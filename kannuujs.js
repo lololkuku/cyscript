@@ -16,6 +16,7 @@
 	let saalittavaltaBtn = document.createElement("button");
 	let homoBtn = document.createElement("button");
 	let antaaollaBtn = document.createElement("button");
+	let iniBtn = document.createElement("button");
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 	let spamlock = false;
@@ -88,6 +89,19 @@
 			const audio = new Audio("https://v.ylilauta.org/24/b5/24b5f6c98b44d186.mp4");
 			audio.play();
 			localStorage.setItem("timelock25", new Date().getTime());
+		}
+	});
+
+	iniBtn.className = "btn btn-sm btn-default";
+    iniBtn.style.float = "right";
+	iniBtn.textContent = "INISEMISENJA";
+	iniBtn.addEventListener("click", () => {
+		const time = localStorage.getItem("timelock29");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "NYTSÄLOPETATTONINISEMISENJA"});
+			const audio = new Audio("https://v.ylilauta.org/39/69/39694c0de186b64e.mp4");
+			audio.play();
+			localStorage.setItem("timelock29", new Date().getTime());
 		}
 	});
 
@@ -370,6 +384,15 @@
 					localStorage.setItem("timelock28", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "NYTSÄLOPETATTONINISEMISENJA" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock30");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/39/69/39694c0de186b64e.mp4");
+					audio.play();
+					localStorage.setItem("timelock30", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "Homo" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock26");
@@ -497,6 +520,7 @@
 	controls.appendChild(hattuBtn);
 	controls.appendChild(homoBtn);
 	controls.appendChild(antaaollaBtn);
+	controls.appendChild(iniBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
