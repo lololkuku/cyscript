@@ -64,10 +64,10 @@
 		}
 	});
 
-	hattuBtn.className = "btn btn-sm btn-default";
-    hattuBtn.style.float = "right";
-	hattuBtn.textContent = "homo";
-	hattuBtn.addEventListener("click", () => {
+	homoBtn.className = "btn btn-sm btn-default";
+    homoBtn.style.float = "right";
+	homoBtn.textContent = "homo";
+	homoBtn.addEventListener("click", () => {
 		const time = localStorage.getItem("timelock25");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "Homo"});
