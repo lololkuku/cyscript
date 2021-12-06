@@ -18,6 +18,7 @@
 	let saalittavaltaBtn = document.createElement("button");
 	let homoBtn = document.createElement("button");
 	let antaaollaBtn = document.createElement("button");
+	let kasniinBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
@@ -91,6 +92,19 @@
 			const audio = new Audio("https://v.ylilauta.org/6b/47/6b47203b71b0002d.mp4");
 			audio.play();
 			localStorage.setItem("timelock33", new Date().getTime());
+		}
+	});
+
+	kasniinBtn.className = "btn btn-sm btn-default";
+    kasniinBtn.style.float = "right";
+	kasniinBtn.textContent = "Kas niiiin";
+	kasniinBtn.addEventListener("click", () => {
+		const time = localStorage.getItem("timelock35");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "Kas niiiin"});
+			const audio = new Audio("https://v.ylilauta.org/d9/ae/d9ae7868a420ac0d.m4a");
+			audio.play();
+			localStorage.setItem("timelock35", new Date().getTime());
 		}
 	});
 
@@ -476,6 +490,15 @@
 					localStorage.setItem("timelock12", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "Kas niiiin" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock36");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/d9/ae/d9ae7868a420ac0d.m4a");
+					audio.play();
+					localStorage.setItem("timelock36", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "EI KIINNOSTA" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock34");
@@ -577,6 +600,7 @@
 	controls.appendChild(iniBtn);
 	controls.appendChild(niinpaBtn);
 	controls.appendChild(eikiinnostaBtn);
+	controls.appendChild(kasniinBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
