@@ -451,7 +451,7 @@
 
     		else if(enabled && (!tabActive || document.hidden)) {
     			tadaa.play();
-    		}
+    		}    		
     		
     		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
     			const msgParentClassname = msg.parentElement.className;

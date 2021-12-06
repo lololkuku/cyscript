@@ -451,7 +451,26 @@
 
     		else if(enabled && (!tabActive || document.hidden)) {
     			tadaa.play();
-    		}SHOWOEKAKI
+    		}
+
+    		if(msg.textContent === "!roll" && username === CLIENT.name) {
+    			const rnd = Math.floor((Math.random() * 100)+1);
+    			socket.emit("chatMsg", {msg: "Rolled: " + rnd});
+    			msg.remove();
+    		}
+    		else
+    			msg.remove();
+
+
+    		if(msg.textContent.split(" ").length === 2 && msg.textContent.split(" ")[0] === "Rolled: " && username === CLIENT.name) {
+    			const rnd = msg.textContent.split(" ")[1];
+    			socket.emit("chatMsg", {msg: "/me rolled " + rnd});
+    			msg.remove();
+    		}
+    		else
+    			msg.remove();
+
+    		
     		
     		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
     			const msgParentClassname = msg.parentElement.className;
@@ -587,133 +606,4 @@
 	function time(ms) {
 		return new Promise(resolve => { setTimeout(resolve, ms) });
 	}
-
-	SHOWOEKAKI	= true;
-
-	// Show oekaki directly on chat
-
-	function showOekakiOnChat(elem) {
-		elem.find('a[href$="?oekaki"]').each(function() {
-			var link = this.href;
-			var block = false;
-			if (link.indexOf("//i.imgur.com") > -1) {
-				if (window.location.href.indexOf("//cytu.be/") > -1) {
-					this.href = DROPBOX + 'bfp7d9u3ep06qad/blocked.png';
-					block = true;
-				}
-				var img = $('<img class="oekakiimg" title="Click to open in a new tab" />')
-				  .attr('src', this.href)
-				  .load(function() {
-					if (SCROLLCHAT) scrollChat();
-				  });
-	  			$(this).html(img).attr('href', link);
-				if (block) {
-					$(this).html($(this).html() + ' [[blocked by imgur, click to see]]');
-					img.addClass('imgurblock');
-				}
-			}
-		});
-	}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* ---------- [SECTION 7] OEKAKI API ---------- */
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// API functions
-// source: drawingboard.js v0.4.6 - https://github.com/Leimi/drawingboard.js
-
-// Copyright © 2015 Emmanuel Pelletier [Licensed MIT]
-
-function uploadOekaki(pic) {
-	upalert = $('<div id="upalert" class="profile-box text-center upalert">Oekaki drawing upload...</div>')
-	  .appendTo("#chatwrap");
-	upalert.css('top', ($chatwrap.height() - upalert.height()) / 2)
-	  .css('left', ($chatwrap.width() - upalert.width()) / 2);
-	$("#oeup-btn, #chat-f8").hide();
-	if (ImgurClientID == "") ImgurClientID = 'a11c2b9fbdd104a';
-
-	$.ajax({url:'https://api.imgur.com/3/image',
-		type:'post',
-		headers:{Authorization:'Client-ID ' + ImgurClientID},
-		data:{image:pic.replace(/^data:image\/[a-z]+;base64,/,''), type:'base64'},
-		dataType:'json',
-		success:function(json) {
-			socket.emit("chatMsg", {msg:json.data.link + '?oekaki'});
-			upalert.remove();
-			$("#oeup-btn, #chat-f8").show();
-		},
-		error:function(json) {
-			alert('Error! Try again.');
-			upalert.remove();
-			$("#oeup-btn, #chat-f8").show();
-		}
-	});
-}
-
-function oekaki() {
-	$.getScript(DROPBOX + "sbuj4e1z3dh87z1/oekaki.js", function() {
-		OETSTAMP = 0;
-		$("#spoekaki").html('');
-		$('<link id="oekakicss" rel="stylesheet" type="text/css" />').appendTo("head")
-		  .attr('href', DROPBOX + 'syendmytcl4rgzt/oekaki.css');
-		var spoekaki = new DrawingBoard.Board('spoekaki', {
-			controls:['Color', 'DrawingMode', 'Size', 'Navigation'],
-			webStorage:"local",
-			droppable:true,
-			controlsPosition:"bottom center"
-		});
-		DrawingBoard.Control.Upload = DrawingBoard.Control.extend({
-			name:'Upload',
-			initialize:function() {
-				$('<button id="oeup-btn" title="send to chat" />').appendTo(this.$el)
-				  .html('Send <i class="glyphicon glyphicon-export"></i>')
-				this.$el.on('click', '#oeup-btn', $.proxy(function(e) {
-					e.preventDefault();
-					var time = (new Date()).getTime();
-					if ((time - OETSTAMP) > 30000) {
-						OETSTAMP = time;
-						uploadOekaki(this.board.getImg());
-					} else alert('Warning! You can send 1 picture every 30 seconds.');
-				}, this));
-			}
-		});
-		spoekaki.addControl('Upload');
-		$("#spoekaki .drawing-board-controls").after('<div id="oekaki-checkbox" class="centered" />');
-		var html = '<label class="checkbox-inline"><input id="show-oekaki" type="checkbox"><span> '
-			 +   'Show drawings directly on chat</span></label>';
-		$("#oekaki-checkbox").html(html);
-		$("#show-oekaki").on("click", function() {
-			if (SHOWOEKAKI) {
-				$messagebuffer.find('a[href$="?oekaki"]').each(function() {
-  					$(this).html(this.href);
-				});
-			} else showOekakiOnChat($messagebuffer);
-			setOpt('SP_showoekaki', SHOWOEKAKI = !SHOWOEKAKI);
-			if (SCROLLCHAT) scrollChat();
-		});
-		if (SHOWOEKAKI) $("#show-oekaki").prop('checked', true);
-		if (SHOWIMAGES) $("#oekaki-checkbox").hide();
-		OEKAKILOAD = true;
-	});
-}
-
-
-// API HTML elements
-
-$oekakiwrap = $('<div id="oekakiwrap" class="col-lg-12 col-md-12 wells leftareas" />')
-  .insertBefore("#notepadwrap").append('<div id="oekaki-well" class="well form-horizontal" />').hide();
-$('<div id="spoekaki" class="centered">Loading drawing board...</div>').appendTo("#oekaki-well");
-$('<button id="oekaki-btn" class="btn btn-sm btn-default btn-chatctrl" title="Oekaki - drawing board" />')
-  .prependTo($chatcontrols).html('<span class="glyphicon glyphicon-picture"></span>')
-  .on("click", function() {
-	toggleElement($oekakiwrap);
-	$(this).toggleClass('btn-success');
-	if (typeof OEKAKILOAD === "undefined") OEKAKILOAD = false;
-	if (!OEKAKILOAD) oekaki();
-  });
-
-
 })();
