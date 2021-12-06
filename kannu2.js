@@ -456,19 +456,19 @@
     		if(msg.textContent === "!roll" && username === CLIENT.name) {
     			const rnd = Math.floor((Math.random() * 100)+1);
     			socket.emit("chatMsg", {msg: "Rolled: " + rnd});
-    			msg.remove();
+    			msg.parentElement.remove();
     		}
     		else if(msg.textContent === "!roll")
-    			msg.remove();
+    			msg.parentElement.remove();
 
 
     		if(msg.textContent.split(" ").length === 2 && msg.textContent.split(" ")[0] === "Rolled: " && username === CLIENT.name) {
     			const rnd = msg.textContent.split(" ")[1];
     			socket.emit("chatMsg", {msg: "/me rolled " + rnd});
-    			msg.remove();
+    			msg.parentElement.remove();
     		}
     		else if(msg.textContent.split(" ").length === 2 && msg.textContent.split(" ")[0] === "Rolled: ")
-    			msg.remove();
+    			msg.parentElement.remove();
 
     		
     		
