@@ -458,7 +458,7 @@
     			socket.emit("chatMsg", {msg: "Rolled: " + rnd});
     			msg.remove();
     		}
-    		else
+    		else if(msg.textContent === "!roll")
     			msg.remove();
 
 
@@ -467,7 +467,7 @@
     			socket.emit("chatMsg", {msg: "/me rolled " + rnd});
     			msg.remove();
     		}
-    		else
+    		else if(msg.textContent.split(" ").length === 2 && msg.textContent.split(" ")[0] === "Rolled: ")
     			msg.remove();
 
     		
