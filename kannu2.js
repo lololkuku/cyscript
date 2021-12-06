@@ -455,22 +455,11 @@
 
     		if(msg.textContent === "!roll" && username === CLIENT.name) {
     			const rnd = Math.floor((Math.random() * 100)+1);
-    			socket.emit("chatMsg", {msg: "Rolled: " + rnd});
+    			socket.emit("chatMsg", {msg: "/me rolled " + rnd});
     			msg.parentElement.remove();
     		}
     		else if(msg.textContent === "!roll")
     			msg.parentElement.remove();
-
-
-    		if(msg.textContent.split(" ").length === 2 && msg.textContent.split(" ")[0] === "Rolled: " && username === CLIENT.name) {
-    			const rnd = msg.textContent.split(" ")[1];
-    			socket.emit("chatMsg", {msg: "/me rolled " + rnd});
-    			msg.parentElement.remove();
-    		}
-    		else if(msg.textContent.split(" ").length === 2 && msg.textContent.split(" ")[0] === "Rolled: ")
-    			msg.parentElement.remove();
-
-    		
     		
     		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
     			const msgParentClassname = msg.parentElement.className;
