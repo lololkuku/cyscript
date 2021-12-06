@@ -19,6 +19,7 @@
 	let homoBtn = document.createElement("button");
 	let antaaollaBtn = document.createElement("button");
 	let kasniinBtn = document.createElement("button");
+	let aivanaivanBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
@@ -79,6 +80,19 @@
 			const audio = new Audio("https://v.ylilauta.org/49/8d/498d8f87186dc57b.mp4");
 			audio.play();
 			localStorage.setItem("timelock23", new Date().getTime());
+		}
+	});
+
+	aivanaivanBtn.className = "btn btn-sm btn-default";
+    aivanaivanBtn.style.float = "right";
+	aivanaivanBtn.textContent = "AIVAN AIVAN";
+	aivanaivanBtn.addEventListener("click", () => {
+		const time = localStorage.getItem("timelock37");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "NO AIVAN AIVAN AIVAN AIVAN"});
+			const audio = new Audio("https://v.ylilauta.org/11/ba/11ba9fd59d74c92b.m4a");
+			audio.play();
+			localStorage.setItem("timelock37", new Date().getTime());
 		}
 	});
 
@@ -462,6 +476,15 @@
 					localStorage.setItem("timelock20", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "NO AIVAN AIVAN AIVAN AIVAN" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock38");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/11/ba/11ba9fd59d74c92b.m4a");
+					audio.play();
+					localStorage.setItem("timelock38", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "Ei voi muuta sanoo kun hattua nostaa" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock24");
@@ -601,6 +624,7 @@
 	controls.appendChild(niinpaBtn);
 	controls.appendChild(eikiinnostaBtn);
 	controls.appendChild(kasniinBtn);
+	controls.appendChild(aivanaivanBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
