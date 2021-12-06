@@ -451,7 +451,7 @@
 
     		else if(enabled && (!tabActive || document.hidden)) {
     			tadaa.play();
-    		}
+    		}SHOWOEKAKI
     		
     		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
     			const msgParentClassname = msg.parentElement.className;
@@ -588,7 +588,7 @@
 		return new Promise(resolve => { setTimeout(resolve, ms) });
 	}
 
-	SHOWOEKAKI	= getOrDefault('SP_showoekaki',		false);
+	SHOWOEKAKI	= true;
 
 	// Show oekaki directly on chat
 
