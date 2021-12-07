@@ -20,6 +20,7 @@
 	let antaaollaBtn = document.createElement("button");
 	let kasniinBtn = document.createElement("button");
 	let aivanaivanBtn = document.createElement("button");
+	let transuBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
 	let enoonahnyBtn = document.createElement("button");
 	let kivapeppuBtn = document.createElement("button");
@@ -139,6 +140,24 @@
 			const audio = new Audio("https://v.ylilauta.org/17/f3/17f3fb4400f58785.m4a");
 			audio.play();
 			localStorage.setItem("timelock43", new Date().getTime());
+		}
+	});
+
+	transuBtn.className = "btn btn-sm btn-default";
+    transuBtn.style.float = "right";
+	transuBtn.textContent = "transu hiljaa";
+	transuBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock45");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "vitun transu hiljaa"});
+			const audio = new Audio("https://v.ylilauta.org/5a/7c/5a7c778952168501.mp4");
+			audio.play();
+			localStorage.setItem("timelock45", new Date().getTime());
 		}
 	});
 
@@ -637,6 +656,15 @@
 					localStorage.setItem("timelock18", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "vitun transu hiljaa" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock46");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/5a/7c/5a7c778952168501.mp4");
+					audio.play();
+					localStorage.setItem("timelock46", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "kiva peppu!" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock44");
@@ -807,6 +835,7 @@
 	controls.appendChild(lassehuutsBtn);
 	controls.appendChild(enoonahnyBtn);
 	controls.appendChild(kivapeppuBtn);
+	controls.appendChild(transuBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
