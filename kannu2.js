@@ -20,6 +20,7 @@
 	let antaaollaBtn = document.createElement("button");
 	let kasniinBtn = document.createElement("button");
 	let aivanaivanBtn = document.createElement("button");
+	let lassehuutsBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
@@ -93,6 +94,19 @@
 			const audio = new Audio("https://v.ylilauta.org/11/ba/11ba9fd59d74c92b.m4a");
 			audio.play();
 			localStorage.setItem("timelock37", new Date().getTime());
+		}
+	});
+
+	lassehuutsBtn.className = "btn btn-sm btn-default";
+    lassehuutsBtn.style.float = "right";
+	lassehuutsBtn.textContent = "lassepihinä";
+	lassehuutsBtn.addEventListener("click", () => {
+		const time = localStorage.getItem("timelock39");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "/lasse "});
+			const audio = new Audio("https://v.ylilauta.org/2e/08/2e08fb9e5b0109f7.m4a");
+			audio.play();
+			localStorage.setItem("timelock39", new Date().getTime());
 		}
 	});
 
@@ -456,6 +470,15 @@
 					const audio = new Audio("https://v.ylilauta.org/24/b5/24b5f6c98b44d186.mp4");
 					audio.play();
 					localStorage.setItem("timelock26", new Date().getTime());
+				}
+    		}
+    		else if(msg.childNodes.length === 2 && msg.childNodes[0].getAttribute("title") === "/lasse" && msg.childNodes[1].textContent === " " && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock40");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/2e/08/2e08fb9e5b0109f7.m4a");
+					audio.play();
+					localStorage.setItem("timelock40", new Date().getTime());
 				}
     		}
     		else if(msg.textContent == "tajuatko miten säälittävältä sä kuulostat?" && username != CLIENT.name) {
