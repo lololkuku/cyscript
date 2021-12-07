@@ -22,6 +22,7 @@
 	let aivanaivanBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
 	let enoonahnyBtn = document.createElement("button");
+	let kivapeppuBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
@@ -95,6 +96,19 @@
 			const audio = new Audio("https://v.ylilauta.org/11/ba/11ba9fd59d74c92b.m4a");
 			audio.play();
 			localStorage.setItem("timelock37", new Date().getTime());
+		}
+	});
+
+	kivapeppuBtn.className = "btn btn-sm btn-default";
+    kivapeppuBtn.style.float = "right";
+	kivapeppuBtn.textContent = "kiva peppu";
+	kivapeppuBtn.addEventListener("click", () => {
+		const time = localStorage.getItem("timelock43");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "kiva peppu!"});
+			const audio = new Audio("https://v.ylilauta.org/17/f3/17f3fb4400f58785.m4a");
+			audio.play();
+			localStorage.setItem("timelock43", new Date().getTime());
 		}
 	});
 
@@ -513,6 +527,15 @@
 					localStorage.setItem("timelock18", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "kiva peppu!" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock44");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/17/f3/17f3fb4400f58785.m4a");
+					audio.play();
+					localStorage.setItem("timelock44", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "ai niinkö?" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock20");
@@ -673,6 +696,7 @@
 	controls.appendChild(aivanaivanBtn);
 	controls.appendChild(lassehuutsBtn);
 	controls.appendChild(enoonahnyBtn);
+	controls.appendChild(kivapeppuBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
