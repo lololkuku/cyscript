@@ -37,6 +37,11 @@
     notifBtn.style.float = "right";
 	notifBtn.textContent = "hälytys";
 	notifBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			myHatakokou = true;
@@ -51,6 +56,11 @@
     hiljaaBtn.style.float = "right";
 	hiljaaBtn.textContent = "OLE HILJAA :D";
 	hiljaaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock3");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "OLE HILJAA"});
@@ -64,6 +74,11 @@
     antaaollaBtn.style.float = "right";
 	antaaollaBtn.textContent = "ANTAA OLLA SITTE";
 	antaaollaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock27");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "ANTAA OLLA SITTE"});
@@ -77,6 +92,11 @@
     hattuBtn.style.float = "right";
 	hattuBtn.textContent = "hattua nostaa";
 	hattuBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock23");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "Ei voi muuta sanoo kun hattua nostaa"});
@@ -90,6 +110,11 @@
     aivanaivanBtn.style.float = "right";
 	aivanaivanBtn.textContent = "AIVAN AIVAN";
 	aivanaivanBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock37");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "NO AIVAN AIVAN AIVAN AIVAN"});
@@ -103,6 +128,11 @@
     kivapeppuBtn.style.float = "right";
 	kivapeppuBtn.textContent = "kiva peppu";
 	kivapeppuBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock43");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "kiva peppu!"});
@@ -116,6 +146,11 @@
     lassehuutsBtn.style.float = "right";
 	lassehuutsBtn.textContent = "lassepihinä";
 	lassehuutsBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock39");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "/lasse "});
@@ -129,6 +164,11 @@
     eikiinnostaBtn.style.float = "right";
 	eikiinnostaBtn.textContent = "EI KIINNOSTA";
 	eikiinnostaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock33");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "EI KIINNOSTA"});
@@ -142,6 +182,11 @@
     kasniinBtn.style.float = "right";
 	kasniinBtn.textContent = "Kas niiiin";
 	kasniinBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock35");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "Kas niiiin"});
@@ -155,6 +200,11 @@
     enoonahnyBtn.style.float = "right";
 	enoonahnyBtn.textContent = "EN OO NÄHNY TISSIÄ";
 	enoonahnyBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock41");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "EN OO NÄHNY PILLUA EN OO NÄHNY TISSIÄ"});
@@ -168,6 +218,11 @@
     niinpaBtn.style.float = "right";
 	niinpaBtn.textContent = "niinpä niin";
 	niinpaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock31");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "niinpä niin, niinhän ne kaikki sanoo"});
@@ -181,6 +236,11 @@
     homoBtn.style.float = "right";
 	homoBtn.textContent = "homo";
 	homoBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock25");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "Homo"});
@@ -194,6 +254,11 @@
     iniBtn.style.float = "right";
 	iniBtn.textContent = "INISEMISENJA";
 	iniBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock29");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "NYTSÄLOPETATTONINISEMISENJA"});
@@ -207,6 +272,11 @@
     uskoBtn.style.float = "right";
 	uskoBtn.textContent = "USKOSEJO";
 	uskoBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock7");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -221,6 +291,11 @@
     turpaBtn.style.float = "right";
 	turpaBtn.textContent = "turpa kiinni sönkkö";
 	turpaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock13");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -235,6 +310,11 @@
     kyllaBtn.style.float = "right";
 	kyllaBtn.textContent = "kyllä";
 	kyllaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock21");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -249,6 +329,11 @@
     niinkoBtn.style.float = "right";
 	niinkoBtn.textContent = "ai niinkö";
 	niinkoBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock19");
 // 900000 
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -264,6 +349,11 @@
     housutBtn.style.float = "right";
 	housutBtn.textContent = "housut pois";
 	housutBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock15");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -278,6 +368,11 @@
     saalittavaltaBtn.style.float = "right";
 	saalittavaltaBtn.textContent = "säälittävältä kuulostat";
 	saalittavaltaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock17");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -292,6 +387,11 @@
     jassBtn.style.float = "right";
 	jassBtn.textContent = "NEEKER JÄSS";
 	jassBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock11");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -306,6 +406,11 @@
     dullaBtn.style.float = "right";
 	dullaBtn.textContent = "men dulla";
 	dullaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock9");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
@@ -332,6 +437,11 @@
     voissaakeliBtn.style.float = "right";
 	voissaakeliBtn.textContent = "ELÄMÄÄ";
 	voissaakeliBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock5");
 		if(!time || new Date().getTime() - +time >= 420000) {
 			socket.emit("chatMsg", {msg: "VOI SAAKELI TÄTÄ ELÄMÄÄ"});
