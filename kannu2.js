@@ -648,6 +648,7 @@
 	controls.appendChild(eikiinnostaBtn);
 	controls.appendChild(kasniinBtn);
 	controls.appendChild(aivanaivanBtn);
+	controls.appendChild(lassehuutsBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
