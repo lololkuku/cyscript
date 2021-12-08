@@ -155,7 +155,7 @@
 		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock47");
 		if(!time || new Date().getTime() - +time >= 420000) {
-			socket.emit("chatMsg", {msg: "kiva peppu!"});
+			socket.emit("chatMsg", {msg: "ÄLÄ VALEHTELE"});
 			const audio = new Audio("https://v.ylilauta.org/8a/ea/8aea348ac92ebe3b.mp4");
 			audio.play();
 			localStorage.setItem("timelock47", new Date().getTime());
