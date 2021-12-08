@@ -22,6 +22,7 @@
 	let aivanaivanBtn = document.createElement("button");
 	let transuBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
+	let valehteleBtn = document.createElement("button");
 	let enoonahnyBtn = document.createElement("button");
 	let kivapeppuBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
@@ -140,6 +141,24 @@
 			const audio = new Audio("https://v.ylilauta.org/17/f3/17f3fb4400f58785.m4a");
 			audio.play();
 			localStorage.setItem("timelock43", new Date().getTime());
+		}
+	});
+
+	valehteleBtn.className = "btn btn-sm btn-default";
+    valehteleBtn.style.float = "right";
+	valehteleBtn.textContent = "ÄLÄ VALEHTELE";
+	valehteleBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock47");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "kiva peppu!"});
+			const audio = new Audio("https://v.ylilauta.org/8a/ea/8aea348ac92ebe3b.mp4");
+			audio.play();
+			localStorage.setItem("timelock47", new Date().getTime());
 		}
 	});
 
@@ -683,6 +702,15 @@
 					localStorage.setItem("timelock20", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "ÄLÄ VALEHTELE" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock48");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/8a/ea/8aea348ac92ebe3b.mp4");
+					audio.play();
+					localStorage.setItem("timelock48", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "NO AIVAN AIVAN AIVAN AIVAN" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock38");
@@ -836,6 +864,7 @@
 	controls.appendChild(enoonahnyBtn);
 	controls.appendChild(kivapeppuBtn);
 	controls.appendChild(transuBtn);
+	controls.appendChild(valehteleBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
