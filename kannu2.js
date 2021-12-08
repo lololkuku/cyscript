@@ -657,7 +657,7 @@
 					localStorage.setItem("timelock26", new Date().getTime());
 				}
     		}
-    		else if(msg.childNodes.length === 2 && msg.childNodes[0].getAttribute("title") === "/lasse" && msg.childNodes[1].textContent === " " && username != CLIENT.name) {
+    		else if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[0].getAttribute("title") === "/lasse" && msg.childNodes[1].textContent === " " && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock40");
 				if(!time || new Date().getTime() - +time > 400000) {
