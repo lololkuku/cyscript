@@ -24,6 +24,7 @@
 	let hyihelvettiBtn = document.createElement("button");
 	let transuBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
+	let loppuBtn = document.createElement("button");
 	let valehteleBtn = document.createElement("button");
 	let enoonahnyBtn = document.createElement("button");
 	let kivapeppuBtn = document.createElement("button");
@@ -161,6 +162,24 @@
 			const audio = new Audio("https://v.ylilauta.org/17/f3/17f3fb4400f58785.m4a");
 			audio.play();
 			localStorage.setItem("timelock43", new Date().getTime());
+		}
+	});
+
+	loppuBtn.className = "btn btn-sm btn-default";
+    loppuBtn.style.float = "right";
+	loppuBtn.textContent = "nyt loppu";
+	loppuBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock53");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "nyt loppu."});
+			const audio = new Audio("https://v.ylilauta.org/e4/9c/e49c03d5763fa418.mp4");
+			audio.play();
+			localStorage.setItem("timelock53", new Date().getTime());
 		}
 	});
 
@@ -677,6 +696,15 @@
 					localStorage.setItem("timelock28", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "nyt loppu." && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock54");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/e4/9c/e49c03d5763fa418.mp4");
+					audio.play();
+					localStorage.setItem("timelock54", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "EN OO NÄHNY PILLUA EN OO NÄHNY TISSIÄ" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock42");
@@ -920,6 +948,7 @@
 	controls.appendChild(valehteleBtn);
 	controls.appendChild(hyihelvettiBtn);
 	controls.appendChild(jesBtn);
+	controls.appendChild(loppuBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
