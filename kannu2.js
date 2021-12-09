@@ -229,7 +229,7 @@
 		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock51");
 		if(!time || new Date().getTime() - +time >= 420000) {
-			socket.emit("chatMsg", {msg: "/jes "});
+			socket.emit("chatMsg", {msg: ":jes: "});
 			const audio = new Audio("https://v.ylilauta.org/6b/1f/6b1f29a03f331cbc.mp4");
 			audio.play();
 			localStorage.setItem("timelock51", new Date().getTime());
@@ -713,7 +713,7 @@
 					localStorage.setItem("timelock40", new Date().getTime());
 				}
     		}
-    		else if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[0].getAttribute("title") === "/jes" && msg.childNodes[1].textContent === " " && username != CLIENT.name) {
+    		else if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[0].getAttribute("title") === ":jes:" && msg.childNodes[1].textContent === " " && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock52");
 				if(!time || new Date().getTime() - +time > 400000) {
