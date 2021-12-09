@@ -20,6 +20,7 @@
 	let antaaollaBtn = document.createElement("button");
 	let kasniinBtn = document.createElement("button");
 	let aivanaivanBtn = document.createElement("button");
+	let jesBtn = document.createElement("button");
 	let hyihelvettiBtn = document.createElement("button");
 	let transuBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
@@ -214,6 +215,24 @@
 			const audio = new Audio("https://v.ylilauta.org/2e/08/2e08fb9e5b0109f7.m4a");
 			audio.play();
 			localStorage.setItem("timelock39", new Date().getTime());
+		}
+	});
+
+	jesBtn.className = "btn btn-sm btn-default";
+    jesBtn.style.float = "right";
+	jesBtn.textContent = "JES";
+	jesBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock51");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "/jes "});
+			const audio = new Audio("https://v.ylilauta.org/6b/1f/6b1f29a03f331cbc.mp4");
+			audio.play();
+			localStorage.setItem("timelock51", new Date().getTime());
 		}
 	});
 
@@ -694,6 +713,15 @@
 					localStorage.setItem("timelock40", new Date().getTime());
 				}
     		}
+    		else if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[0].getAttribute("title") === "/jes" && msg.childNodes[1].textContent === " " && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock52");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/6b/1f/6b1f29a03f331cbc.mp4");
+					audio.play();
+					localStorage.setItem("timelock52", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "tajuatko miten säälittävältä sä kuulostat?" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock18");
@@ -891,6 +919,7 @@
 	controls.appendChild(transuBtn);
 	controls.appendChild(valehteleBtn);
 	controls.appendChild(hyihelvettiBtn);
+	controls.appendChild(jesBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
