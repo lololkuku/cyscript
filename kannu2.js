@@ -25,6 +25,7 @@
 	let transuBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
 	let pilluBtn = document.createElement("button");
+	let turpaasBtn = document.createElement("button");
 	let panemisiinBtn = document.createElement("button");
 	let asiaselvaBtn = document.createElement("button");
 	let loppuBtn = document.createElement("button");
@@ -167,6 +168,24 @@
 			const audio = new Audio("https://v.ylilauta.org/c3/a4/c3a460b3dfa6e1a0.m4a");
 			audio.play();
 			localStorage.setItem("timelock61", new Date().getTime());
+		}
+	});
+
+	turpaasBtn.className = "btn btn-sm btn-default";
+    turpaasBtn.style.float = "right";
+	turpaasBtn.textContent = "HALUUTSÄ TURPAAS";
+	turpaasBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock65");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "HALUUT SÄ TURPAAS"});
+			const audio = new Audio("https://v.ylilauta.org/c9/8a/c98af08255fd8d68.mp4");
+			audio.play();
+			localStorage.setItem("timelock65", new Date().getTime());
 		}
 	});
 
@@ -800,6 +819,15 @@
 					localStorage.setItem("timelock58", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "HALUUT SÄ TURPAAS" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock66");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/c9/8a/c98af08255fd8d68.mp4");
+					audio.play();
+					localStorage.setItem("timelock66", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "hyi helveTTI" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock50");
@@ -1094,6 +1122,7 @@
 	controls.appendChild(asiaselvaBtn);
 	controls.appendChild(kutenhaluatteBtn);
 	controls.appendChild(viisaspaatosBtn);
+	controls.appendChild(turpaasBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
