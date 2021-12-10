@@ -24,10 +24,15 @@
 	let hyihelvettiBtn = document.createElement("button");
 	let transuBtn = document.createElement("button");
 	let lassehuutsBtn = document.createElement("button");
+	let pilluBtn = document.createElement("button");
+	let panemisiinBtn = document.createElement("button");
+	let asiaselvaBtn = document.createElement("button");
 	let loppuBtn = document.createElement("button");
 	let valehteleBtn = document.createElement("button");
+	let kutenhaluatteBtn = document.createElement("button");
 	let enoonahnyBtn = document.createElement("button");
 	let kivapeppuBtn = document.createElement("button");
+	let viisaspaatosBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
@@ -90,6 +95,96 @@
 			const audio = new Audio("https://v.ylilauta.org/9e/a5/9ea5c36d5bb7c656.mp4");
 			audio.play();
 			localStorage.setItem("timelock27", new Date().getTime());
+		}
+	});
+
+	pilluBtn.className = "btn btn-sm btn-default";
+    pilluBtn.style.float = "right";
+	pilluBtn.textContent = "pillu mielessä";
+	pilluBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock55");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "pillu mielessä SLRSPLPSRLSPRLSSPRLSPRLURPS"});
+			const audio = new Audio("https://v.ylilauta.org/70/4b/704b56cacaf9858b.m4a");
+			audio.play();
+			localStorage.setItem("timelock55", new Date().getTime());
+		}
+	});
+
+	panemisiinBtn.className = "btn btn-sm btn-default";
+    panemisiinBtn.style.float = "right";
+	panemisiinBtn.textContent = "panemisiin";
+	panemisiinBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock57");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "panemisiin"});
+			const audio = new Audio("https://v.ylilauta.org/dc/65/dc65be05f5ed1a5d.m4a");
+			audio.play();
+			localStorage.setItem("timelock57", new Date().getTime());
+		}
+	});
+
+	asiaselvaBtn.className = "btn btn-sm btn-default";
+    asiaselvaBtn.style.float = "right";
+	asiaselvaBtn.textContent = "asia selvä";
+	asiaselvaBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock59");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "asiahan on sitten sillä selvä senioriittaaa"});
+			const audio = new Audio("https://v.ylilauta.org/9d/74/9d743762a26039fc.m4a");
+			audio.play();
+			localStorage.setItem("timelock59", new Date().getTime());
+		}
+	});
+
+	kutenhaluatteBtn.className = "btn btn-sm btn-default";
+    kutenhaluatteBtn.style.float = "right";
+	kutenhaluatteBtn.textContent = "aivan kuten haluatte ylhäisyys";
+	kutenhaluatteBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock61");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "aivan kuten haluatte ylhäisyys"});
+			const audio = new Audio("https://v.ylilauta.org/c3/a4/c3a460b3dfa6e1a0.m4a");
+			audio.play();
+			localStorage.setItem("timelock61", new Date().getTime());
+		}
+	});
+
+	viisaspaatosBtn.className = "btn btn-sm btn-default";
+    viisaspaatosBtn.style.float = "right";
+	viisaspaatosBtn.textContent = "viisas päätös";
+	viisaspaatosBtn.addEventListener("click", () => {
+		if(spamlock)
+			return;
+
+		spamlock = true;
+		setTimeout(() => {spamlock = false}, 3000)
+		const time = localStorage.getItem("timelock63");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			socket.emit("chatMsg", {msg: "todella viisas päätös ylhäisyys"});
+			const audio = new Audio("https://v.ylilauta.org/33/66/336643ca0f44fc92.m4a");
+			audio.play();
+			localStorage.setItem("timelock63", new Date().getTime());
 		}
 	});
 
@@ -651,6 +746,15 @@
 					localStorage.setItem("timelock8", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "pillu mielessä SLRSPLPSRLSPRLSSPRLSPRLURPS" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock56");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/70/4b/704b56cacaf9858b.m4a");
+					audio.play();
+					localStorage.setItem("timelock56", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "si-si-si-si-si-sitte ka-ka-ka-ka-ka-kannattaa pitää turpa kiinni sönkkö" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock14");
@@ -669,6 +773,15 @@
 					localStorage.setItem("timelock16", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "asiahan on sitten sillä selvä senioriittaaa" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock60");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/9d/74/9d743762a26039fc.m4a");
+					audio.play();
+					localStorage.setItem("timelock60", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "Kyllä" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock22");
@@ -678,6 +791,15 @@
 					localStorage.setItem("timelock22", new Date().getTime());
 				}
     		}
+    		else if(msg.textContent == "panemisiin" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock58");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/dc/65/dc65be05f5ed1a5d.m4a");
+					audio.play();
+					localStorage.setItem("timelock58", new Date().getTime());
+				}
+    		}
     		else if(msg.textContent == "hyi helveTTI" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock50");
@@ -685,6 +807,24 @@
 					const audio = new Audio("https://v.ylilauta.org/46/15/46155f0b545e6112.mp4");
 					audio.play();
 					localStorage.setItem("timelock50", new Date().getTime());
+				}
+    		}
+    		else if(msg.textContent == "todella viisas päätös ylhäisyys" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock64");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/33/66/336643ca0f44fc92.m4a");
+					audio.play();
+					localStorage.setItem("timelock64", new Date().getTime());
+				}
+    		}
+    		else if(msg.textContent == "aivan kuten haluatte ylhäisyys" && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock62");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/c3/a4/c3a460b3dfa6e1a0.m4a");
+					audio.play();
+					localStorage.setItem("timelock62", new Date().getTime());
 				}
     		}
     		else if(msg.textContent == "ANTAA OLLA SITTE" && username != CLIENT.name) {
@@ -949,6 +1089,11 @@
 	controls.appendChild(hyihelvettiBtn);
 	controls.appendChild(jesBtn);
 	controls.appendChild(loppuBtn);
+	controls.appendChild(pilluBtn);
+	controls.appendChild(panemisiinBtn);
+	controls.appendChild(asiaselvaBtn);
+	controls.appendChild(kutenhaluatteBtn);
+	controls.appendChild(viisaspaatosBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
