@@ -48,13 +48,14 @@
     notifBtn.style.float = "right";
 	notifBtn.textContent = "hälytys";
 	notifBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
 			myHatakokou = true;
 			socket.emit("chatMsg", {msg: "ISMOJEN HÄTÄKOKOU"});
 			const audio = new Audio("https://v.ylilauta.org/22/47/2247757306bb9c10.mp4");
@@ -67,13 +68,15 @@
     hiljaaBtn.style.float = "right";
 	hiljaaBtn.textContent = "OLE HILJAA :D";
 	hiljaaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock3");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "OLE HILJAA"});
 			const audio = new Audio("https://v.ylilauta.org/c2/d6/c2d61a29e7987290.m4a");
 			audio.play();
@@ -85,13 +88,15 @@
     antaaollaBtn.style.float = "right";
 	antaaollaBtn.textContent = "ANTAA OLLA SITTE";
 	antaaollaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock27");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "ANTAA OLLA SITTE"});
 			const audio = new Audio("https://v.ylilauta.org/9e/a5/9ea5c36d5bb7c656.mp4");
 			audio.play();
@@ -103,13 +108,15 @@
     pilluBtn.style.float = "right";
 	pilluBtn.textContent = "pillu mielessä";
 	pilluBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock55");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "pillu mielessä SLRSPLPSRLSPRLSSPRLSPRLURPS"});
 			const audio = new Audio("https://v.ylilauta.org/70/4b/704b56cacaf9858b.m4a");
 			audio.play();
@@ -121,13 +128,15 @@
     panemisiinBtn.style.float = "right";
 	panemisiinBtn.textContent = "panemisiin";
 	panemisiinBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock57");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "panemisiin"});
 			const audio = new Audio("https://v.ylilauta.org/dc/65/dc65be05f5ed1a5d.m4a");
 			audio.play();
@@ -139,13 +148,15 @@
     asiaselvaBtn.style.float = "right";
 	asiaselvaBtn.textContent = "asia selvä";
 	asiaselvaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock59");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "asiahan on sitten sillä selvä senioriittaaa"});
 			const audio = new Audio("https://v.ylilauta.org/9d/74/9d743762a26039fc.m4a");
 			audio.play();
@@ -155,15 +166,17 @@
 
 	kutenhaluatteBtn.className = "btn btn-sm btn-default";
     kutenhaluatteBtn.style.float = "right";
-	kutenhaluatteBtn.textContent = "aivan kuten haluatte ylhäisyys";
+	kutenhaluatteBtn.textContent = "aivan kuten haluatte";
 	kutenhaluatteBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock61");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "aivan kuten haluatte ylhäisyys"});
 			const audio = new Audio("https://v.ylilauta.org/c3/a4/c3a460b3dfa6e1a0.m4a");
 			audio.play();
@@ -175,13 +188,15 @@
     turpaasBtn.style.float = "right";
 	turpaasBtn.textContent = "HALUUTSÄ TURPAAS";
 	turpaasBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock65");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "HALUUT SÄ TURPAAS"});
 			const audio = new Audio("https://v.ylilauta.org/c9/8a/c98af08255fd8d68.mp4");
 			audio.play();
@@ -193,13 +208,15 @@
     viisaspaatosBtn.style.float = "right";
 	viisaspaatosBtn.textContent = "viisas päätös";
 	viisaspaatosBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock63");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "todella viisas päätös teidän ylhäisyys"});
 			const audio = new Audio("https://v.ylilauta.org/33/66/336643ca0f44fc92.m4a");
 			audio.play();
@@ -211,13 +228,14 @@
     hattuBtn.style.float = "right";
 	hattuBtn.textContent = "hattua nostaa";
 	hattuBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
-
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock23");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "Ei voi muuta sanoo kun hattua nostaa"});
 			const audio = new Audio("https://v.ylilauta.org/49/8d/498d8f87186dc57b.mp4");
 			audio.play();
@@ -229,13 +247,15 @@
     aivanaivanBtn.style.float = "right";
 	aivanaivanBtn.textContent = "AIVAN AIVAN";
 	aivanaivanBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock37");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "NO AIVAN AIVAN AIVAN AIVAN"});
 			const audio = new Audio("https://v.ylilauta.org/11/ba/11ba9fd59d74c92b.m4a");
 			audio.play();
@@ -247,13 +267,15 @@
     hyihelvettiBtn.style.float = "right";
 	hyihelvettiBtn.textContent = "hyi helveTTI";
 	hyihelvettiBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock49");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "hyi helveTTI"});
 			const audio = new Audio("https://v.ylilauta.org/46/15/46155f0b545e6112.mp4");
 			audio.play();
@@ -265,13 +287,15 @@
     kivapeppuBtn.style.float = "right";
 	kivapeppuBtn.textContent = "kiva peppu";
 	kivapeppuBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock43");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "kiva peppu!"});
 			const audio = new Audio("https://v.ylilauta.org/17/f3/17f3fb4400f58785.m4a");
 			audio.play();
@@ -283,13 +307,15 @@
     loppuBtn.style.float = "right";
 	loppuBtn.textContent = "nyt loppu";
 	loppuBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock53");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "nyt loppu."});
 			const audio = new Audio("https://v.ylilauta.org/e4/9c/e49c03d5763fa418.mp4");
 			audio.play();
@@ -301,13 +327,15 @@
     valehteleBtn.style.float = "right";
 	valehteleBtn.textContent = "ÄLÄ VALEHTELE";
 	valehteleBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock47");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "ÄLÄ VALEHTELE"});
 			const audio = new Audio("https://v.ylilauta.org/8a/ea/8aea348ac92ebe3b.mp4");
 			audio.play();
@@ -319,13 +347,15 @@
     transuBtn.style.float = "right";
 	transuBtn.textContent = "transu hiljaa";
 	transuBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock45");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "vitun transu hiljaa"});
 			const audio = new Audio("https://v.ylilauta.org/5a/7c/5a7c778952168501.mp4");
 			audio.play();
@@ -337,13 +367,15 @@
     lassehuutsBtn.style.float = "right";
 	lassehuutsBtn.textContent = "lassepihinä";
 	lassehuutsBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock39");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "/lasse  "});
 			const audio = new Audio("https://v.ylilauta.org/2e/08/2e08fb9e5b0109f7.m4a");
 			audio.play();
@@ -355,13 +387,15 @@
     jesBtn.style.float = "right";
 	jesBtn.textContent = "JES";
 	jesBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock51");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: ":jes:  "});
 			const audio = new Audio("https://v.ylilauta.org/6b/1f/6b1f29a03f331cbc.mp4");
 			audio.play();
@@ -373,13 +407,15 @@
     eikiinnostaBtn.style.float = "right";
 	eikiinnostaBtn.textContent = "EI KIINNOSTA";
 	eikiinnostaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock33");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "EI KIINNOSTA"});
 			const audio = new Audio("https://v.ylilauta.org/6b/47/6b47203b71b0002d.mp4");
 			audio.play();
@@ -391,13 +427,15 @@
     kasniinBtn.style.float = "right";
 	kasniinBtn.textContent = "Kas niiiin";
 	kasniinBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock35");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "Kas niiiin"});
 			const audio = new Audio("https://v.ylilauta.org/d9/ae/d9ae7868a420ac0d.m4a");
 			audio.play();
@@ -409,13 +447,15 @@
     enoonahnyBtn.style.float = "right";
 	enoonahnyBtn.textContent = "EN OO NÄHNY TISSIÄ";
 	enoonahnyBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock41");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "EN OO NÄHNY PILLUA EN OO NÄHNY TISSIÄ"});
 			const audio = new Audio("https://v.ylilauta.org/4d/d9/4dd94d6ee9a12983.m4a");
 			audio.play();
@@ -427,13 +467,15 @@
     niinpaBtn.style.float = "right";
 	niinpaBtn.textContent = "niinpä niin";
 	niinpaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock31");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "niinpä niin, niinhän ne kaikki sanoo"});
 			const audio = new Audio("https://v.ylilauta.org/8e/88/8e884f33e8b6893c.mp4");
 			audio.play();
@@ -445,13 +487,15 @@
     homoBtn.style.float = "right";
 	homoBtn.textContent = "homo";
 	homoBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock25");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "Homo"});
 			const audio = new Audio("https://v.ylilauta.org/24/b5/24b5f6c98b44d186.mp4");
 			audio.play();
@@ -463,13 +507,15 @@
     iniBtn.style.float = "right";
 	iniBtn.textContent = "INISEMISENJA";
 	iniBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock29");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "NYTSÄLOPETATTONINISEMISENJA"});
 			const audio = new Audio("https://v.ylilauta.org/39/69/39694c0de186b64e.mp4");
 			audio.play();
@@ -481,14 +527,16 @@
     uskoBtn.style.float = "right";
 	uskoBtn.textContent = "USKOSEJO";
 	uskoBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock7");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "USKO SE JO"});
 			const audio = new Audio("https://v.ylilauta.org/50/1e/501e48f6f86ce645.m4a");
 			audio.play();
@@ -500,14 +548,16 @@
     turpaBtn.style.float = "right";
 	turpaBtn.textContent = "turpa kiinni sönkkö";
 	turpaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock13");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "si-si-si-si-si-sitte ka-ka-ka-ka-ka-kannattaa pitää turpa kiinni sönkkö"});
 			const audio = new Audio("https://v.ylilauta.org/15/5c/155c85fd8f03ea3a.mp4");
 			audio.play();
@@ -519,14 +569,16 @@
     kyllaBtn.style.float = "right";
 	kyllaBtn.textContent = "kyllä";
 	kyllaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock21");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "Kyllä"});
 			const audio = new Audio("https://v.ylilauta.org/47/09/4709187cf869b10c.mp4");
 			audio.play();
@@ -538,14 +590,16 @@
     niinkoBtn.style.float = "right";
 	niinkoBtn.textContent = "ai niinkö";
 	niinkoBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock19");
 // 900000 
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "ai niinkö?"});
 			const audio = new Audio("https://v.ylilauta.org/62/28/62285fed7c663a94.mp4");
 			audio.play();
@@ -558,14 +612,16 @@
     housutBtn.style.float = "right";
 	housutBtn.textContent = "housut pois";
 	housutBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock15");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "HOUSUT JA KENGÄT POIS"});
 			const audio = new Audio("https://v.ylilauta.org/ca/41/ca41516da801c6a6.mp4");
 			audio.play();
@@ -577,14 +633,16 @@
     saalittavaltaBtn.style.float = "right";
 	saalittavaltaBtn.textContent = "säälittävältä kuulostat";
 	saalittavaltaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock17");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "tajuatko miten säälittävältä sä kuulostat?"});
 			const audio = new Audio("https://v.ylilauta.org/01/2b/012bfbc83b1d6e65.mp4");
 			audio.play();
@@ -596,14 +654,16 @@
     jassBtn.style.float = "right";
 	jassBtn.textContent = "NEEKER JÄSS";
 	jassBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock11");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "NEEKER JÄSS :D"});
 			const audio = new Audio("https://v.ylilauta.org/9f/e8/9fe891b3618fca20.m4a");
 			audio.play();
@@ -615,14 +675,16 @@
     dullaBtn.style.float = "right";
 	dullaBtn.textContent = "men dulla";
 	dullaBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock9");
 // 900000
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "Men dulla edläge bäeväd"});
 			const audio = new Audio("https://v.ylilauta.org/eb/23/eb23f53e4a0e4b8a.m4a");
 			audio.play();
@@ -646,13 +708,15 @@
     voissaakeliBtn.style.float = "right";
 	voissaakeliBtn.textContent = "ELÄMÄÄ";
 	voissaakeliBtn.addEventListener("click", () => {
-		if(spamlock)
-			return;
 
-		spamlock = true;
-		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock5");
 		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
 			socket.emit("chatMsg", {msg: "VOI SAAKELI TÄTÄ ELÄMÄÄ"});
 	const voissaakeli = new Audio("https://v.ylilauta.org/5e/97/5e97fc96f52dfcfa.m4a"); 
 			voissaakeli.play()
