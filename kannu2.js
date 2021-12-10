@@ -181,7 +181,7 @@
 		setTimeout(() => {spamlock = false}, 3000)
 		const time = localStorage.getItem("timelock63");
 		if(!time || new Date().getTime() - +time >= 420000) {
-			socket.emit("chatMsg", {msg: "todella viisas päätös ylhäisyys"});
+			socket.emit("chatMsg", {msg: "todella viisas päätös teidän ylhäisyys"});
 			const audio = new Audio("https://v.ylilauta.org/33/66/336643ca0f44fc92.m4a");
 			audio.play();
 			localStorage.setItem("timelock63", new Date().getTime());
@@ -809,7 +809,7 @@
 					localStorage.setItem("timelock50", new Date().getTime());
 				}
     		}
-    		else if(msg.textContent == "todella viisas päätös ylhäisyys" && username != CLIENT.name) {
+    		else if(msg.textContent == "todella viisas päätös teidän ylhäisyys" && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock64");
 				if(!time || new Date().getTime() - +time > 400000) {
