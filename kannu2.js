@@ -127,7 +127,7 @@
 
 	laskiBtn.className = "btn btn-sm btn-default";
     laskiBtn.style.float = "right";
-	laskiBtn.textContent = "läski";
+	laskiBtn.textContent = "iida";
 	laskiBtn.addEventListener("click", () => {
 
 		const time = localStorage.getItem("timelock67");
