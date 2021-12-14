@@ -32,6 +32,7 @@
 	let loppuBtn = document.createElement("button");
 	let valehteleBtn = document.createElement("button");
 	let kutenhaluatteBtn = document.createElement("button");
+	let sesmonauroiBtn = document.createElement("button");
 	let enoonahnyBtn = document.createElement("button");
 	let kivapeppuBtn = document.createElement("button");
 	let viisaspaatosBtn = document.createElement("button");
@@ -401,6 +402,26 @@
 			const audio = new Audio("https://v.ylilauta.org/2e/08/2e08fb9e5b0109f7.m4a");
 			audio.play();
 			localStorage.setItem("timelock39", new Date().getTime());
+		}
+	});
+
+	sesmonauroiBtn.className = "btn btn-sm btn-default";
+    sesmonauroiBtn.style.float = "right";
+	sesmonauroiBtn.textContent = "sesmo vaan nauroi";
+	sesmonauroiBtn.addEventListener("click", () => {
+
+		const time = localStorage.getItem("timelock69");
+		if(!time || new Date().getTime() - +time >= 420000) {
+			if(spamlock)
+				return;
+
+			spamlock = true;
+			setTimeout(() => {spamlock = false}, 3000)
+
+			socket.emit("chatMsg", {msg: "/sesmo vaan nauroi  "});
+			const audio = new Audio("https://v.ylilauta.org/f0/5a/f05a88d710ae770f.mp4");
+			audio.play();
+			localStorage.setItem("timelock69", new Date().getTime());
 		}
 	});
 
@@ -1003,6 +1024,15 @@
 					localStorage.setItem("timelock40", new Date().getTime());
 				}
     		}
+    		else if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[0].getAttribute("title") === "/sesmo vaan nauroi" && msg.childNodes[1].textContent === "  " && username != CLIENT.name) {
+    			
+				const time = localStorage.getItem("timelock70");
+				if(!time || new Date().getTime() - +time > 400000) {
+					const audio = new Audio("https://v.ylilauta.org/f0/5a/f05a88d710ae770f.mp4");
+					audio.play();
+					localStorage.setItem("timelock70", new Date().getTime());
+				}
+    		}
     		else if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[0].getAttribute("title") === ":jes:" && msg.childNodes[1].textContent === "  " && username != CLIENT.name) {
     			
 				const time = localStorage.getItem("timelock52");
@@ -1218,6 +1248,7 @@
 	controls.appendChild(viisaspaatosBtn);
 	controls.appendChild(turpaasBtn);
 	controls.appendChild(laskiBtn);
+	controls.appendChild(sesmonauroiBtn);
 
 	setTimeout(() => {
 		const msgs = messageCont.getElementsByTagName("div");
