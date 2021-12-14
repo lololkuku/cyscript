@@ -37,10 +37,10 @@
 	let kivapeppuBtn = document.createElement("button");
 	let viisaspaatosBtn = document.createElement("button");
 	let iniBtn = document.createElement("button");
+	
 	let messageCont = document.getElementById("messagebuffer");
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 	let spamlock = false;
-
 	let tabActive = true;
 
 	window.addEventListener("focus", () => { tabActive = true; })
