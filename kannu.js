@@ -391,6 +391,12 @@
 			msg: "mmmmmmmmmmmmmm supra",
 			sound: new Audio("https://v.ylilauta.org/fa/2c/fa2c191a7a4ec5a9.m4a"),
 		},
+		epasensitiivinen: {
+			btnText: "epäsensitiivinen tila",
+			msg: "tää on musta ensinnäkin todella epämukava, todella epäsensitiivinen turvaton tila tällä hetkellä, et on tosi ikävää et mä oon tässä tilassa joudun tähän keskusteluun tällä tavalla",
+			sound: new Audio("https://v.ylilauta.org/36/58/365841f2a46b3187.mp4"),
+		},
+		
 	}
 
 	const soundMsgs = [];
