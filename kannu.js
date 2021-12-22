@@ -388,7 +388,7 @@
 		},
 		mmsupra: {
 			btnText: "supra",
-			msg: "MmmmMmmMmMm sUpRa :D",
+			msg: "mmmmmmmmmmmmmm supra",
 			sound: new Audio("https://v.ylilauta.org/fa/2c/fa2c191a7a4ec5a9.m4a"),
 		},
 	}
