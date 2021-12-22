@@ -6,16 +6,24 @@
 	let spamlock = false;
 	let enabled = false;
 	let tabActive = true;
+	let disableBtns = false;
 
 	const kasBtn = document.createElement("button");
 	const emoBtn = document.createElement("button");
 	const soundNotifBtn = document.createElement("button");
+	const disableBtn = document.createElement("button");
 
 	const tadaa = new Audio("https://v.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
+	const cyEmoBtn = document.getElementById("emotelistbtn");
+	cyEmoBtn.style.float = "left";
+
+	controls.appendChild(cyEmoBtn);
+	controls.appendChild(disableBtn);
 	controls.appendChild(kasBtn);
 	controls.appendChild(soundNotifBtn);
 	controls.appendChild(emoBtn);
+
 
 	const soundBtns = {
 		hatakokou: {
@@ -34,7 +42,7 @@
 			sound: new Audio("https://v.ylilauta.org/5e/97/5e97fc96f52dfcfa.m4a"),
 		},
 		usko: {
-			btnText: "USKO",
+			btnText: "USKOSEJO",
 			msg: "USKOSEJO",
 			sound: new Audio("https://v.ylilauta.org/50/1e/501e48f6f86ce645.m4a"),
 		},
@@ -193,6 +201,196 @@
 			msg: "/sesmo vaan nauroi  ",
 			sound: new Audio("https://v.ylilauta.org/f0/5a/f05a88d710ae770f.mp4"),
 		},
+		homoasia: {
+			btnText: "se sun homoasia",
+			msg: "se sun homoasiaski, se menee ajan myötä ohi",
+			sound: new Audio("https://v.ylilauta.org/fc/6e/fc6e60315ccec868.mp4"),
+		},
+		seisominen: {
+			btnText: "jysähti",
+			msg: "no nyt se mulkun seisominen taas alkaa",
+			sound: new Audio("https://v.ylilauta.org/3e/bb/3ebb0e8ccf847689.mp4"),
+		},
+		mita: {
+			btnText: "mitä?",
+			msg: "mitä?",
+			sound: new Audio("https://v.ylilauta.org/5d/f1/5df1f7f1548beb5a.mp4"),
+		},
+		tytina: {
+			btnText: "hyvä tytinä",
+			msg: "mulla on nyt aika hyvä tytinä tästä",
+			sound: new Audio("https://v.ylilauta.org/bb/0d/bb0d4fe807297e92.mp4"),
+		},
+		rakastansua: {
+			btnText: "rakastan sinua",
+			msg: "musta tuntuu että mä taidan rakastaa sua",
+			sound: new Audio("https://v.ylilauta.org/f2/e8/f2e85c12aa20ebcd.mp4"),
+		},
+		alapelleile: {
+			btnText: "älä pelleile",
+			msg: "älä pelleile mun kanssa",
+			sound: new Audio("https://v.ylilauta.org/66/61/6661584fb4319d12.mp4"),
+		},
+		fever: {
+			btnText: "nightfever :D",
+			msg: "/ismofever  ",
+			sound: new Audio("https://v.ylilauta.org/f1/61/f16116d1e54f4c84.mp4"),
+		},
+		aijasettia: {
+			btnText: "ÄIJÄSETTIÄ",
+			msg: "/äijäsetti  ",
+			sound: new Audio("https://v.ylilauta.org/ba/76/ba7603c5f65eeaf1.mp4"),
+		},
+		arvasin: {
+			btnText: "arvasin",
+			msg: "/arvasin  ",
+			sound: new Audio("https://v.ylilauta.org/78/ee/78ee2923ee53c365.mp4"),
+		},
+		kahvi: {
+			btnText: "kahvi",
+			msg: ":kahvi:  ",
+			sound: new Audio("https://v.ylilauta.org/f0/95/f095c349c3b22633.m4a"),
+		},
+		sorirumasti: {
+			btnText: "okei rumasti sanottu",
+			msg: "okei okei okei se oli rumasti sanottu",
+			sound: new Audio("https://v.ylilauta.org/9a/ee/9aeefc0cc59ac5d6.mp4"),
+		},
+		alalonksuta: {
+			btnText: "älä lonksuta",
+			msg: "älä nyt lonksuta niitä leukojas vaan häivy",
+			sound: new Audio("https://v.ylilauta.org/2e/3a/2e3ac0fa44400c3a.mp4"),
+		},
+		kyllapassaa: {
+			btnText: "mulle passaa",
+			msg: "kyllä se mulle vaan passaa :)",
+			sound: new Audio("https://v.ylilauta.org/0b/8c/0b8cb5aaea7a907c.mp4"),
+		},
+		pilalla: {
+			btnText: "pilalla",
+			msg: "/pilalla  ",
+			sound: new Audio("https://v.ylilauta.org/d1/df/d1df4b8be4a7f0f7.m4a"),
+		},
+		leikkiin: {
+			btnText: "leikkiin ryhtyy",
+			msg: "KEN LEIKKIIN RYHTYY SE LEIKIN KESTÄKÖÖN",
+			sound: new Audio("https://v.ylilauta.org/c3/2c/c32cbd8c1316baa2.mp4"),
+		},
+		MITA: {
+			btnText: "MITÄ",
+			msg: "MITÄ?",
+			sound: new Audio("https://v.ylilauta.org/f7/8c/f78c996b7b8eab69.mp4"),
+		},
+		TUKUTUKU: {
+			btnText: "TUKU TUKU",
+			msg: "/pap  ",
+			sound: new Audio("https://v.ylilauta.org/3b/b0/3bb056114a7b2e90.m4a"),
+		},
+		karamba: {
+			btnText: "karamba",
+			msg: "/karamba  ",
+			sound: new Audio("https://v.ylilauta.org/31/4c/314cfb3853c6c15f.mp4"),
+		},
+		kukku: {
+			btnText: "cuckku",
+			msg: ":cuckka:  ",
+			sound: new Audio("https://v.ylilauta.org/8f/d7/8fd7183bb671cbe6.m4a"),
+		},
+		kaljatanne: {
+			btnText: "kalja tänne",
+			msg: "kalja tänne ja heTI",
+			sound: new Audio("https://v.ylilauta.org/68/69/6869aace33c53a90.mp4"),
+		},
+		huora: {
+			btnText: "huora",
+			msg: "HUORA",
+			sound: new Audio("https://v.ylilauta.org/47/cb/47cbe6b0e2a5ac2e.mp4"),
+		},
+		turpakiitoihin: {
+			btnText: "turpa kiinni töihin",
+			msg: "MEE KUNNON TÖIHIN JA PIDÄ TURPAS KIINNI",
+			sound: new Audio("https://v.ylilauta.org/24/2d/242dc7f40ce14d75.mp4"),
+		},
+		tosipahakommentti: {
+			btnText: "paha kommentti :(",
+			msg: "ei noin saa sanoo kellekään :(",
+			sound: new Audio("https://v.ylilauta.org/38/be/38be496f0b30d634.mp4"),
+		},
+		cuckki: {
+			btnText: "cuckki",
+			msg: ":cucku:  ",
+			sound: new Audio("https://v.ylilauta.org/26/80/26807c30da5a781e.m4a"),
+		},
+		niilokalja: {
+			btnText: "ei kai kaljaa",
+			msg: "et kai sää ala nyt kaljaa ottaan",
+			sound: new Audio("https://v.ylilauta.org/56/2a/562a434c6f99156e.mp4"),
+		},
+		saalittavalappa: {
+			btnText: "säälittävä läppä",
+			msg: "ähhähä säälittävä läppä",
+			sound: new Audio("https://v.ylilauta.org/7f/8f/7f8f8ff4fd7e88b4.m4a"),
+		},
+		niinii: {
+			btnText: "niinii",
+			msg: "/niinnii  ",
+			sound: new Audio("https://v.ylilauta.org/c9/b4/c9b4fa100d5758d5.mp4"),
+		},
+		mustamies: {
+			btnText: "nigrolin",
+			msg: "musta mies",
+			sound: new Audio("https://v.ylilauta.org/4e/65/4e655aaa0fbb27b4.mp4"),
+		},
+		olipasse: {
+			btnText: "olipas hauskaa",
+			msg: "olipas se hauskaa",
+			sound: new Audio("https://v.ylilauta.org/38/e0/38e057be6725290e.m4a"),
+		},
+		niinvarmaanjoo: {
+			btnText: "niinvarmaanjoo",
+			msg: "joo niin varmaan joo niin varmaa",
+			sound: new Audio("https://v.ylilauta.org/17/d9/17d969f7c5dd88f2.mp4"),
+		},
+		heitavoltti: {
+			btnText: "heitä voltti",
+			msg: "heitä homo voltti",
+			sound: new Audio("https://v.ylilauta.org/01/e4/01e4c828b6926517.m4a"),
+		},
+		humpuukia: {
+			btnText: "humpuukia",
+			msg: "vai että semmosta humpuukia",
+			sound: new Audio("https://v.ylilauta.org/2e/d9/2ed9c4a94a50d8bc.m4a"),
+		},
+		enikina: {
+			btnText: "en ikinä",
+			msg: "en ikiNÄ",
+			sound: new Audio("https://v.ylilauta.org/86/ce/86ce82ebf432511b.mp4"),
+		},
+		hyvaayota: {
+			btnText: "hyvää yötä",
+			msg: "hyvää yötä, jatketaan sitte joskus toiste",
+			sound: new Audio("https://v.ylilauta.org/3b/22/3b22bbcf5ae109ec.m4a"),
+		},
+		mehukestit: {
+			btnText: "mitkäs mehukestit",
+			msg: "mitkäs lasten mehukestit täällä on",
+			sound: new Audio("https://v.ylilauta.org/63/88/63888de66362e15f.m4a"),
+		},
+		turpalutka: {
+			btnText: "turpa kii lutka",
+			msg: "turpa kiinni lutka",
+			sound: new Audio("https://v.ylilauta.org/e2/7e/e27e63b1de1ae33a.mp4"),
+		},
+		seppotulee: {
+			btnText: "tässä tulee seppo",
+			msg: "tässä tulee seppo taalasmaa sula hopsula hei sula hopsansaa :D",
+			sound: new Audio("https://v.ylilauta.org/24/9b/249bf84572255665.m4a"),
+		},
+		mmsupra: {
+			btnText: "supra",
+			msg: "MmmmMmmMmMm sUpRa :D",
+			sound: new Audio("https://v.ylilauta.org/fa/2c/fa2c191a7a4ec5a9.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
@@ -207,13 +405,18 @@
 		const sound = btn.sound;
 
 		soundMsgs.push(msg);
+		CHANNEL.emotes.push({name: msg});
 
 		const btnEl = document.createElement("button");
 
 		btnEl.textContent = text;
-
+		btnEl.className = "btn btn-sm btn-default aaninappi";
+    	btnEl.style.float = "right";
 
 		btnEl.addEventListener("click", () => {
+
+			if(disableBtns)
+				return;
 
 			const time = localStorage.getItem(keys[i] + "_timelock");
 
@@ -226,8 +429,7 @@
 				setTimeout(() => {spamlock = false}, 3000)
 
 				socket.emit("chatMsg", {msg: msg});
-				sound.play();
-				localStorage.setItem(keys[i] + "_timelock", new Date().getTime());
+				
 			}
 
 		});
@@ -235,6 +437,28 @@
 		controls.appendChild(btnEl);
 		
 	}
+
+	disableBtn.className = "btn btn-sm btn-default";
+    disableBtn.style.float = "left";
+	disableBtn.textContent = "muteta ääninapit";
+	disableBtn.addEventListener("click", () => {
+		if(disableBtns) {
+			disableBtns = false;
+			disableBtn.textContent = "muteta ääninapit";
+		}
+		else {
+			for(let i = 0, keys = Object.keys(soundBtns); i < keys.length; i++) {
+				const sound = soundBtns[keys[i]].sound;
+				sound.load();
+			}
+			disableBtns = true;
+			disableBtn.textContent = "unmuteta ääninapit";
+		}
+
+		const btns = document.getElementsByClassName("aaninappi");
+		for(let i = 0; i < btns.length; i++)
+			btns[i].style.display = disableBtns ? "none" : "inline-block";
+	});
 
 	emoBtn.className = "btn btn-sm btn-default";
     emoBtn.style.float = "right";
@@ -309,21 +533,32 @@
 
     		let soundIndex = soundMsgs.indexOf(msg.textContent);
 
-    		if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[1].nodeType === 3 && msg.childNodes[1].textContent === "  ") {
+    		if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[1].nodeType === 3 && (msg.childNodes[1].textContent === "  " || msg.childNodes[1].textContent === "   ")) {
     			const emoTitle = msg.childNodes[0].getAttribute("title");
     			soundIndex = soundMsgs.indexOf(emoTitle + "  ");
     		}
 
-    		if(soundIndex > -1 && username != CLIENT.name) {
+    		if(soundIndex == -1 && msg.textContent[msg.textContent.length - 1] == " ") 
+    			soundIndex = soundMsgs.indexOf(msg.textContent.slice(0, msg.textContent.length - 1));
+
+    		if(soundIndex > -1 && username) {
     			const btnKey = Object.keys(soundBtns)[soundIndex];
     			const soundBtn = soundBtns[btnKey];
 				const text = soundBtn.btnText;
 				const sound = soundBtn.sound;
 				const time = localStorage.getItem(btnKey + "_timelock2");
+				const myTime = localStorage.getItem(btnKey + "_timelock");
 
-				if(!time || new Date().getTime() - +time > 400000) {
-					sound.play();
-					localStorage.setItem(btnKey + "_timelock2", new Date().getTime());
+				if(username == CLIENT.name || (!disableBtns && (!time || new Date().getTime() - +time > 400000))) {
+					
+					if(username != CLIENT.name) {
+						localStorage.setItem(btnKey + "_timelock2", new Date().getTime());
+						sound.play();
+					}
+					else if(!disableBtns && (!myTime || new Date().getTime() - +myTime > 420000)) {
+						localStorage.setItem(btnKey + "_timelock", new Date().getTime());
+						sound.play();
+					}
 				}
     		}
     		else if(enabled && (!tabActive || document.hidden)) {
@@ -348,36 +583,7 @@
     			const links = msg.getElementsByTagName("a");
     			for(let i = 0; i < links.length; i++) {
     				const link = links[i];
-    				if(isImgUrl(link.href)) {
-    					link.innerHTML = "<img style='max-width:330px;max-height:330px' src='" + link.href + "'>";
-    				}
-    				else if(isVideoUrl(link.href)) {
-    					const video = document.createElement("video");
-    					video.style.maxWidth = "330px";
-    					video.style.maxHeight = "330px"
-    					video.controls = true;
-						video.style.verticalAlign = "middle";
-    					video.innerHTML = `<source src="${link.href}" type="video/mp4">`;
-    					link.parentElement.replaceChild(video, link);
-    				}
-					else if(isAudioUrl(link.href)) {
-	    					const audio = document.createElement("audio");
-	    					audio.controls = true;
-							audio.style.verticalAlign = "middle";
-	    					audio.innerHTML = `<source src="${link.href}" type="audio/mpeg">`;
-	    					link.parentElement.replaceChild(audio, link);
-					}
-    				else if(isTubeUrl(link.href)) {
-    					const video = document.createElement("iframe");
-    					video.width = 450;
-    					video.height = 315;
-    					video.style.verticalAlign = "middle";
-    					video.src = "https://www.youtube.com/embed/" + link.href.split("?v=")[1].split("&t=")[0];
-    					video.setAttribute("frameborder", 0);
-    					video.setAttribute("allowfullscreen", true);
-    					video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-    					link.parentElement.replaceChild(video, link);
-    				}
+    				handleLink(link);
     			}
     		}
         }
@@ -395,42 +601,46 @@
 			const links = msg.getElementsByTagName("a");
 			for(let i = 0; i < links.length; i++) {
 				const link = links[i];
-				if(isImgUrl(link.href)) {
-					link.innerHTML = "<img style='max-width:330px;max-height:330px' src='" + link.href + "'>";
-				}
-				else if(isVideoUrl(link.href)) {
-    					const video = document.createElement("video");
-    					video.style.maxWidth = "330px";
-    					video.style.maxHeight = "330px"
-    					video.controls = true;
-						video.style.verticalAlign = "middle";
-    					video.innerHTML = `<source src="${link.href}" type="video/mp4">`;
-    					link.parentElement.replaceChild(video, link);
-				}
-				else if(isAudioUrl(link.href)) {
-    					const audio = document.createElement("audio");
-    					audio.controls = true;
-						audio.style.verticalAlign = "middle";
-    					audio.innerHTML = `<source src="${link.href}" type="audio/mpeg">`;
-    					link.parentElement.replaceChild(audio, link);
-				}
-				else if(isTubeUrl(link.href)) {
-					const video = document.createElement("iframe");
-					video.width = 450;
-					video.height = 315;
-					video.style.verticalAlign = "middle";
-					video.src = "https://www.youtube.com/embed/" + link.href.split("?v=")[1].split("&t=")[0];
-					video.setAttribute("frameborder", 0);
-					video.setAttribute("allowfullscreen", true);
-
-					video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-					link.parentElement.replaceChild(video, link);
-				}
+				handleLink(link);
 			}
 		}
 	}, 200)
 
 	const userlist = document.getElementById("userlist");
+
+	function handleLink(link) {
+		if(isImgUrl(link.href)) {
+			link.innerHTML = "<img style='max-width:330px;max-height:330px' src='" + link.href + "'>";
+		}
+		else if(isVideoUrl(link.href)) {
+			const video = document.createElement("video");
+			video.style.maxWidth = "330px";
+			video.style.maxHeight = "330px"
+			video.controls = true;
+			video.style.verticalAlign = "middle";
+			video.innerHTML = `<source src="${link.href}" type="video/mp4">`;
+			link.parentElement.replaceChild(video, link);
+		}
+		else if(isAudioUrl(link.href)) {
+			const audio = document.createElement("audio");
+			audio.controls = true;
+			audio.style.verticalAlign = "middle";
+			audio.innerHTML = `<source src="${link.href}" type="audio/mpeg">`;
+			link.parentElement.replaceChild(audio, link);
+		}
+		else if(isTubeUrl(link.href)) {
+			const video = document.createElement("iframe");
+			video.width = 450;
+			video.height = 315;
+			video.style.verticalAlign = "middle";
+			video.src = "https://www.youtube.com/embed/" + link.href.split("?v=")[1].split("&t=")[0];
+			video.setAttribute("frameborder", 0);
+			video.setAttribute("allowfullscreen", true);
+
+			video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+			link.parentElement.replaceChild(video, link);
+		}
+	}
 
 	function isImgUrl(str) {
 		const regex = new RegExp(/(https?:\/\/.*\.(?:png|jpg|gif|jpeg|PNG|JPG|GIF|JPEG))/);
