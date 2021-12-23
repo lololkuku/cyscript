@@ -396,6 +396,11 @@
 			msg: "tää on musta ensinnäkin todella epämukava, todella epäsensitiivinen turvaton tila tällä hetkellä, et on tosi ikävää et mä oon tässä tilassa joudun tähän keskusteluun tällä tavalla",
 			sound: new Audio("https://v.ylilauta.org/36/58/365841f2a46b3187.mp4"),
 		},
+		kiitostiedosta: {
+			btnText: "kiitos tiedosta",
+			msg: "ahaa okei kiitos vittu tiedosta",
+			sound: new Audio("https://v.ylilauta.org/9a/58/9a58c44564f6cddb.mp4"),
+		},
 		
 	}
 
