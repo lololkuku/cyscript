@@ -289,7 +289,7 @@
 		karamba: {
 			btnText: "karamba",
 			msg: "/karamba  ",
-			sound: new Audio("https://v.ylilauta.org/31/4c/314cfb3853c6c15f.mp4"),
+			sound: new Audio("https://v.ylilauta.org/90/a8/90a85d6d703bdb43.m4a"),
 		},
 		kukku: {
 			btnText: "cuckku",
