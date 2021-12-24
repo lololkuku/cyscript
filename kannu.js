@@ -654,7 +654,7 @@
 	}
 
 	function isImgUrl(str) {
-		const regex = new RegExp(/(https?:\/\/.*\.(?:png|jpg|gif|jpeg|PNG|JPG|GIF|JPEG))/);
+		const regex = new RegExp(/(https?:\/\/.*\.(?:png|jpg|gif|jpeg|PNG|JPG|GIF|JPEG|webp|WEBP))/);
 		return str.match(regex) ? true : false;
 	}
 	function isVideoUrl(str) {
