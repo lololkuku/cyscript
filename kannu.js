@@ -401,7 +401,11 @@
 			msg: "ahaa okei kiitos vittu tiedosta",
 			sound: new Audio("https://v.ylilauta.org/9a/58/9a58c44564f6cddb.mp4"),
 		},
-		
+		mitakuulustelet: {
+			btnText: "mitä sä kuulustelet",
+			msg: "MITÄ SÄ SIINÄ KOKO AJAN KUULUSTELET",
+			sound: new Audio("https://v.ylilauta.org/b0/25/b025ac0c6bb93814.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
