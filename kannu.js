@@ -408,7 +408,7 @@
 		},
 		tiedathyvin: {
 			btnText: "sä nulkki tiedät sen itekkin",
-			msg: "sä helvetin nulkki tiedät sen varsin hyvin",
+			msg: "sä helvetin nulkki",
 			sound: new Audio("https://v.ylilauta.org/a9/3b/a93b2b4c4d650caf.mp4"),
 		},
 
