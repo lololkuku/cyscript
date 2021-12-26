@@ -411,7 +411,11 @@
 			msg: "sä helvetin nulkki tiedät sen varsin hyvin",
 			sound: new Audio("https://v.ylilauta.org/a9/3b/a93b2b4c4d650caf.mp4"),
 		},
-
+		hyvinviihtynyt: {
+			btnText: "hyvin oot viihtynyt",
+			msg: "hyvin sää siellä netissä oot viihtynyt",
+			sound: new Audio("https://v.ylilauta.org/05/15/051506a7e2b1ffea.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
