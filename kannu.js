@@ -416,6 +416,11 @@
 			msg: "hyvin sää siellä netissä oot viihtynyt",
 			sound: new Audio("https://v.ylilauta.org/05/15/051506a7e2b1ffea.mp4"),
 		},
+		oonaikuinen: {
+			btnText: "MUA EI MÄÄRÄTÄ",
+			msg: "MÄ OON AIKUINEN SÄ ET VOI MUA MÄÄRÄTÄ",
+			sound: new Audio("https://v.ylilauta.org/35/ec/35ec430f7510a342.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
