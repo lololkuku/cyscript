@@ -423,7 +423,7 @@
 		},
 		voisitkovittuun: {
 			btnText: "voisitko painua vittuun",
-			msg: "voisitko painua vittuun täältä saatanan hökäle",
+			msg: "voisitko painua vittuun täältä saatanan hökäle :D",
 			sound: new Audio("https://v.ylilauta.org/99/e0/99e0985a46ca3425.m4a"),
 		},
 	}
