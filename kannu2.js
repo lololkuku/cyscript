@@ -602,7 +602,8 @@
 						if(!soundStats) {
 
 							for(let i = 0; i < soundMsgs.length; i++) {
-								const btn = soundBtns[soundMsgs[i]];
+				    			const btnKey = Object.keys(soundBtns)[i];
+				    			const btn = soundBtns[btnKey];
 								const text = btn.btnText;
 
 								newStats[text] = 0;
