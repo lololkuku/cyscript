@@ -426,6 +426,11 @@
 			msg: "voisitko painua vittuun täältä saatanan hökäle :D",
 			sound: new Audio("https://v.ylilauta.org/99/e0/99e0985a46ca3425.m4a"),
 		},
+		keravalle: {
+			btnText: "no ei sitte",
+			msg: "no ei sitte. mä lähen keravalle",
+			sound: new Audio("https://v.ylilauta.org/84/bc/84bc5f9e3186e281.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
