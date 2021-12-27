@@ -421,9 +421,15 @@
 			msg: "MÄ OON AIKUINEN SÄ ET VOI MUA MÄÄRÄTÄ",
 			sound: new Audio("https://v.ylilauta.org/35/ec/35ec430f7510a342.m4a"),
 		},
+		voisitkovittuun: {
+			btnText: "voisitko painua vittuun",
+			msg: "voisitko painua vittuun täältä saatanan hökäle",
+			sound: new Audio("https://v.ylilauta.org/99/e0/99e0985a46ca3425.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
+	//const soundNames = [];
 
 	window.addEventListener("focus", () => { tabActive = true; })
 	window.addEventListener("blur", () => { tabActive = false; })
@@ -436,6 +442,8 @@
 
 		soundMsgs.push(msg);
 		CHANNEL.emotes.push({name: msg});
+
+		//soundNames.push(text);
 
 		const btnEl = document.createElement("button");
 
@@ -571,7 +579,7 @@
     		if(soundIndex == -1 && msg.textContent[msg.textContent.length - 1] == " ") 
     			soundIndex = soundMsgs.indexOf(msg.textContent.slice(0, msg.textContent.length - 1));
 
-    		if(soundIndex > -1 && username) {
+    		if(soundIndex > -1) {
     			const btnKey = Object.keys(soundBtns)[soundIndex];
     			const soundBtn = soundBtns[btnKey];
 				const text = soundBtn.btnText;
