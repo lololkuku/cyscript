@@ -616,7 +616,7 @@
 						}
 						soundStats = JSON.stringify(newStats);
 
-						if(CLIENT.rank >= CHANNEL.emoteedit) {
+						if(CLIENT.rank >= CHANNEL.perms.emoteedit) {
 						    socket.emit("updateEmote", {
 						        name: "ääninappien statsit (älä poista tätä)",
 						        image: soundStats,
