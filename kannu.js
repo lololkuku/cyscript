@@ -431,6 +431,16 @@
 			msg: "no ei sitte. mä lähen keravalle",
 			sound: new Audio("https://v.ylilauta.org/84/bc/84bc5f9e3186e281.m4a"),
 		},
+		ootpaskapaa: {
+			btnText: "olet paskapää",
+			msg: "sää oot oikeen paska pää",
+			sound: new Audio("https://v.ylilauta.org/82/ee/82eee9119390691a.m4a"),
+		},
+		niinolinki: {
+			btnText: "niin olinkin",
+			msg: "niin olinkin",
+			sound: new Audio("https://v.ylilauta.org/81/4c/814cf7b19bfd770e.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
