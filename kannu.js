@@ -441,6 +441,11 @@
 			msg: "niin olinkin",
 			sound: new Audio("https://v.ylilauta.org/81/4c/814cf7b19bfd770e.m4a"),
 		},
+		ruffneck: {
+			btnText: "ruffnek",
+			msg: "DONGGDONGGDONGGDONGG",
+			sound: new Audio("https://v.ylilauta.org/d4/71/d471722670572ddb.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
