@@ -451,7 +451,11 @@
 			msg: "ei aina kannata viinaa ottaa mut välillä kannattaa mei",
 			sound: new Audio("https://v.ylilauta.org/2d/05/2d0568e2a465cb0b.mp4"),
 		},
-		
+		dongdong: {
+			btnText: "DONG DONG DONG",
+			msg: "DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG",
+			sound: new Audio("https://v.ylilauta.org/6a/9f/6a9fc4c123863d1a.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
