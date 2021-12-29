@@ -446,6 +446,12 @@
 			msg: "DONGGDONGGDONGGDONGG",
 			sound: new Audio("https://v.ylilauta.org/d4/71/d471722670572ddb.m4a"),
 		},
+		eiviinaaaina: {
+			btnText: "ei aina viinaa",
+			msg: "ei aina kannata viinaa ottaa mut välillä kannattaa mei",
+			sound: new Audio("https://v.ylilauta.org/2d/05/2d0568e2a465cb0b.mp4"),
+		},
+		
 	}
 
 	const soundMsgs = [];
