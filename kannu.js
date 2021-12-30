@@ -456,6 +456,16 @@
 			msg: "DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG",
 			sound: new Audio("https://v.ylilauta.org/6a/9f/6a9fc4c123863d1a.m4a"),
 		},
+		alakullittele: {
+			btnText: "älä kullittele",
+			msg: "hei hei älä yhtään kullittele siinä",
+			sound: new Audio("https://v.ylilauta.org/0b/de/0bded1db98ee6a7b.m4a"),
+		},
+		isosisko: {
+			btnText: "OON ISOSISKO",
+			msg: "miten niin, mä oon ISO SISKO",
+			sound: new Audio("https://v.ylilauta.org/27/f9/27f9a8fc9d70e3f3.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
