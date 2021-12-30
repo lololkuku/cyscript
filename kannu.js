@@ -527,7 +527,8 @@
 		else {
 			for(let i = 0, keys = Object.keys(soundBtns); i < keys.length; i++) {
 				const sound = soundBtns[keys[i]].sound;
-				sound.load();
+				if(!sound.paused)
+					sound.load();
 			}
 			disableBtns = true;
 			disableBtn.textContent = "unmuteta ääninapit";
