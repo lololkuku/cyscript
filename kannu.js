@@ -466,6 +466,17 @@
 			msg: "miten niin, mä oon ISO SISKO",
 			sound: new Audio("https://v.ylilauta.org/27/f9/27f9a8fc9d70e3f3.m4a"),
 		},
+		kauniitaunia: {
+			btnText: "kauniita unia",
+			msg: "kauniita unia beibi",
+			sound: new Audio("https://v.ylilauta.org/a1/58/a1584e56836cb0d7.m4a"),
+		},
+		entietenkaan: {
+			btnText: "en tietenkään",
+			msg: "eeennn en tietenkään",
+			sound: new Audio("https://v.ylilauta.org/09/39/09391fb6fed40dc6.mp4"),
+		},
+	
 	}
 
 	const soundMsgs = [];
