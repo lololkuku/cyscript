@@ -476,7 +476,11 @@
 			msg: "eeennn en tietenkään",
 			sound: new Audio("https://v.ylilauta.org/09/39/09391fb6fed40dc6.mp4"),
 		},
-	
+		skippaduppa: {
+			btnText: "skippaappaduuppa",
+			msg: "/ami  ",
+			sound: new Audio("https://v.ylilauta.org/ff/ee/ffee75ceee8a3e6b.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
