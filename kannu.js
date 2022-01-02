@@ -481,6 +481,11 @@
 			msg: "/ami  ",
 			sound: new Audio("https://v.ylilauta.org/ff/ee/ffee75ceee8a3e6b.m4a"),
 		},
+		koulualkaa: {
+			btnText: "millos koulu alkaa",
+			msg: "mihis aikaan sun koulu alkaa?",
+			sound: new Audio("https://v.ylilauta.org/72/49/724952f0404cfc7c.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
