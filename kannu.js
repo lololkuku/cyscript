@@ -486,6 +486,12 @@
 			msg: "mihis aikaan sun koulu alkaa?",
 			sound: new Audio("https://v.ylilauta.org/72/49/724952f0404cfc7c.mp4"),
 		},
+		pulimita: {
+			btnText: "puli MITÄ",
+			msg: "MITÄ  ",
+			sound: new Audio("https://v.ylilauta.org/a2/90/a290514f18880e2d.mp4"),
+		},
+		
 	}
 
 	const soundMsgs = [];
