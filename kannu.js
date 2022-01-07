@@ -491,6 +491,11 @@
 			msg: "/pulimitä  ",
 			sound: new Audio("https://v.ylilauta.org/a2/90/a290514f18880e2d.mp4"),
 		},
+		mikamattaa: {
+			btnText: "mikä mättää",
+			msg: "mikä vittu tässä nyt mättää",
+			sound: new Audio("https://v.ylilauta.org/65/81/658167f5fd41a1a5.m4a"),
+		},
 		
 	}
 
