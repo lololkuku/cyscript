@@ -500,8 +500,6 @@
 	window.addEventListener("focus", () => { tabActive = true; })
 	window.addEventListener("blur", () => { tabActive = false; })
 
-	setInterval(addSoundsToEmo, 2000);
-
 	for(let i = 0, keys = Object.keys(soundBtns); i < keys.length; i++) {
 		const btn = soundBtns[keys[i]];
 		const text = btn.btnText;
@@ -746,15 +744,6 @@
 
 			video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
 			link.parentElement.replaceChild(video, link);
-		}
-	}
-
-	function addSoundsToEmo() {
-		for(let i = 0, keys = Object.keys(soundBtns); i < keys.length; i++) {
-			const btn = soundBtns[keys[i]];
-			const msg = btn.msg;
-
-			CHANNEL.emotes.push({name: msg});
 		}
 	}
 
