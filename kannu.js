@@ -496,7 +496,11 @@
 			msg: "mikä vittu tässä nyt mättää",
 			sound: new Audio("https://v.ylilauta.org/65/81/658167f5fd41a1a5.m4a"),
 		},
-		
+		naurettavapelle: {
+			btnText: "naurettava pelle",
+			msg: "naurettava pelle :D",
+			sound: new Audio("https://v.ylilauta.org/cf/bd/cfbdd6d9c6e492b9.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
