@@ -501,6 +501,7 @@
 			msg: "naurettava pelle :D",
 			sound: new Audio("https://v.ylilauta.org/cf/bd/cfbdd6d9c6e492b9.mp4"),
 		},
+		asd: {},
 	}
 
 	const soundMsgs = [];
