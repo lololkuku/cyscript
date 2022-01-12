@@ -501,7 +501,11 @@
 			msg: "naurettava pelle :D",
 			sound: new Audio("https://v.ylilauta.org/cf/bd/cfbdd6d9c6e492b9.mp4"),
 		},
-		asd: {},
+		toihindokaamasta: {
+			btnText: "tekisit töitä",
+			msg: "sä täällä dokaat ja luet lehtiä, tekisit töitä saatanan huuhkaja",
+			sound: new Audio("https://v.ylilauta.org/2b/ce/2bce336a9e9ca2af.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
