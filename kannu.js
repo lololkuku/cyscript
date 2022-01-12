@@ -511,6 +511,11 @@
 			msg: "älä puhu paskaa saatana",
 			sound: new Audio("https://v.ylilauta.org/a6/1f/a61f54f6b689a35b.mp4"),
 		},
+		alamennasiita: {
+			btnText: "ala mennä siitä",
+			msg: "ala mennä siitä, JA TAKAS EI OO TULEMISTA ENNEN KUN ON DUUNIA",
+			sound: new Audio("https://v.ylilauta.org/f9/93/f9938835e2fa0454.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
