@@ -506,6 +506,11 @@
 			msg: "sä täällä dokaat ja luet lehtiä, tekisit töitä saatanan huuhkaja",
 			sound: new Audio("https://v.ylilauta.org/2b/ce/2bce336a9e9ca2af.m4a"),
 		},
+		alapuhupaskaa: {
+			btnText: "älä puhu paskaa",
+			msg: "älä puhu paskaa saatana",
+			sound: new Audio("		https://v.ylilauta.org/a6/1f/a61f54f6b689a35b.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
