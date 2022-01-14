@@ -606,7 +606,7 @@
 	kasBtn.textContent = "kass :D";
 	kasBtn.addEventListener("click", () => {
 		let extra = 0;
-		let kass = ["-", ":pitkäkisu1:", ":pitkäkisu2:", ":pitkäkisu3:"];
+		let kass = ["-", ":pitkäkisu1", ":pitkäkisu2", ":pitkäkisu3"];
 
 		(async () => {
 			if(spamlock)
