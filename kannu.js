@@ -123,7 +123,7 @@
 		},
 		lassehuuts: {
 			btnText: "lassepihinä",
-			msg: "/lasse  ",
+			msg: ":lasse  ",
 			sound: new Audio("https://v.ylilauta.org/2e/08/2e08fb9e5b0109f7.m4a"),
 		},
 		enoonahny: {
@@ -153,7 +153,7 @@
 		},
 		jes: {
 			btnText: "JES",
-			msg: ":jes:  ",
+			msg: ":jes  ",
 			sound: new Audio("https://v.ylilauta.org/6b/1f/6b1f29a03f331cbc.mp4"),
 		},
 		loppu: {
@@ -198,7 +198,7 @@
 		},
 		sesmonauroi: {
 			btnText: "sesmo vaan nauroi",
-			msg: "/sesmo vaan nauroi  ",
+			msg: ":sesmo vaan nauroi  ",
 			sound: new Audio("https://v.ylilauta.org/f0/5a/f05a88d710ae770f.mp4"),
 		},
 		homoasia: {
@@ -233,22 +233,22 @@
 		},
 		fever: {
 			btnText: "nightfever :D",
-			msg: "/ismofever  ",
+			msg: ":ismofever  ",
 			sound: new Audio("https://v.ylilauta.org/f1/61/f16116d1e54f4c84.mp4"),
 		},
 		aijasettia: {
 			btnText: "ÄIJÄSETTIÄ",
-			msg: "/äijäsetti  ",
+			msg: ":äijäsetti  ",
 			sound: new Audio("https://v.ylilauta.org/ba/76/ba7603c5f65eeaf1.mp4"),
 		},
 		arvasin: {
 			btnText: "arvasin",
-			msg: "/arvasin  ",
+			msg: ":arvasin  ",
 			sound: new Audio("https://v.ylilauta.org/78/ee/78ee2923ee53c365.mp4"),
 		},
 		kahvi: {
 			btnText: "kahvi",
-			msg: ":kahvi:  ",
+			msg: ":kahvi  ",
 			sound: new Audio("https://v.ylilauta.org/f0/95/f095c349c3b22633.m4a"),
 		},
 		sorirumasti: {
@@ -268,7 +268,7 @@
 		},
 		pilalla: {
 			btnText: "pilalla",
-			msg: "/pilalla  ",
+			msg: ":pilalla  ",
 			sound: new Audio("https://v.ylilauta.org/d1/df/d1df4b8be4a7f0f7.m4a"),
 		},
 		leikkiin: {
@@ -283,17 +283,17 @@
 		},
 		TUKUTUKU: {
 			btnText: "TUKU TUKU",
-			msg: "/pap  ",
+			msg: ":pap  ",
 			sound: new Audio("https://v.ylilauta.org/3b/b0/3bb056114a7b2e90.m4a"),
 		},
 		karamba: {
 			btnText: "karamba",
-			msg: "/karamba  ",
+			msg: ":karamba  ",
 			sound: new Audio("https://v.ylilauta.org/90/a8/90a85d6d703bdb43.m4a"),
 		},
 		kukku: {
 			btnText: "cuckku",
-			msg: ":cuckka:  ",
+			msg: ":cuckka  ",
 			sound: new Audio("https://v.ylilauta.org/8f/d7/8fd7183bb671cbe6.m4a"),
 		},
 		kaljatanne: {
@@ -318,7 +318,7 @@
 		},
 		cuckki: {
 			btnText: "cuckki",
-			msg: ":cucku:  ",
+			msg: ":cucku  ",
 			sound: new Audio("https://v.ylilauta.org/26/80/26807c30da5a781e.m4a"),
 		},
 		niilokalja: {
@@ -333,7 +333,7 @@
 		},
 		niinii: {
 			btnText: "niinii",
-			msg: "/niinnii  ",
+			msg: ":niinnii  ",
 			sound: new Audio("https://v.ylilauta.org/c9/b4/c9b4fa100d5758d5.mp4"),
 		},
 		mustamies: {
@@ -478,7 +478,7 @@
 		},
 		skippaduppa: {
 			btnText: "skippaappaduuppa",
-			msg: "/ami  ",
+			msg: ":ami  ",
 			sound: new Audio("https://v.ylilauta.org/ff/ee/ffee75ceee8a3e6b.m4a"),
 		},
 		koulualkaa: {
@@ -488,7 +488,7 @@
 		},
 		pulimita: {
 			btnText: "puli MITÄ",
-			msg: "/pulimitä  ",
+			msg: ":pulimitä  ",
 			sound: new Audio("https://v.ylilauta.org/a2/90/a290514f18880e2d.mp4"),
 		},
 		mikamattaa: {
@@ -704,7 +704,7 @@
     			msg.remove();
     			if(msgParentClassname == "chat-msg-" + CLIENT.name) {
 	    			socket.emit("chatMsg", {msg: msg.getElementsByTagName("img")[0].getAttribute("title")});
-	    			socket.emit("chatMsg", {msg: "/pippeli"});
+	    			socket.emit("chatMsg", {msg: ":pippeli"});
     			}
     		}
 
