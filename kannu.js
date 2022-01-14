@@ -619,7 +619,7 @@
 				await time(30);
 				if(i == 2) {
 					for(let j = 0; j < extra; j++) {
-						socket.emit("chatMsg", {msg: kass[i]});
+						socket.emit("chatMsg", {msg: "\\" + kass[i] + "\\"});
 						await time(30);
 					}
 				}
