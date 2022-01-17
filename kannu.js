@@ -771,6 +771,22 @@
 		}
 	}
 
+	setInterval(() => {
+		for(let i = 0; i < CHANNEL.emotes.length; i++) {
+			const emoName = CHANNEL.emotes[i]["name"];
+			if(emoName === "ISMOJEN HÄTÄKOKOU")
+				return;
+		}
+
+		for(let i = 0, keys = Object.keys(soundBtns); i < keys.length; i++) {
+			const btn = soundBtns[keys[i]];
+			const msg = btn.msg;
+
+			CHANNEL.emotes.push({name: msg});
+		}
+
+	}, 1000);
+
 	function isImgUrl(str) {
 		const regex = new RegExp(/(https?:\/\/.*\.(?:png|jpg|gif|jpeg|PNG|JPG|GIF|JPEG|webp|WEBP))/);
 		return str.match(regex) ? true : false;
