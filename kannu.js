@@ -521,6 +521,11 @@
 			msg: "SEKUNTI POIS",
 			sound: new Audio("https://v.ylilauta.org/ea/fc/eafc6515147c3441.m4a"),
 		},
+		ryyppaamaan: {
+			btnText: "ryyppäämääään",
+			msg: ":ryyppäämään  ",
+			sound: new Audio("https://v.ylilauta.org/b4/6f/b46f2b8083f031fd.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
