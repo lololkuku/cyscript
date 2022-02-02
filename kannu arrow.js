@@ -531,11 +531,6 @@
 			msg: "HILJAA",
 			sound: new Audio("https://v.ylilauta.org/ab/da/abda965b19e12b47.m4a"),
 		},
-		huumeissa: {
-			btnText: "oletettavasti huumeissa",
-			msg: "oletettavasti huumeissa",
-			sound: new Audio("https://v.ylilauta.org/96/69/9669e17b8ddcdea3.mp4"),
-		},
 	}
 
 	const soundMsgs = [];
@@ -806,6 +801,24 @@
 		}
 
 	}, 1000);
+
+	const emoMenu = document.getElementById("emotelist");
+
+	window.addEventListener("keydown", e => {
+		if(e.key == "ArrowLeft" && emoMenu.getAttribute("aria-hidden") == "false") {
+			const btns = emoMenu.getElementsByClassName("emotelist-paginator-container")[0].getElementsByTagName("a");
+			const btn = btns[1];
+			btn.click();
+		}
+	})
+
+	window.addEventListener("keydown", e => {
+		if(e.key == "ArrowRight" && emoMenu.getAttribute("aria-hidden") == "false") {
+			const btns = emoMenu.getElementsByClassName("emotelist-paginator-container")[0].getElementsByTagName("a");
+			const btn = btns[btns.length - 2];
+			btn.click();		
+		}
+	})
 
 	function isImgUrl(str) {
 		const regex = new RegExp(/(https?:\/\/.*\.(?:png|jpg|gif|jpeg|PNG|JPG|GIF|JPEG|webp|WEBP))/);
