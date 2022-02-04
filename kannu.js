@@ -778,11 +778,12 @@
 			link.parentElement.replaceChild(audio, link);
 		}
 		else if(isTubeUrl(link.href)) {
+			const url = isTubeUrl(link.href);
 			const video = document.createElement("iframe");
 			video.width = 450;
 			video.height = 315;
 			video.style.verticalAlign = "middle";
-			video.src = "https://www.youtube.com/embed/" + link.href.split("?v=")[1].split("&t=")[0];
+			video.src = "https://www.youtube.com/embed/" + url.split("?v=")[1];
 			video.setAttribute("frameborder", 0);
 			video.setAttribute("allowfullscreen", true);
 
@@ -820,7 +821,7 @@
 		return str.match(regex) ? true : false;
 	}
 	function isTubeUrl(str) {
-		return str.substring(0,32) == "https://www.youtube.com/watch?v=" ? true : false;
+		return str.indexOf("watch?v=") > 0 ? str.slice(0,43) : false;
 	}
 	function time(ms) {
 		return new Promise(resolve => { setTimeout(resolve, ms) });
