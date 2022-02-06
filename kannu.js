@@ -536,6 +536,12 @@
 			msg: "oletettavasti huumeissa",
 			sound: new Audio("https://v.ylilauta.org/96/69/9669e17b8ddcdea3.mp4"),
 		},
+		eikosanakuulu: {
+			btnText: "ULOS",
+			msg: "eikö sana kuulu vai eikö se tehoa? ULOS",
+			sound: new Audio("https://v.ylilauta.org/2b/bb/2bbb9eae3094aa94.mp4"),
+		},
+		
 	}
 
 	const soundMsgs = [];
