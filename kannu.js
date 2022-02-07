@@ -543,8 +543,8 @@
 		},
 		kyllimas: {
 			btnText: "kylläpä imas",
-			msg: "kylläpä imas",
-			sound: new Audio("		https://v.ylilauta.org/18/53/1853f01e58dbbe93.m4a"),
+			msg: "kylläpä іmas",
+			sound: new Audio("https://v.ylilauta.org/18/53/1853f01e58dbbe93.m4a"),
 		},
 	}
 
