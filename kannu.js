@@ -538,7 +538,7 @@
 		},
 		eikosanakuulu: {
 			btnText: "ULOS",
-			msg: "eikö sana kuulu vai eikö se tehoa? ULOS",
+			msg: "eikö sana kuulu vai eikö se tehoa?",
 			sound: new Audio("https://v.ylilauta.org/2b/bb/2bbb9eae3094aa94.mp4"),
 		},
 		
@@ -582,7 +582,11 @@
 				spamlock = true;
 				setTimeout(() => {spamlock = false}, 3000)
 
+
 				socket.emit("chatMsg", {msg: msg});
+
+				if(msg == "eikö sana kuulu vai eikö se tehoa?")
+					setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
 				
 			}
 
