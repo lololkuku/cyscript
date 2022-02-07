@@ -541,7 +541,11 @@
 			msg: "eikö sana kuulu vai eikö se tehoa?",
 			sound: new Audio("https://v.ylilauta.org/2b/bb/2bbb9eae3094aa94.mp4"),
 		},
-		
+		kyllimas: {
+			btnText: "kylläpä imas",
+			msg: "kylläpä imas",
+			sound: new Audio("		https://v.ylilauta.org/18/53/1853f01e58dbbe93.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
