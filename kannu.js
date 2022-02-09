@@ -546,6 +546,11 @@
 			msg: "kylläpä іmas",
 			sound: new Audio("https://v.ylilauta.org/18/53/1853f01e58dbbe93.m4a"),
 		},
+		mikätoi: {
+			btnText: "mikä toi on",
+			msg: "mikä toi on",
+			sound: new Audio("https://v.ylilauta.org/c1/52/c1523277b9d55369.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
