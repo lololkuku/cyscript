@@ -551,6 +551,11 @@
 			msg: "mikä toi on",
 			sound: new Audio("https://v.ylilauta.org/c1/52/c1523277b9d55369.mp4"),
 		},
+		sosiaalinenkanssa: {
+			btnText: "ei aikaa",
+			msg: "kun mulla nyt ei vaan kertakaikkiaan ole aikaa mihinkään sosiaaliseen kanssakäymiseen",
+			sound: new Audio("https://v.ylilauta.org/be/a4/bea44e1c09d64a99.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
