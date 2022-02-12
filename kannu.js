@@ -556,6 +556,12 @@
 			msg: "kun mulla nyt ei vaan kertakaikkiaan ole aikaa mihinkään sosiaaliseen kanssakäymiseen",
 			sound: new Audio("https://v.ylilauta.org/be/a4/bea44e1c09d64a99.mp4"),
 		},
+		kuulostaahomolta: {
+			btnText: "homolta kuulostaa",
+			msg: ":artolauri  ",
+			sound: new Audio("https://v.ylilauta.org/bf/b7/bfb709214b3fb498.mp4"),
+		},
+		
 	}
 
 	const soundMsgs = [];
