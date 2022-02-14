@@ -757,7 +757,7 @@
 				})
     		}
  
-    		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
+    		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe" && username == CLIENT.name) {
     			const msgParentClassname = msg.parentElement.className;
     			msg.remove();
     			if(msgParentClassname == "chat-msg-" + CLIENT.name) {
