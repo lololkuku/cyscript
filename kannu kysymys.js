@@ -753,7 +753,7 @@
     			const kysymys = encodeURIComponent(msg.textContent.slice(6));
 				
 				fetch("https://kannubotti.herokuapp.com/?" + kysymys, {headers: {"kysymys": "kys"}}).then(res => res.text()).then(text => {
-					socket.emit("chatMsg", {msg: text})
+					socket.emit("chatMsg", {msg: "`" + text + "`"})
 				})
     		}
  
