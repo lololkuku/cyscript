@@ -453,7 +453,7 @@
 		},
 		dongdong: {
 			btnText: "DONG DONG DONG",
-			msg: "DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG DONG",
+			msg: ":mäenpystykeskittyy  ",
 			sound: new Audio("https://v.ylilauta.org/6a/9f/6a9fc4c123863d1a.m4a"),
 		},
 		alakullittele: {
