@@ -749,7 +749,7 @@
     			socket.emit("chatMsg", {msg: "/me rolled " + rnd});
     		}
 
-    		if(msg.textContent.slice(0,6) == "!kysy " && msg.textContent.length > 6) {
+    		if(msg.textContent.slice(0,6) == "!kysy " && msg.textContent.length > 6 && username == CLIENT.name) {
     			const kysymys = encodeURIComponent(msg.textContent.slice(6));
 				
 				fetch("https://kannubotti.herokuapp.com/?" + kysymys, {headers: {"kysymys": "kys"}}).then(res => res.text()).then(text => {
@@ -757,7 +757,7 @@
 				})
     		}
  
-    		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe" && username == CLIENT.name) {
+    		if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
     			const msgParentClassname = msg.parentElement.className;
     			msg.remove();
     			if(msgParentClassname == "chat-msg-" + CLIENT.name) {
