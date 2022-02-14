@@ -428,7 +428,7 @@
 		},
 		keravalle: {
 			btnText: "no ei sitte",
-			msg: "no ei sitte. mä lähen keravalle",
+			msg: ":jukkakerava  ",
 			sound: new Audio("https://v.ylilauta.org/84/bc/84bc5f9e3186e281.m4a"),
 		},
 		ootpaskapaa: {
