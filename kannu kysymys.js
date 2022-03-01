@@ -561,7 +561,11 @@
 			msg: ":artolauri  ",
 			sound: new Audio("https://v.ylilauta.org/bf/b7/bfb709214b3fb498.mp4"),
 		},
-		
+		haistapaska: {
+			btnText: "haista paska",
+			msg: "haista paska",
+			sound: new Audio("https://v.ylilauta.org/a4/b5/a4b521265cc5b0a5.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
