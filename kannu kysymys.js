@@ -608,8 +608,9 @@
 
 
 				socket.emit("chatMsg", {msg: msg});
+				console.log("btn text: " + text)
 
-				if(msg.trim() == "eikö sana kuulu vai eikö se tehoa?")
+				if(text == "ULOS")
 					setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
 				
 			}
