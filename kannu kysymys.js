@@ -609,7 +609,7 @@
 
 				socket.emit("chatMsg", {msg: msg});
 
-				if(msg == "eikö sana kuulu vai eikö se tehoa?")
+				if(msg.trim() == "eikö sana kuulu vai eikö se tehoa?")
 					setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
 				
 			}
