@@ -7,6 +7,7 @@
 	let enabled = false;
 	let tabActive = true;
 	let disableBtns = false;
+	let btnPressed = false;
 
 	const kasBtn = document.createElement("button");
 	const emoBtn = document.createElement("button");
@@ -610,8 +611,10 @@
 				socket.emit("chatMsg", {msg: msg});
 				console.log("btn text: " + text)
 
-				if(text == "ULOS")
+				if(text == "ULOS") {
+					btnPressed = true;
 					setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
+				}
 				
 			}
 
@@ -743,8 +746,10 @@
 						localStorage.setItem(btnKey + "_timelock", new Date().getTime());
 						sound.play();
 
-						if(text == "ULOS")
+						if(text == "ULOS" && !btnPressed)
 							setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
+
+						btnPressed = false;
 					}
 				}
     		}
