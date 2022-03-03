@@ -742,6 +742,9 @@
 					else if(!disableBtns && (!myTime || new Date().getTime() - +myTime > 420000)) {
 						localStorage.setItem(btnKey + "_timelock", new Date().getTime());
 						sound.play();
+
+						if(text == "ULOS")
+							setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
 					}
 				}
     		}
