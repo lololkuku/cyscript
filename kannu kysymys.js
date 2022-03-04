@@ -747,7 +747,7 @@
 						sound.play();
 
 						if(text == "ULOS" && !btnPressed)
-							setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
+							setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 4700)
 
 						btnPressed = false;
 					}
