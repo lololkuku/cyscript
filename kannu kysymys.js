@@ -567,6 +567,16 @@
 			msg: "haista paska",
 			sound: new Audio("https://v.ylilauta.org/a4/b5/a4b521265cc5b0a5.m4a"),
 		},
+		enskeskustele: {
+			btnText: "en keskustele",
+			msg: "minä en keskustele anonyymien kanssa",
+			sound: new Audio("https://v.ylilauta.org/71/7a/717ac543c533bd02.m4a"),
+		},
+		tsiisus: {
+			btnText: "voi tsiisus",
+			msg: "voi tsiisus",
+			sound: new Audio("https://v.ylilauta.org/6c/7b/6c7bb9a52ff26d45.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
@@ -607,14 +617,13 @@
 				spamlock = true;
 				setTimeout(() => {spamlock = false}, 3000)
 
-
-				socket.emit("chatMsg", {msg: msg});
-				console.log("btn text: " + text)
-
 				if(text == "ULOS") {
 					btnPressed = true;
 					setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
 				}
+
+				socket.emit("chatMsg", {msg: msg});
+				console.log("btn text: " + text)
 				
 			}
 
