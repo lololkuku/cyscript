@@ -577,6 +577,11 @@
 			msg: "voi tsiisus",
 			sound: new Audio("https://v.ylilauta.org/6c/7b/6c7bb9a52ff26d45.m4a"),
 		},
+		lepaaseppo: {
+			btnText: "öitä seppo",
+			msg: "lepää rauhassa seppo :ihku",
+			sound: new Audio("https://v.ylilauta.org/81/ee/81eef72a32d3838a.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
