@@ -582,6 +582,11 @@
 			msg: "lepää rauhassa seppo",
 			sound: new Audio("https://v.ylilauta.org/81/ee/81eef72a32d3838a.mp4"),
 		},
+		onkspaskaa: {
+			btnText: "onks tää paskaa",
+			msg: "onks tää paskaa mitä",
+			sound: new Audio("https://v.ylilauta.org/f3/7d/f37d4f641a462ff5.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
