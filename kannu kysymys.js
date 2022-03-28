@@ -587,6 +587,11 @@
 			msg: "onks tää paskaa mitä",
 			sound: new Audio("https://v.ylilauta.org/f3/7d/f37d4f641a462ff5.m4a"),
 		},
+		suusuppuun: {
+			btnText: "suu suppuun",
+			msg: "suu suppuun eikö sana kuulu",
+			sound: new Audio("https://v.ylilauta.org/c5/1e/c51e99b84639690a.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
