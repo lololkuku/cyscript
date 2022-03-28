@@ -2,7 +2,10 @@
 	const input = document.getElementById("chatline");
 	const controls = document.getElementById("leftcontrols");
 	const messageCont = document.getElementById("messagebuffer");
-	
+	const rightpane = document.getElementById("rightpane-inner");
+
+	rightpane.classList.add("marginfix");
+
 	let spamlock = false;
 	let enabled = false;
 	let tabActive = true;
@@ -669,6 +672,11 @@
 		const btns = document.getElementsByClassName("aaninappi");
 		for(let i = 0; i < btns.length; i++)
 			btns[i].style.display = disableBtns ? "none" : "inline-block";
+
+		if(rightpane.classList.contains("marginfix"))
+			rightpane.classList.remove("marginfix");
+		else
+			rightpane.classList.add("marginfix");
 	});
 
 	emoBtn.className = "btn btn-sm btn-default";
