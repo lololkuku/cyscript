@@ -561,7 +561,11 @@
 			msg: ":artolauri  ",
 			sound: new Audio("https://v.ylilauta.org/bf/b7/bfb709214b3fb498.mp4"),
 		},
-		
+		pelleily: {
+			btnText: "kauanko pelleily jatkuu",
+			msg: "kuinka kauan tää pelleily jatkuu?",
+			sound: new Audio("https://v.ylilauta.org/03/8d/038d2c1ba508cef0.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
