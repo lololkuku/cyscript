@@ -600,6 +600,11 @@
 			msg: "kuinka kauan tää pelleily jatkuu?",
 			sound: new Audio("https://v.ylilauta.org/03/8d/038d2c1ba508cef0.mp4"),
 		},
+		HÄ: {
+			btnText: "HÄ",
+			msg: "HÄ ",
+			sound: new Audio("https://v.ylilauta.org/82/45/824560875065ad0f.m4a"),
+		},
 	}
 
 	const soundMsgs = [];
