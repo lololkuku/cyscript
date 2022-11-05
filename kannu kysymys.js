@@ -603,7 +603,7 @@
 		HÄ: {
 			btnText: "HÄ",
 			msg: "HÄ ",
-			sound: new Audio("https://v.ylilauta.org/82/45/824560875065ad0f.m4a"),
+			sound: new Audio("https://v.ylilauta.org/a0/78/a078b164bc1dbb9c.m4a"),
 		},
 	}
 
