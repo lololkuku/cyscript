@@ -605,6 +605,11 @@
 			msg: "HÄ ",
 			sound: new Audio("https://v.ylilauta.org/a0/78/a078b164bc1dbb9c.m4a"),
 		},
+		vammasten: {
+			btnText: "kannu",
+			msg: "täältähän löytyy aika paljonkin vammasten kirjotuksia ja blog ",
+			sound: new Audio("https://v.ylilauta.org/56/2d/562d76a0efd67605.mp4"),
+		},
 	}
 
 	const soundMsgs = [];
