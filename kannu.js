@@ -838,9 +838,9 @@
 
             for(let i = 0; i < emotes.length; i++) {
                 const emote = emotes[i];
-                emote.addEventListener("click", () => {
+                emote.onclick = () => {
                     input.value.length == 0 ? input.value = emote.getAttribute("title") : input.value += " " + emote.getAttribute("title");
-                })
+                }
             }
         }
     );
@@ -858,6 +858,15 @@
             for(let i = 0; i < links.length; i++) {
                 const link = links[i];
                 handleLink(link);
+            }
+        }
+
+        const emotes = document.getElementsByClassName("channel-emote");
+
+        for(let i = 0; i < emotes.length; i++) {
+            const emote = emotes[i];
+            emote.onclick = () => {
+                input.value.length == 0 ? input.value = emote.getAttribute("title") : input.value += " " + emote.getAttribute("title");
             }
         }
     }, 200)
