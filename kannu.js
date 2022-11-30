@@ -838,7 +838,7 @@
 
             for(let i = 0; i < emotes.length; i++) {
                 const emote = emotes[i];
-                emotes.addEventListener("click", () => {
+                emote.addEventListener("click", () => {
                     input.value.length == 0 ? input.value = emote.getAttribute("title") : input.value += " " + emote.getAttribute("title");
                 })
             }
