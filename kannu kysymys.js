@@ -883,6 +883,34 @@
                 input.focus();
             }
         }
+
+        input.onkeydown = e => {
+            if(e.key !== "Tab") {
+                const esi = document.getElementById("emo-esi");
+                if(esi)
+                    esi.remove();
+                return;
+            }
+            for(let i = 0; i < CHANNEL.emotes.length; i++) {
+                if(input.value.endsWith(CHANNEL.emotes[i]["name"]) || input.value.endsWith(CHANNEL.emotes[i]["name"] + " ")) {
+                    console.log("check")
+                    let esi = document.getElementById("emo-esi");
+                    if(!esi) {
+                        esi = document.createElement("img");
+                        esi.id = "emo-esi";
+                        esi.style.position = "absolute";
+                        esi.style.left = "15px";
+                        esi.style.top = 0;
+                        esi.style.zIndex = 999;
+                        esi.style.width = "150px";
+                        controls.appendChild(esi);
+                    }
+                    esi.src = CHANNEL.emotes[i].image;
+                    break;
+                }
+            }
+        }
+
     }, 200)
 
     const userlist = document.getElementById("userlist");
@@ -928,7 +956,6 @@
             if(emoName === "ISMOJEN HÄTÄKOKOU")
                 return;
         }
-
         for(let i = 0, keys = Object.keys(soundBtns); i < keys.length; i++) {
             const btn = soundBtns[keys[i]];
             const msg = btn.msg;
