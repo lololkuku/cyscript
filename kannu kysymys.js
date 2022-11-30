@@ -838,8 +838,14 @@
 
             for(let i = 0; i < emotes.length; i++) {
                 const emote = emotes[i];
+
                 emote.onclick = () => {
-                    input.value.length == 0 ? input.value = emote.getAttribute("title") + " " : input.value += emote.getAttribute("title") + " ";
+                    if(input.value.length == 0)
+                        input.value = emote.getAttribute("title") + " ";
+                    else if(input.value[input.value.length - 1] == " ")
+                        input.value += emote.getAttribute("title") + " ";
+                    else
+                        input.value += " " + emote.getAttribute("title") + " ";
                     input.focus();
                 }
             }
@@ -866,8 +872,14 @@
 
         for(let i = 0; i < emotes.length; i++) {
             const emote = emotes[i];
+
             emote.onclick = () => {
-                input.value.length == 0 ? input.value = emote.getAttribute("title") + " " : input.value += emote.getAttribute("title") + " ";
+                if(input.value.length == 0)
+                    input.value = emote.getAttribute("title") + " ";
+                else if(input.value[input.value.length - 1] == " ")
+                    input.value += emote.getAttribute("title") + " ";
+                else
+                    input.value += " " + emote.getAttribute("title") + " ";
                 input.focus();
             }
         }
