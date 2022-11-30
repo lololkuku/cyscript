@@ -838,8 +838,15 @@
 
             for(let i = 0; i < emotes.length; i++) {
                 const emote = emotes[i];
+                const value = input.value;
                 emote.onclick = () => {
-                    input.value.length == 0 ? input.value = emote.getAttribute("title") : input.value += " " + emote.getAttribute("title");
+                    if(value.length == 0)
+                        input.value = emote.getAttribute("title") + " ";
+                    else if(value[value.length - 1] == " ")
+                        input.value += emote.getAttribute("title") + " ";
+                    else
+                        input.value += " " + emote.getAttribute("title") + " ";
+                    input.focus();
                 }
             }
         }
@@ -865,10 +872,17 @@
 
         for(let i = 0; i < emotes.length; i++) {
             const emote = emotes[i];
+            const value = input.value;
             emote.onclick = () => {
-                input.value.length == 0 ? input.value = emote.getAttribute("title") : input.value += " " + emote.getAttribute("title");
+                if(value.length == 0)
+                    input.value = emote.getAttribute("title") + " ";
+                else if(value[value.length - 1] == " ")
+                    input.value += emote.getAttribute("title") + " ";
+                else
+                    input.value += " " + emote.getAttribute("title") + " ";
+                input.focus();
             }
-        }
+            }
     }, 200)
 
     const userlist = document.getElementById("userlist");
