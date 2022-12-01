@@ -610,6 +610,16 @@
             msg: "täältähän löytyy aika paljonkin vammasten kirjotuksia ja blog ",
             sound: new Audio("https://v.ylilauta.org/56/2d/562d76a0efd67605.mp4"),
         },
+        mammanpoika: {
+            btnText: "mene siitä mammanpoika",
+            msg: "MENE SENKIN SENKIN MAMMANPOIKA",
+            sound: new Audio("https://v.ylilauta.org/fc/d9/fcd90bd0c97fea6d.mp4"),
+        },
+        niinmenenkin: {
+            btnText: "niin menenkin",
+            msg: "NIIN MENENKIN",
+            sound: new Audio("https://v.ylilauta.org/ac/00/ac00559a7b34b5e5.mp4"),
+        },
     }
 
     const soundMsgs = [];
