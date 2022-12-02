@@ -902,7 +902,7 @@
                 return;
             }
             for(let i = 0; i < CHANNEL.emotes.length; i++) {
-                if(input.value.endsWith(CHANNEL.emotes[i]["name"]) || input.value.endsWith(CHANNEL.emotes[i]["name"] + " ")) {
+                if(input.value.slice(0, input.selectionStart).endsWith(CHANNEL.emotes[i]["name"]) || input.value.slice(0, input.selectionStart).endsWith(CHANNEL.emotes[i]["name"] + " ")) {
                     console.log("check")
                     let esi = document.getElementById("emo-esi");
                     if(!esi) {
