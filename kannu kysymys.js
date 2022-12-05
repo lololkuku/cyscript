@@ -625,6 +625,11 @@
             msg: "töihin siitä",
             sound: new Audio("https://v.ylilauta.org/ef/41/ef41b5804e8780ae.mp4"),
         },
+        teteem: {
+            btnText: "teteem :D",
+            msg: ":teteem  ",
+            sound: new Audio("https://v.ylilauta.org/1c/54/1c5432bd08cb928e.m4a"),
+        },
     }
 
     const soundMsgs = [];
