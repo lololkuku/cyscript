@@ -620,6 +620,11 @@
             msg: "NIIN MENENKIN",
             sound: new Audio("https://v.ylilauta.org/ac/00/ac00559a7b34b5e5.mp4"),
         },
+        töihinsiitä: {
+            btnText: "töihin siitä",
+            msg: "töihin siitä",
+            sound: new Audio("https://v.ylilauta.org/ef/41/ef41b5804e8780ae.mp4"),
+        },
     }
 
     const soundMsgs = [];
