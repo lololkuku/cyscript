@@ -607,7 +607,7 @@
         },
         vammasten: {
             btnText: "kannu",
-            msg: "täältähän löytyy aika paljonkin vammasten kirjotuksia ja blog ",
+            msg: "täältähän löytyy aika paljonkin vammasten kirjotuksia",
             sound: new Audio("https://v.ylilauta.org/56/2d/562d76a0efd67605.mp4"),
         },
         mammanpoika: {
@@ -673,6 +673,10 @@
                 if(text == "ULOS") {
                     btnPressed = true;
                     setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
+                }
+                else if(text == "täältähän löytyy aika paljonkin vammasten kirjotuksia") {
+                    btnPressed = true;
+                    setTimeout(() => { socket.emit("chatMsg", {msg: ":jablog"}) }, 5500)
                 }
 
                 socket.emit("chatMsg", {msg: msg});
