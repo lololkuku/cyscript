@@ -674,7 +674,7 @@
                     btnPressed = true;
                     setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 5500)
                 }
-                else if(text == "täältähän löytyy aika paljonkin vammasten kirjotuksia") {
+                else if(text == "kannu") {
                     btnPressed = true;
                     setTimeout(() => { socket.emit("chatMsg", {msg: ":jablog"}) }, 5500)
                 }
