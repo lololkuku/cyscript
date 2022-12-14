@@ -630,6 +630,11 @@
             msg: ":teteem  ",
             sound: new Audio("https://v.ylilauta.org/1c/54/1c5432bd08cb928e.m4a"),
         },
+        pulihuutis: {
+            btnText: "pulihuutis",
+            msg: ":pulihuutis  ",
+            sound: new Audio("https://v.ylilauta.org/76/65/76653a6bd18461df.m4a"),
+        },
     }
 
     const soundMsgs = [];
