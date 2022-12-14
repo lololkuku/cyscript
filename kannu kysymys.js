@@ -676,7 +676,7 @@
                 }
                 else if(text == "kannu") {
                     btnPressed = true;
-                    setTimeout(() => { socket.emit("chatMsg", {msg: ":jablog"}) }, 5500)
+                    setTimeout(() => { socket.emit("chatMsg", {msg: ":jablog"}) }, 4900)
                 }
 
                 socket.emit("chatMsg", {msg: msg});
