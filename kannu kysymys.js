@@ -152,7 +152,7 @@
         },
         hyihelvetti: {
             btnText: "hyi helveTTI",
-            msg: "hyi helveTTI",
+            msg: "hyi helvetti",
             sound: new Audio("https://v.ylilauta.org/46/15/46155f0b545e6112.mp4"),
         },
         jes: {
@@ -629,6 +629,11 @@
             btnText: "teteem :D",
             msg: ":teteem  ",
             sound: new Audio("https://v.ylilauta.org/1c/54/1c5432bd08cb928e.m4a"),
+        },
+        hyihelveTTI: {
+            btnText: "hyi helveTTI2",
+            msg: "hyi helveTTI",
+            sound: new Audio("https://cdn.sndup.net/b7nh/hyihelveTTI.wav?token=ibcz_DpZIXXpRwdp8nrIAGnVuVQMNPf8a1mq6y8sDNc&token_path=%2Fb7nh%2F&expires=1671031895"),
         },
     }
 
