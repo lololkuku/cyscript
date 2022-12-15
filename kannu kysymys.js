@@ -635,6 +635,11 @@
             msg: ":pulihuutis  ",
             sound: new Audio("https://v.ylilauta.org/76/65/76653a6bd18461df.m4a"),
         },
+        pulihuutis2: {
+            btnText: "pulihuutis2",
+            msg: "/pulihuutis2  ",
+            sound: new Audio("https://v.ylilauta.org/42/a7/42a7cfaec5cd7d72.m4a"),
+        },
     }
 
     const soundMsgs = [];
