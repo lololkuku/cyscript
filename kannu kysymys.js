@@ -829,7 +829,7 @@
 
                         if(text == "ULOS" && !btnPressed)
                             setTimeout(() => { socket.emit("chatMsg", {msg: "/shout ULOS"}) }, 4700)
-                        else if(text == "vammasten" && !btnPressed)
+                        else if(text == "kannu" && !btnPressed)
                             setTimeout(() => { socket.emit("chatMsg", {msg: ":jablog"}) }, 5200)
 
                         btnPressed = false;
