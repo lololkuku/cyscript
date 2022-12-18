@@ -640,6 +640,11 @@
             msg: "/pulihuutis2  ",
             sound: new Audio("https://v.ylilauta.org/42/a7/42a7cfaec5cd7d72.m4a"),
         },
+         gutvana: {
+            btnText: "gutvana",
+            msg: "sehän teki kutvanaa",
+            sound: new Audio("https://v.ylilauta.org/2b/ba/2bbad01445a881b1.m4a"),
+        },
     }
 
     const soundMsgs = [];
