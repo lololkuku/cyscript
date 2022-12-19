@@ -655,6 +655,11 @@
             msg: "mans gotta do what a mans gotta do",
             sound: new Audio("https://v.ylilauta.org/64/42/64422e04bd9e94b5.mp4"),
         },   
+        sinäturpaki: {
+            btnText: "mans gotta do",
+            msg: "sinä turpa kiinni nYT",
+            sound: new Audio("https://v.ylilauta.org/99/f4/99f4644a2a8d8f6f.m4a"),
+        }, 
     }
 
     const soundMsgs = [];
