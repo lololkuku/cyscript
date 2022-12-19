@@ -660,6 +660,11 @@
             msg: "sinä turpa kiinni nYT",
             sound: new Audio("https://v.ylilauta.org/99/f4/99f4644a2a8d8f6f.m4a"),
         }, 
+        janytturpa: {
+            btnText: "nyt turpa kiinni",
+            msg: "ja nyt turpa kiiNNI",
+            sound: new Audio("https://v.ylilauta.org/6a/c6/6ac69ee3364212fd.mp4"),
+        },
     }
 
     const soundMsgs = [];
