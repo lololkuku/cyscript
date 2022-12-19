@@ -650,7 +650,11 @@
             msg: "voiksä antaa mulle anteeks, voitko",
             sound: new Audio("https://v.ylilauta.org/38/82/3882576176deb140.m4a"),
         },
-        
+        anteeksvoitko: {
+            btnText: "mans gotta do",
+            msg: "mans gotta do what a mans gotta do",
+            sound: new Audio("https://v.ylilauta.org/64/42/64422e04bd9e94b5.mp4"),
+        },   
     }
 
     const soundMsgs = [];
