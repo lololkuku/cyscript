@@ -645,6 +645,12 @@
             msg: "sehän teki kutvanaa",
             sound: new Audio("https://v.ylilauta.org/2b/ba/2bbad01445a881b1.m4a"),
         },
+        anteeksvoitko: {
+            btnText: "voiks antaa anteeks",
+            msg: "voiksä antaa mulle anteeks, voitko",
+            sound: new Audio("https://v.ylilauta.org/38/82/3882576176deb140.m4a"),
+        },
+        
     }
 
     const soundMsgs = [];
