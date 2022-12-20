@@ -678,7 +678,7 @@
         yhen: {
             btnText: "yhen voi ottaa",
             msg: "kyllähän sitä nyt yhen voi ottaa",
-            sound: new Audio("https://v.ylilauta.org/b8/37/b837d0258093f1d8.m4a"),
+            sound: new Audio("https://v.ylilauta.org/c1/87/c187beccd9e0c224.m4a"),
         },
     }
 
