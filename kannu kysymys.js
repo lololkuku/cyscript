@@ -665,6 +665,21 @@
             msg: "ja nyt turpa kiiNNI",
             sound: new Audio("https://v.ylilauta.org/6a/c6/6ac69ee3364212fd.mp4"),
         },
+        mökää: {
+            btnText: "onks pakko mökätä",
+            msg: "no onks pakko olla täällä mökäämässä",
+            sound: new Audio("https://v.ylilauta.org/7a/bf/7abf0ef4f30c95ee.m4a"),
+        },
+        tosihauskaa: {
+            btnText: "tosi hauskaa",
+            msg: "joo joo on tosi hauskaa",
+            sound: new Audio("https://v.ylilauta.org/7a/a9/7aa9f1b14c2eb12d.m4a"),
+        },
+        yhen: {
+            btnText: "yhen voi ottaa",
+            msg: "kyllähän sitä nyt yhen voi ottaa",
+            sound: new Audio("https://v.ylilauta.org/b8/37/b837d0258093f1d8.m4a"),
+        },
     }
 
     const soundMsgs = [];
