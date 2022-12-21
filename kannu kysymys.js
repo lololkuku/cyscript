@@ -680,6 +680,11 @@
             msg: "kyllähän sitä nyt yhen voi ottaa",
             sound: new Audio("https://v.ylilauta.org/c1/87/c187beccd9e0c224.m4a"),
         },
+        täntakia: {
+            btnText: "tän takia koneen hankin",
+            msg: "tän takia mä tän koneen hankin",
+            sound: new Audio("https://v.ylilauta.org/db/d6/dbd6862b5f2ea77d.mp4"),
+        },
     }
 
     const soundMsgs = [];
