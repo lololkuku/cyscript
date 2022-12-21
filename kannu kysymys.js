@@ -689,8 +689,17 @@
             btnText: "oot humalas",
             msg: "sä oot humalas",
             sound: new Audio("https://v.ylilauta.org/73/5a/735ae60f612ea15f.m4a"),
+        },
+        {
+            btnText: "höpöhöpö",
+            msg: "höpö höpö höpö höpö höpö",
+            sound: new Audio("https://v.ylilauta.org/a9/24/a924dbe464755111.m4a"),
+        },
+        {
+            btnText: "joojoojojojoj",
+            msg: "no joojoojoojoojoojoojoojoo",
+            sound: new Audio("https://v.ylilauta.org/c0/cd/c0cdeaf5ac85ba1a.m4a"),
         }
-        
     ]
 
     const soundMsgs = [];
