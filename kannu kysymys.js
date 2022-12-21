@@ -684,7 +684,13 @@
             btnText: "tän takia koneen hankin",
             msg: "tän takia mä tän koneen hankin",
             sound: new Audio("https://v.ylilauta.org/db/d6/dbd6862b5f2ea77d.mp4"),
+        },
+        {
+            btnText: "oot humalas",
+            msg: "sä oot humalas",
+            sound: new Audio("https://v.ylilauta.org/73/5a/735ae60f612ea15f.m4a"),
         }
+        
     ]
 
     const soundMsgs = [];
