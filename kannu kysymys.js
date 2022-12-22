@@ -699,6 +699,11 @@
             btnText: "joojoojojojoj",
             msg: "no joojoojoojoojoojoojoojoo",
             sound: new Audio("https://v.ylilauta.org/c0/cd/c0cdeaf5ac85ba1a.m4a"),
+        },
+        {
+            btnText: "KUOPIJOOOO",
+            msg: ":KUOPIIJJOOO  ",
+            sound: new Audio("https://v.ylilauta.org/3e/1f/3e1f5cf794afa50d.mp4"),
         }
     ]
 
