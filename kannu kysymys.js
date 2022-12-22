@@ -704,6 +704,11 @@
             btnText: "KUOPIJOOOO",
             msg: ":KUOPIIJJOOO  ",
             sound: new Audio("https://v.ylilauta.org/3e/1f/3e1f5cf794afa50d.mp4"),
+        },
+        {
+            btnText: "KERRO",
+            msg: "KERRO ",
+            sound: new Audio("https://v.ylilauta.org/9d/9f/9d9f57a2cfa55f14.mp4"),
         }
     ]
 
