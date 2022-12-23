@@ -938,10 +938,10 @@
                 }
             }
 
-            if(msgText.slice(msgText.length - 13, msgText.length) == " random.       " && msg.innerHTML.split(">").length == 2) {
-                let msgHtml = msg.innerHTML.split(">");
+            if(msgText.slice(msgText.length - 13, msgText.length) == " random.       " && msg.innerHTML.split("</span>").length == 2) {
+                let msgHtml = msg.innerHTML.split("</span>");
                 msgHtml[1] = " <span class='randomEmo'>RANDOM</span>";
-                msgHtml = msgHtml.join(">");
+                msgHtml = msgHtml.join("</span>");
                 msg.innerHTML = msgHtml;
             }
 
