@@ -684,6 +684,31 @@
             btnText: "tän takia koneen hankin",
             msg: "tän takia mä tän koneen hankin",
             sound: new Audio("https://v.ylilauta.org/db/d6/dbd6862b5f2ea77d.mp4"),
+        },
+        {
+            btnText: "oot humalas",
+            msg: "sä oot humalas",
+            sound: new Audio("https://v.ylilauta.org/73/5a/735ae60f612ea15f.m4a"),
+        },
+        {
+            btnText: "höpöhöpö",
+            msg: "höpö höpö höpö höpö höpö",
+            sound: new Audio("https://v.ylilauta.org/a9/24/a924dbe464755111.m4a"),
+        },
+        {
+            btnText: "joojoojojojoj",
+            msg: "no joojoojoojoojoojoojoojoo",
+            sound: new Audio("https://v.ylilauta.org/c0/cd/c0cdeaf5ac85ba1a.m4a"),
+        },
+        {
+            btnText: "KUOPIJOOOO",
+            msg: ":KUOPIIJJOOO  ",
+            sound: new Audio("https://v.ylilauta.org/3e/1f/3e1f5cf794afa50d.mp4"),
+        },
+        {
+            btnText: "KERRO",
+            msg: "KERRO ",
+            sound: new Audio("https://v.ylilauta.org/9d/9f/9d9f57a2cfa55f14.mp4"),
         }
     ]
 
@@ -780,7 +805,7 @@
 
         spamlock = true;
         setTimeout(() => {spamlock = false}, 3000)
-        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name})
+        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random.       "})
     });
 
     kasBtn.className = "btn btn-sm btn-default";
@@ -834,6 +859,7 @@
                 return;
 
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
+            let msgText = msg.textContent;
 
             if(messageCont.scrollHeight - messageCont.scrollTop === messageCont.clientHeight) {
                 setTimeout(() => { messageCont.scrollTo(0, messageCont.scrollHeight) }, 300);
@@ -842,15 +868,15 @@
 
             const username = msg.parentElement.className.split(" ")[0].split("-")[2];
 
-            let soundIndex = soundMsgs.indexOf(msg.textContent);
+            let soundIndex = soundMsgs.indexOf(msgText);
 
             if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[1].nodeType === 3 && (msg.childNodes[1].textContent === "  " || msg.childNodes[1].textContent === "   ")) {
                 const emoTitle = msg.childNodes[0].getAttribute("title");
                 soundIndex = soundMsgs.indexOf(emoTitle + "  ");
             }
 
-            if(soundIndex == -1 && msg.textContent[msg.textContent.length - 1] == " ") 
-                soundIndex = soundMsgs.indexOf(msg.textContent.slice(0, msg.textContent.length - 1));
+            if(soundIndex == -1 && msgText[msgText.length - 1] == " ") 
+                soundIndex = soundMsgs.indexOf(msgText.slice(0, msgText.length - 1));
 
             if(soundIndex > -1) {
                 const soundBtn = soundBtns[soundIndex];
@@ -882,13 +908,13 @@
                 tadaa.play();
             }
 
-            if(msg.textContent === "!roll" && username === CLIENT.name) {
+            if(msgText === "!roll" && username === CLIENT.name) {
                 const rnd = Math.floor((Math.random() * 100)+1);
                 socket.emit("chatMsg", {msg: "/me rolled " + rnd});
             }
 
-            if(msg.textContent.slice(0,6) == "!kysy " && msg.textContent.length > 6 && username == CLIENT.name) {
-                const kysymys = encodeURIComponent(msg.textContent.slice(6));
+            if(msgText.slice(0,6) == "!kysy " && msgText.length > 6 && username == CLIENT.name) {
+                const kysymys = encodeURIComponent(msgText.slice(6));
                 
                 fetch("https://kannubotti.herokuapp.com/?" + kysymys, {headers: {"kysymys": "kys"}}).then(res => res.text()).then(text => {
                     socket.emit("chatMsg", {msg: "`" + text + "`"})
@@ -910,6 +936,13 @@
                     const link = links[i];
                     handleLink(link);
                 }
+            }
+
+            if(msgText.slice(msgText.length - 13, msgText.length) == " random.       " && msg.innerHTML.split(">").length == 2) {
+                let msgHtml = msg.innerHTML.split(">");
+                msgHtml[1] = " <span class='randomEmo'>RANDOM</span>";
+                msgHtml = msgHtml.join(">");
+                msg.innerHTML = msgHtml;
             }
 
             const emotes = msg.getElementsByClassName("channel-emote");
