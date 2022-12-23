@@ -805,7 +805,7 @@
 
         spamlock = true;
         setTimeout(() => {spamlock = false}, 3000)
-        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random.       "})
+        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
     kasBtn.className = "btn btn-sm btn-default";
@@ -937,11 +937,13 @@
                     handleLink(link);
                 }
             }
-
-            if(msgText.slice(msgText.length - 13, msgText.length) == " random.       " && msg.innerHTML.split("</span>").length == 2) {
-                let msgHtml = msg.innerHTML.split("</span>");
+            console.log(msgText.slice(msgText.length - 13, msgText.length))
+            console.log(msg.innerHTML.split(">").length)
+            if(msgText.slice(msgText.length - 9, msgText.length) == " random. " && msg.innerHTML.split(">").length == 2) {
+                console.log("pitäis")
+                let msgHtml = msg.innerHTML.split(">");
                 msgHtml[1] = " <span class='randomEmo'>RANDOM</span>";
-                msgHtml = msgHtml.join("</span>");
+                msgHtml = msgHtml.join(">");
                 msg.innerHTML = msgHtml;
             }
 
