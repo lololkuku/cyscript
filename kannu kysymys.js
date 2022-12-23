@@ -805,7 +805,7 @@
 
         spamlock = true;
         setTimeout(() => {spamlock = false}, 3000)
-        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name})
+        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
     kasBtn.className = "btn btn-sm btn-default";
@@ -859,6 +859,7 @@
                 return;
 
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
+            let msgText = msg.textContent;
 
             if(messageCont.scrollHeight - messageCont.scrollTop === messageCont.clientHeight) {
                 setTimeout(() => { messageCont.scrollTo(0, messageCont.scrollHeight) }, 300);
@@ -867,15 +868,15 @@
 
             const username = msg.parentElement.className.split(" ")[0].split("-")[2];
 
-            let soundIndex = soundMsgs.indexOf(msg.textContent);
+            let soundIndex = soundMsgs.indexOf(msgText);
 
             if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[1].nodeType === 3 && (msg.childNodes[1].textContent === "  " || msg.childNodes[1].textContent === "   ")) {
                 const emoTitle = msg.childNodes[0].getAttribute("title");
                 soundIndex = soundMsgs.indexOf(emoTitle + "  ");
             }
 
-            if(soundIndex == -1 && msg.textContent[msg.textContent.length - 1] == " ") 
-                soundIndex = soundMsgs.indexOf(msg.textContent.slice(0, msg.textContent.length - 1));
+            if(soundIndex == -1 && msgText[msgText.length - 1] == " ") 
+                soundIndex = soundMsgs.indexOf(msgText.slice(0, msgText.length - 1));
 
             if(soundIndex > -1) {
                 const soundBtn = soundBtns[soundIndex];
@@ -907,13 +908,13 @@
                 tadaa.play();
             }
 
-            if(msg.textContent === "!roll" && username === CLIENT.name) {
+            if(msgText === "!roll" && username === CLIENT.name) {
                 const rnd = Math.floor((Math.random() * 100)+1);
                 socket.emit("chatMsg", {msg: "/me rolled " + rnd});
             }
 
-            if(msg.textContent.slice(0,6) == "!kysy " && msg.textContent.length > 6 && username == CLIENT.name) {
-                const kysymys = encodeURIComponent(msg.textContent.slice(6));
+            if(msgText.slice(0,6) == "!kysy " && msgText.length > 6 && username == CLIENT.name) {
+                const kysymys = encodeURIComponent(msgText.slice(6));
                 
                 fetch("https://kannubotti.herokuapp.com/?" + kysymys, {headers: {"kysymys": "kys"}}).then(res => res.text()).then(text => {
                     socket.emit("chatMsg", {msg: "`" + text + "`"})
@@ -935,6 +936,15 @@
                     const link = links[i];
                     handleLink(link);
                 }
+            }
+            console.log(msgText.slice(msgText.length - 13, msgText.length))
+            console.log(msg.innerHTML.split(">").length)
+            if(msgText.slice(msgText.length - 9, msgText.length) == " random. " && msg.innerHTML.split(">").length == 2) {
+                console.log("pitäis")
+                let msgHtml = msg.innerHTML.split(">");
+                msgHtml[1] = " <span class='randomEmo'>RANDOM</span>";
+                msgHtml = msgHtml.join(">");
+                msg.innerHTML = msgHtml;
             }
 
             const emotes = msg.getElementsByClassName("channel-emote");
