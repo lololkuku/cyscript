@@ -709,6 +709,11 @@
             btnText: "KERRO",
             msg: "KERRO ",
             sound: new Audio("https://v.ylilauta.org/9d/9f/9d9f57a2cfa55f14.mp4"),
+        },
+        {
+            btnText: "idioottien touhua",
+            msg: "ihan idioottien touhua se koko tsätti ",
+            sound: new Audio("https://v.ylilauta.org/35/fe/35fed50eb7917309.m4a"),
         }
     ]
 
