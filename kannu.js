@@ -922,9 +922,12 @@
             }
 
             if(msgText === "!roll" && username === CLIENT.name) {
-                msg.innerHTML += ' <img class="channel-emote" src="https://c.tenor.com/1ghY8kGML2sAAAAC/pepe-apu.gif" title=":roll">';
                 const rnd = Math.floor((Math.random() * 100)+1);
                 socket.emit("chatMsg", {msg: "/me rolled " + rnd});
+            }
+
+            if(msgText === "!roll") {
+                msg.innerHTML += ' <img class="channel-emote" src="https://c.tenor.com/1ghY8kGML2sAAAAC/pepe-apu.gif" title=":roll">';
             }
 
             if(msgText.slice(0,6) == "!kysy " && msgText.length > 6 && username == CLIENT.name) {
