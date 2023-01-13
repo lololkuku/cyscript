@@ -709,6 +709,11 @@
             btnText: "KERRO",
             msg: "KERRO ",
             sound: new Audio("https://v.ylilauta.org/9d/9f/9d9f57a2cfa55f14.mp4"),
+        },
+        {
+            btnText: "idioottien touhua",
+            msg: "ihan idioottien touhua se koko tsätti ",
+            sound: new Audio("https://v.ylilauta.org/35/fe/35fed50eb7917309.m4a"),
         }
     ]
 
@@ -804,7 +809,9 @@
             return;
 
         spamlock = true;
-        setTimeout(() => {spamlock = false}, 3000)
+        
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 0)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
@@ -860,6 +867,12 @@
 
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
             let msgText = msg.textContent;
+            let msgTextSound = "";
+
+            if(msgText.slice(msgText.length - 9, msgText.length) == " random. ")
+                msgTextSound = msgText.slice(0,msgText.length-9)
+
+            msgTextSound = msgTextSound === "" ? msgText : msgTextSound;
 
             if(messageCont.scrollHeight - messageCont.scrollTop === messageCont.clientHeight) {
                 setTimeout(() => { messageCont.scrollTo(0, messageCont.scrollHeight) }, 300);
@@ -868,15 +881,15 @@
 
             const username = msg.parentElement.className.split(" ")[0].split("-")[2];
 
-            let soundIndex = soundMsgs.indexOf(msgText);
+            let soundIndex = soundMsgs.indexOf(msgTextSound);
 
             if(msg.childNodes.length === 2 && msg.childNodes[0].nodeType === 1 && msg.childNodes[1].nodeType === 3 && (msg.childNodes[1].textContent === "  " || msg.childNodes[1].textContent === "   ")) {
                 const emoTitle = msg.childNodes[0].getAttribute("title");
                 soundIndex = soundMsgs.indexOf(emoTitle + "  ");
             }
 
-            if(soundIndex == -1 && msgText[msgText.length - 1] == " ") 
-                soundIndex = soundMsgs.indexOf(msgText.slice(0, msgText.length - 1));
+            if(soundIndex == -1 && msgTextSound[msgTextSound.length - 1] == " ") 
+                soundIndex = soundMsgs.indexOf(msgTextSound.slice(0, msgTextSound.length - 1));
 
             if(soundIndex > -1) {
                 const soundBtn = soundBtns[soundIndex];
@@ -909,6 +922,7 @@
             }
 
             if(msgText === "!roll" && username === CLIENT.name) {
+                msg.innerHTML += ' <img class="channel-emote" src="https://c.tenor.com/1ghY8kGML2sAAAAC/pepe-apu.gif" title=":roll">';
                 const rnd = Math.floor((Math.random() * 100)+1);
                 socket.emit("chatMsg", {msg: "/me rolled " + rnd});
             }
@@ -937,13 +951,15 @@
                     handleLink(link);
                 }
             }
-            console.log(msgText.slice(msgText.length - 13, msgText.length))
-            console.log(msg.innerHTML.split(">").length)
             if(msgText.slice(msgText.length - 9, msgText.length) == " random. " && msg.innerHTML.split(">").length == 2) {
-                console.log("pitäis")
                 let msgHtml = msg.innerHTML.split(">");
                 msgHtml[1] = " <span class='randomEmo'>RANDOM</span>";
                 msgHtml = msgHtml.join(">");
+                msg.innerHTML = msgHtml;
+            }
+            else if(msgText.slice(msgText.length - 9, msgText.length) == " random. " && soundIndex > -1) {
+                let msgHtml = msg.innerHTML.slice(0,msgText.length-9);
+                msgHtml += " <span class='randomEmo'>RANDOM</span>";
                 msg.innerHTML = msgHtml;
             }
 
@@ -1006,7 +1022,6 @@
             }
             for(let i = 0; i < CHANNEL.emotes.length; i++) {
                 if(input.value.slice(0, input.selectionStart).endsWith(CHANNEL.emotes[i]["name"]) || input.value.slice(0, input.selectionStart).endsWith(CHANNEL.emotes[i]["name"] + " ")) {
-                    console.log("check")
                     let esi = document.getElementById("emo-esi");
                     if(!esi) {
                         esi = document.createElement("img");
