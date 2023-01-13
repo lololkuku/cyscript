@@ -714,7 +714,17 @@
             btnText: "idioottien touhua",
             msg: "ihan idioottien touhua se koko tsätti ",
             sound: new Audio("https://v.ylilauta.org/35/fe/35fed50eb7917309.m4a"),
-        }
+        },
+        {
+            btnText: "tsajajajajajai",
+            msg: "tsajajajajajai",
+            sound: new Audio("https://v.ylilauta.org/18/02/180296bca3ffcac6.mp4"),
+        },
+        {
+            btnText: "mut tsajai ismo",
+            msg: "mut tsajajajajai ismo",
+            sound: new Audio("https://v.ylilauta.org/16/7e/167e61a9517830d4.mp4"),
+        },
     ]
 
     const soundMsgs = [];
