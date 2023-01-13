@@ -809,9 +809,9 @@
             return;
 
         spamlock = true;
-        
+
         //temp 3000
-        setTimeout(() => {spamlock = false}, 0)
+        setTimeout(() => {spamlock = false}, 3000)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
