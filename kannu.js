@@ -725,6 +725,11 @@
             msg: "mut tsajajajajai ismo",
             sound: new Audio("https://v.ylilauta.org/16/7e/167e61a9517830d4.mp4"),
         },
+        {
+            btnText: "hyvä syy dokata",
+            msg: "siinähän sulla onki hyvä syy alkaa dokata",
+            sound: new Audio("https://v.ylilauta.org/60/5a/605a83eec2c0ecc7.mp4"),
+        },
     ]
 
     const soundMsgs = [];
