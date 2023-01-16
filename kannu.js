@@ -730,6 +730,11 @@
             msg: "siinähän sulla onki hyvä syy alkaa dokata",
             sound: new Audio("https://v.ylilauta.org/60/5a/605a83eec2c0ecc7.mp4"),
         },
+        {
+            btnText: "olutta ON",
+            msg: "JA OLUTTA ON",
+            sound: new Audio("https://v.ylilauta.org/4e/25/4e256518c760366f.m4a"),
+        },
     ]
 
     const soundMsgs = [];
