@@ -735,6 +735,11 @@
             msg: "JA OLUTTA ON",
             sound: new Audio("https://v.ylilauta.org/4e/25/4e256518c760366f.m4a"),
         },
+        {
+            btnText: "glögi maistunu",
+            msg: "SULLE ON GLÖGI MAISTUNU GINIÄ ON MENNY JUOPPO",
+            sound: new Audio("https://v.ylilauta.org/29/41/294187eab6a472f1.mp4"),
+        },
     ]
 
     const soundMsgs = [];
