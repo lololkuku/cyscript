@@ -740,6 +740,11 @@
             msg: "SULLE ON GLÖGI MAISTUNU GINIÄ ON MENNY JUOPPO",
             sound: new Audio("https://v.ylilauta.org/29/41/294187eab6a472f1.mp4"),
         },
+        {
+            btnText: "OSTERI OSSI",
+            msg: "sinne meni osteri-ossi joka naisen lossi",
+            sound: new Audio("https://v.ylilauta.org/01/59/0159ae196f265d74.m4a"),
+        },
     ]
 
     const soundMsgs = [];
