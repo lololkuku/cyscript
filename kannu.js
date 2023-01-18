@@ -745,6 +745,11 @@
             msg: "sinne meni osteri-ossi joka naisen lossi",
             sound: new Audio("https://v.ylilauta.org/01/59/0159ae196f265d74.m4a"),
         },
+        {
+            btnText: "hoho ei kiinnost",
+            msg: "HOHHOHO ei kiinnosta",
+            sound: new Audio("https://v.ylilauta.org/06/9c/069c294c391c1010.mp4"),
+        },
     ]
 
     const soundMsgs = [];
