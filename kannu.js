@@ -750,6 +750,11 @@
             msg: "HOHHOHO ei kiinnosta",
             sound: new Audio("https://v.ylilauta.org/06/9c/069c294c391c1010.mp4"),
         },
+        {
+            btnText: "mitä iniset",
+            msg: "mitä sä oikein iniset mies",
+            sound: new Audio("https://v.ylilauta.org/1f/00/1f002091b1e4756e.mp4"),
+        },
     ]
 
     const soundMsgs = [];
