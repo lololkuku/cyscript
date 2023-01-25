@@ -755,6 +755,7 @@
             msg: "mitä sä oikein iniset mies",
             sound: new Audio("https://v.ylilauta.org/1f/00/1f002091b1e4756e.mp4"),
         },
+        {
             btnText: "kutos jässi",
             msg: "kutos jatsi :D",
             sound: new Audio("https://v.ylilauta.org/e9/bd/e9bd49c80346a896.m4a"),
