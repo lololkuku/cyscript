@@ -760,6 +760,11 @@
             msg: "kutos jatsi :D",
             sound: new Audio("https://v.ylilauta.org/e9/bd/e9bd49c80346a896.m4a"),
         },
+        {
+            btnText: "mä mitään ryyp",
+            msg: "mä mitään ryyppää, kuhan vaan huuhdon kaikki huolet ja murheet pois",
+            sound: new Audio("https://v.ylilauta.org/43/17/4317514f41946b5b.mp4"),
+        },
     ]
 
     const soundMsgs = [];
