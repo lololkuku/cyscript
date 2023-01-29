@@ -779,6 +779,11 @@
             btnText: "totuus tekee kipeetä",
             msg: "mä olen todella pahoillani joskus totuus tekee kipeetä",
             sound: new Audio("https://v.ylilauta.org/e5/1c/e51c319428ebfb2c.mp4"),
+        },  
+        {
+            btnText: "mitä uhoot",
+            msg: "mitä sä oikein uhoot poika",
+            sound: new Audio("https://v.ylilauta.org/c4/33/c433094b6aacdd5b.mp4"),
         },
     ]
 
