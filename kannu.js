@@ -775,6 +775,11 @@
             msg: "älä puhu pasKAA",
             sound: new Audio("https://v.ylilauta.org/85/a9/85a900093d06dd02.mp4"),
         },
+        {
+            btnText: "totuus tekee kipeetä",
+            msg: "mä olen todella pahoillani joskus totuus tekee kipeetä",
+            sound: new Audio("https://v.ylilauta.org/e5/1c/e51c319428ebfb2c.mp4"),
+        },
     ]
 
     const soundMsgs = [];
