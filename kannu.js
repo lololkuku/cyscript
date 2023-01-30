@@ -767,7 +767,7 @@
         },
         {
             btnText: "ei",
-            msg: "ei ",
+            msg: ":ismoei  ",
             sound: new Audio("https://v.ylilauta.org/97/23/97234ae6b76f6535.mp4"),
         },
         {
