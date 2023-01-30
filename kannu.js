@@ -785,6 +785,11 @@
             msg: "mitä sä oikein uhoot poika",
             sound: new Audio("https://v.ylilauta.org/c4/33/c433094b6aacdd5b.mp4"),
         },
+        {
+            btnText: "homoja",
+            msg: "homoja",
+            sound: new Audio("https://v.ylilauta.org/ba/e1/bae1c3766a732cc4.mp4"),
+        },
     ]
 
     const soundMsgs = [];
