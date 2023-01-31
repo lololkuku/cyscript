@@ -790,6 +790,11 @@
             msg: "homoja",
             sound: new Audio("https://v.ylilauta.org/ba/e1/bae1c3766a732cc4.mp4"),
         },
+        {
+            btnText: "kuka pelleilee",
+            msg: "kuka täällä oikein pelleilee",
+            sound: new Audio("https://v.ylilauta.org/40/f1/40f192dae5a69d5f.mp4"),
+        },
     ]
 
     const soundMsgs = [];
