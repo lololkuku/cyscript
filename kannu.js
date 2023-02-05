@@ -795,6 +795,11 @@
             msg: "kuka täällä oikein pelleilee",
             sound: new Audio("https://v.ylilauta.org/40/f1/40f192dae5a69d5f.mp4"),
         },
+        {
+            btnText: "ullahuutis",
+            msg: ":ulla ",
+            sound: new Audio("https://v.ylilauta.org/61/93/619353bae560a537.m4a"),
+        },
     ]
 
     const soundMsgs = [];
