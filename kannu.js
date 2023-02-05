@@ -800,6 +800,11 @@
             msg: ":ulla  ",
             sound: new Audio("https://v.ylilauta.org/61/93/619353bae560a537.m4a"),
         },
+        {
+            btnText: "ja nyt sinä pidät turpas kii",
+            msg: ":ismolyö3  ",
+            sound: new Audio("https://v.ylilauta.org/ed/16/ed1667c100390ac7.mp4"),
+        },
     ]
 
     const soundMsgs = [];
