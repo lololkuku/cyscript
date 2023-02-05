@@ -797,7 +797,7 @@
         },
         {
             btnText: "ullahuutis",
-            msg: ":ulla ",
+            msg: ":ulla  ",
             sound: new Audio("https://v.ylilauta.org/61/93/619353bae560a537.m4a"),
         },
     ]
