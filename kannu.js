@@ -805,6 +805,11 @@
             msg: ":ismolyö3  ",
             sound: new Audio("https://v.ylilauta.org/ed/16/ed1667c100390ac7.mp4"),
         },
+        {
+            btnText: "en usko",
+            msg: "mä en usko sua",
+            sound: new Audio("https://v.ylilauta.org/e4/75/e47562526e074d55.mp4"),
+        },
     ]
 
     const soundMsgs = [];
