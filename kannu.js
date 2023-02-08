@@ -810,6 +810,12 @@
             msg: "mä en usko sua",
             sound: new Audio("https://v.ylilauta.org/e4/75/e47562526e074d55.mp4"),
         },
+        {
+            btnText: "miten voi olla mahollista",
+            msg: "miten helkkarissa tämmönen voi olla ees mahdollista",
+            sound: new Audio("https://v.ylilauta.org/42/37/42375f90ee4c5ee2.mp4"),
+        },
+        
     ]
 
     const soundMsgs = [];
