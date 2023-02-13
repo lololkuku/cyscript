@@ -821,6 +821,11 @@
             sound: new Audio("https://v.ylilauta.org/79/30/7930d4c1e10fc2aa.m4a"),
         },
         {
+            btnText: "pitäskö ryyppäämään",
+            msg: "pitäskö tässä ruveta ryyppäämään",
+            sound: new Audio("https://v.ylilauta.org/b8/dc/b8dca225d06df6c3.m4a"),
+        },
+        {
             btnText: "kiitoksia",
             msg: "kiitoksia vaan",
             sound: new Audio("https://v.ylilauta.org/00/83/0083fcc15aeb8bbc.m4a"),
