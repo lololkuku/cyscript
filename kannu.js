@@ -830,6 +830,11 @@
             msg: "pitäskö tässä ruveta ryyppäämään",
             sound: new Audio("https://v.ylilauta.org/b8/dc/b8dca225d06df6c3.m4a"),
         },
+        {
+            btnText: "hyvää olutta",
+            msg: "hyvää olutta",
+            sound: new Audio("https://v.ylilauta.org/61/36/6136ce7ab90a5c33.mp4"),
+        },
     ]
 
     const soundMsgs = [];
