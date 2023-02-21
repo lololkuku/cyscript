@@ -835,6 +835,11 @@
             msg: "hyvää olutta",
             sound: new Audio("https://v.ylilauta.org/61/36/6136ce7ab90a5c33.mp4"),
         },
+        {
+            btnText: "eieieiei",
+            msg: "eieieieiei nyt sä käsitit ihan väärin",
+            sound: new Audio("https://v.ylilauta.org/39/73/3973ff2359b8ed80.mp4"),
+        },
     ]
 
     const soundMsgs = [];
