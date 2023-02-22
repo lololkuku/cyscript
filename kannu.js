@@ -840,6 +840,11 @@
             msg: "eieieieiei nyt sä käsitit ihan väärin",
             sound: new Audio("https://v.ylilauta.org/39/73/3973ff2359b8ed80.mp4"),
         },
+        {
+            btnText: "no ei kai",
+            msg: "no ei kai",
+            sound: new Audio("https://v.ylilauta.org/6e/ce/6ece1e4f0bf491a1.m4a"),
+        },
     ]
 
     const soundMsgs = [];
