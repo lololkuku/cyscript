@@ -847,7 +847,7 @@
         },
         {
             btnText: "otaotaotata",
-            msg: "no otaotaotaotaotaotata",
+            msg: ":ismosepporyys  ",
             sound: new Audio("https://v.ylilauta.org/09/9a/099a16516976140b.m4a"),
         },
     ]
