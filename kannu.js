@@ -845,6 +845,11 @@
             msg: "no ei kai",
             sound: new Audio("https://v.ylilauta.org/6e/ce/6ece1e4f0bf491a1.m4a"),
         },
+        {
+            btnText: "otaotaotata",
+            msg: "no otaotaotaotaotaotata",
+            sound: new Audio("https://v.ylilauta.org/09/9a/099a16516976140b.m4a"),
+        },
     ]
 
     const soundMsgs = [];
