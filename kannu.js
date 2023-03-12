@@ -850,6 +850,11 @@
             msg: ":ismosepporyys  ",
             sound: new Audio("https://v.ylilauta.org/09/9a/099a16516976140b.m4a"),
         },
+        {
+            btnText: "juttus on tyhmiä",
+            msg: "onko kukaan kertonut että noi sun juttus on saatanan tyhmiä",
+            sound: new Audio("https://v.ylilauta.org/73/73/7373ec0a0e970f23.mp4"),
+        },
     ]
 
     const soundMsgs = [];
