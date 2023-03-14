@@ -855,6 +855,11 @@
             msg: "onko kukaan kertonut että noi sun juttus on saatanan tyhmiä",
             sound: new Audio("https://v.ylilauta.org/73/73/7373ec0a0e970f23.mp4"),
         },
+        {
+            btnText: "häähä",
+            msg: "häähä",
+            sound: new Audio("https://v.ylilauta.org/a6/22/a6227939d1d3fc65.mp4"),
+        },
     ]
 
     const soundMsgs = [];
