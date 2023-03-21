@@ -870,6 +870,7 @@
             msg: "mustalaisia neekeri",
             sound: new Audio("https://v.ylilauta.org/98/bc/98bc2b3982b48e6d.m4a"),
         },
+        {
             btnText: "jumala töihin",
             msg: "jumala haulaa että sä meet töihin",
             sound: new Audio("https://v.ylilauta.org/96/de/96de3353955d4cbc.mp4"),
