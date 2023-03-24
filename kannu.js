@@ -875,6 +875,11 @@
             msg: "jumala haulaa että sä meet töihin",
             sound: new Audio("https://v.ylilauta.org/96/de/96de3353955d4cbc.mp4"),
         },
+        {
+            btnText: "aattelin ryypätä",
+            msg: "/gunnarryys  ",
+            sound: new Audio("https://v.ylilauta.org/60/b1/60b10a10a1e6b8f9.m4a"),
+        },
     ]
 
     const soundMsgs = [];
