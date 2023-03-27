@@ -880,6 +880,11 @@
             msg: "/gunnarryys  ",
             sound: new Audio("https://v.ylilauta.org/60/b1/60b10a10a1e6b8f9.m4a"),
         },
+        {
+            btnText: "älä koske muhun",
+            msg: "älä koske muhun, mä oon vammanen",
+            sound: new Audio("https://is.ylilauta.org/df/3f/df3fc86ab15a5a46.m4a"),
+        },
     ]
 
     const soundMsgs = [];
