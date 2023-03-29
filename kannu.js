@@ -883,7 +883,7 @@
         {
             btnText: "älä koske muhun",
             msg: "älä koske muhun, mä oon vammanen",
-            sound: new Audio("https://is.ylilauta.org/df/3f/df3fc86ab15a5a46.m4a"),
+            sound: new Audio("https://i.ylilauta.org/df/3f/df3fc86ab15a5a46.m4a"),
         },
     ]
 
