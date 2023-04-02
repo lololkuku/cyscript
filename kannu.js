@@ -885,6 +885,11 @@
             msg: "älä koske muhun, mä oon vammanen",
             sound: new Audio("https://i.ylilauta.org/df/3f/df3fc86ab15a5a46.m4a"),
         },
+        {
+            btnText: "monimutkanen kysymys",
+            msg: "hohhoijaa olipa monimutkanen kysymys",
+            sound: new Audio("https://i.ylilauta.org/88/b0/88b0b807fbb49395.mp4"),
+        },
     ]
 
     const soundMsgs = [];
