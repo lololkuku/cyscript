@@ -890,6 +890,11 @@
             msg: "hohhoijaa olipa monimutkanen kysymys",
             sound: new Audio("https://i.ylilauta.org/88/b0/88b0b807fbb49395.mp4"),
         },
+        {
+            btnText: "kirottua",
+            msg: "kirottua",
+            sound: new Audio("https://i.ylilauta.org/b2/e2/b2e24b53a3221565.mp4"),
+        },
     ]
 
     const soundMsgs = [];
