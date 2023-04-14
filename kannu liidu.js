@@ -895,6 +895,11 @@
             msg: "kirottua",
             sound: new Audio("https://i.ylilauta.org/b2/e2/b2e24b53a3221565.mp4"),
         },
+        {
+            btnText: "hemmettiä",
+            msg: "hemmeTTIä oikeesti",
+            sound: new Audio("https://i.ylilauta.org/0e/a9/0ea948aa96a20348.m4a"),
+        },
     ]
 
     const soundMsgs = [];
