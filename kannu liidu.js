@@ -900,6 +900,16 @@
             msg: "hemmeTTIä oikeesti",
             sound: new Audio("https://i.ylilauta.org/0e/a9/0ea948aa96a20348.m4a"),
         },
+        {
+            btnText: "sinne meni",
+            msg: "ahh sinne meni",
+            sound: new Audio("https://i.ylilauta.org/10/b8/10b87e938a9d0bee.m4a"),
+        },
+        {
+            btnText: "pysähdy pent",
+            msg: "pysähdy penteLE",
+            sound: new Audio("https://i.ylilauta.org/06/99/06994b75d51f5f7c.m4a"),
+        },
     ]
 
     const soundMsgs = [];
