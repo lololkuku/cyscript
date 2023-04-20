@@ -910,6 +910,11 @@
             msg: "pysähdy penteLE",
             sound: new Audio("https://i.ylilauta.org/06/99/06994b75d51f5f7c.m4a"),
         },
+        {
+            btnText: "maahanmuuttajat",
+            msg: "kaikki maahanmuuttajat on väkivaltasia rikollisia",
+            sound: new Audio("https://i.ylilauta.org/0a/5f/0a5f4eb2a48dedf8.m4a"),
+        },
     ]
 
     const soundMsgs = [];
