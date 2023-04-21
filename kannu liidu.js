@@ -915,6 +915,11 @@
             msg: "kaikki maahanmuuttajat on väkivaltasia rikollisia",
             sound: new Audio("https://i.ylilauta.org/0a/5f/0a5f4eb2a48dedf8.m4a"),
         },
+        {
+            btnText: "oot oikeessa",
+            msg: "sä oot harvinaisen oikeessa",
+            sound: new Audio("https://i.ylilauta.org/c5/fa/c5fae1f7e4e76904.mp4"),
+        },
     ]
 
     const soundMsgs = [];
