@@ -925,6 +925,11 @@
             msg: "äm niinkun molopää",
             sound: new Audio("https://i.ylilauta.org/50/4b/504b916c1508f984.m4a"),
         },
+        {
+            btnText: "piipin",
+            msg: "piipin piipin",
+            sound: new Audio("https://i.ylilauta.org/18/54/185445d3ac9a2901.m4a"),
+        },
     ]
 
     const soundMsgs = [];
