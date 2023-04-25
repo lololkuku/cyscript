@@ -920,6 +920,11 @@
             msg: "sä oot harvinaisen oikeessa",
             sound: new Audio("https://i.ylilauta.org/c5/fa/c5fae1f7e4e76904.mp4"),
         },
+        {
+            btnText: "m molopää",
+            msg: "äm niinkun molopää",
+            sound: new Audio("https://i.ylilauta.org/50/4b/504b916c1508f984.m4a"),
+        },
     ]
 
     const soundMsgs = [];
