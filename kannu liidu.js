@@ -930,6 +930,11 @@
             msg: "piipin piipin",
             sound: new Audio("https://i.ylilauta.org/18/54/185445d3ac9a2901.m4a"),
         },
+        {
+            btnText: "höpön löpö",
+            msg: "ja höpön löpön löppö",
+            sound: new Audio("https://i.ylilauta.org/2c/1e/2c1e3c77bce1bfa3.m4a"),
+        },
     ]
 
     const soundMsgs = [];
