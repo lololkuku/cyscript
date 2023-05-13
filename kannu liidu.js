@@ -935,6 +935,11 @@
             msg: "ja höpön löpön löppö",
             sound: new Audio("https://i.ylilauta.org/2c/1e/2c1e3c77bce1bfa3.m4a"),
         },
+        {
+            btnText: "mitä helvettiä",
+            msg: "mitä helveTTIä",
+            sound: new Audio("https://i.ylilauta.org/e5/42/e54223fffa4ee4d8.m4a"),
+        },
     ]
 
     const soundMsgs = [];
