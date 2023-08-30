@@ -945,6 +945,11 @@
             msg: "n*ekeri melkoisella varmuudella",
             sound: new Audio("https://i.ylilauta.org/ec/96/ec961e364fcc758a.mp4"),
         },
+        {
+            btnText: "lohkare",
+            msg: "kohta lentää lohkare",
+            sound: new Audio("https://i.ylilauta.org/99/5c/995ced935f253065.mp4"),
+        },
     ]
 
     const soundMsgs = [];
