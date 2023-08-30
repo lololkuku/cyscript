@@ -940,6 +940,11 @@
             msg: "mitä helveTTIä",
             sound: new Audio("https://i.ylilauta.org/e5/42/e54223fffa4ee4d8.m4a"),
         },
+        {
+            btnText: "varmuudella",
+            msg: "n*ekeri melkoisella varmuudella",
+            sound: new Audio("https://i.ylilauta.org/ec/96/ec961e364fcc758a.mp4"),
+        },
     ]
 
     const soundMsgs = [];
