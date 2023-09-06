@@ -950,6 +950,11 @@
             msg: "kohta lentää lohkare",
             sound: new Audio("https://i.ylilauta.org/99/5c/995ced935f253065.mp4"),
         },
+        {
+            btnText: "tästä se lähtee",
+            msg: "joo joo, tästä se lähtee",
+            sound: new Audio("https://i.ylilauta.org/79/7c/797c22009f8de567.mp4"),
+        },
     ]
 
     const soundMsgs = [];
