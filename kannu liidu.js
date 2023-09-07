@@ -960,6 +960,11 @@
             msg: "sä kuolet",
             sound: new Audio("https://i.ylilauta.org/89/14/89142e6f8d57c185.mp4"),
         },
+        {
+            btnText: "kebabbia nakkipalkalla",
+            msg: ":hitlerismo  ",
+            sound: new Audio("https://i.ylilauta.org/7a/cf/7acfd75a3de12ca9.mp4"),
+        },
     ]
 
     const soundMsgs = [];
