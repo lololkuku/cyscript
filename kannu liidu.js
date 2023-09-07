@@ -955,6 +955,11 @@
             msg: "joo joo, tästä se lähtee",
             sound: new Audio("https://i.ylilauta.org/79/7c/797c22009f8de567.mp4"),
         },
+        {
+            btnText: "sä kuolet",
+            msg: "sä kuolet",
+            sound: new Audio("https://i.ylilauta.org/89/14/89142e6f8d57c185.mp4"),
+        },
     ]
 
     const soundMsgs = [];
