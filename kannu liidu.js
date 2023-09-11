@@ -783,7 +783,7 @@
         {
             btnText: "mitä uhoot",
             msg: "mitä sä oikein uhoot poika",
-            sound: new Audio("https://i.ylilauta.org/c4/33/c433094b6aacdd5b.mp4"),
+            sound: new Audio("https://i.ylilauta.org/e4/50/e450466f61fe2e67.mp4"),
         },
         {
             btnText: "homoja",
