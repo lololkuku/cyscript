@@ -965,6 +965,11 @@
             msg: ":hitlerismo  ",
             sound: new Audio("https://i.ylilauta.org/7a/cf/7acfd75a3de12ca9.mp4"),
         },
+        {
+            btnText: "nettikiusaaja",
+            msg: "sä oot netti kiusaaja",
+            sound: new Audio("https://i.ylilauta.org/d5/13/d513f526fe94dabc.mp4"),
+        },
     ]
 
     const soundMsgs = [];
