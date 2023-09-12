@@ -1211,7 +1211,7 @@
 
             if(username == CLIENT.name && msgText == "!napit") {
                 const btns = document.querySelectorAll(".aaninappi").length;
-                socket.emit("chatMsg", {msg: "nappeja: " + btns + " kpl :ismo"})
+                socket.emit("chatMsg", {msg: "nappeja: " + btns + " kpl :ismokolme"})
             }
  
             if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
