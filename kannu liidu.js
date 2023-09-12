@@ -1208,6 +1208,11 @@
                     socket.emit("chatMsg", {msg: "`" + text + "`"})
                 })
             }
+
+            if(username == CLIENT.name && msgText == "!napit") {
+                const btns = document.querySelectorAll(".aaninappi").length;
+                socket.emit("chatMsg", {msg: "nappeja: " + btns + " kpl :ismo"})
+            }
  
             if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
                 const msgParentClassname = msg.parentElement.className;
