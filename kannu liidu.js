@@ -970,6 +970,11 @@
             msg: "sä oot netti kiusaaja",
             sound: new Audio("https://i.ylilauta.org/d5/13/d513f526fe94dabc.mp4"),
         },
+        {
+            btnText: "jallu",
+            msg: "kyllä mulle jallu kelpaa",
+            sound: new Audio("https://i.ylilauta.org/af/3f/af3f9b2ecb819743.mp4"),
+        },
     ]
 
     const soundMsgs = [];
