@@ -975,6 +975,11 @@
             msg: "kyllä mulle jallu kelpaa",
             sound: new Audio("https://i.ylilauta.org/af/3f/af3f9b2ecb819743.mp4"),
         },
+        {
+            btnText: "emmä tajunnut",
+            msg: "emmä tajunnu että sä oot vajonnu noin alas",
+            sound: new Audio("https://i.ylilauta.org/85/3c/853cc5e703415590.mp4"),
+        },
     ]
 
     const soundMsgs = [];
