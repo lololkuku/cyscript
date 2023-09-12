@@ -980,6 +980,11 @@
             msg: "emmä tajunnu että sä oot vajonnu noin alas",
             sound: new Audio("https://i.ylilauta.org/85/3c/853cc5e703415590.mp4"),
         },
+        {
+            btnText: "naittekote",
+            msg: "naitteko te",
+            sound: new Audio("https://i.ylilauta.org/18/8b/188bef05adf7ba33.mp4"),
+        },
     ]
 
     const soundMsgs = [];
