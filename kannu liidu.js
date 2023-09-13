@@ -985,6 +985,11 @@
             msg: "naitteko te",
             sound: new Audio("https://i.ylilauta.org/18/8b/188bef05adf7ba33.mp4"),
         },
+        {
+            btnText: "WOO O",
+            msg: "WO O O WOWO WO O O WOO",
+            sound: new Audio("https://i.ylilauta.org/91/bb/91bb6b306dd97f1e.m4a"),
+        }
     ]
 
     const soundMsgs = [];
