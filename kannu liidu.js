@@ -1009,6 +1009,11 @@
             btnText: "en tiedä",
             msg: "en tiedä, täytyy mennä",
             sound: new Audio("https://i.ylilauta.org/75/25/7525f024e5bdf7ce.m4a"),
+        },
+        {
+            btnText: "TURPA KIINNI",
+            msg: "TURPA KIINNI",
+            sound: new Audio("https://i.ylilauta.org/af/dc/afdc498ea0ccfacb.m4a"),
         }
     ]
 
