@@ -1014,6 +1014,11 @@
             btnText: "TURPA KIINNI",
             msg: "TURPA KIINNI",
             sound: new Audio("https://i.ylilauta.org/af/dc/afdc498ea0ccfacb.m4a"),
+        },
+        {
+            btnText: "ismomitä helvettiä",
+            msg: "MITÄ HELVETTIÄ",
+            sound: new Audio("https://i.ylilauta.org/cc/8b/cc8b19d82f367deb.mp4"),
         }
     ]
 
