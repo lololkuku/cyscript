@@ -1024,6 +1024,11 @@
             btnText: "sopii yrittää",
             msg: "sopii yrittää",
             sound: new Audio("https://i.ylilauta.org/d0/f7/d0f720f9def1082c.mp4"),
+        },
+        {
+            btnText: "no heii väliä",
+            msg: "no heiii mitä väliä",
+            sound: new Audio("https://i.ylilauta.org/a1/d6/a1d6797fc2783881.mp4"),
         }
     ]
 
