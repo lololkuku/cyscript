@@ -994,6 +994,21 @@
             btnText: "ismo dirlandaa",
             msg: ":ismodance  ",
             sound: new Audio("https://i.ylilauta.org/56/51/56517cd6527df3a6.mp4"),
+        },
+        {
+            btnText: "en ymmärrä",
+            msg: "en ymmärrä ",
+            sound: new Audio("https://i.ylilauta.org/19/77/19770642b212e295.mp4"),
+        },
+        {
+            btnText: "ootko aatellu töihin",
+            msg: "ootko ajatellu työpaikkaa hankkia",
+            sound: new Audio("https://i.ylilauta.org/5b/f2/5bf28446582f4504.mp4"),
+        },
+        {
+            btnText: "en tiedä",
+            msg: "en tiedä, täytyy mennä",
+            sound: new Audio("https://i.ylilauta.org/75/25/7525f024e5bdf7ce.m4a"),
         }
     ]
 
