@@ -1019,6 +1019,11 @@
             btnText: "ismomitä helvettiä",
             msg: "MITÄ HELVETTIÄ",
             sound: new Audio("https://i.ylilauta.org/cc/8b/cc8b19d82f367deb.mp4"),
+        },
+        {
+            btnText: "sopii yrittää",
+            msg: "sopii yrittää",
+            sound: new Audio("https://i.ylilauta.org/d0/f7/d0f720f9def1082c.mp4"),
         }
     ]
 
