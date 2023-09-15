@@ -1029,6 +1029,11 @@
             btnText: "no heii väliä",
             msg: "no heiii mitä väliä",
             sound: new Audio("https://i.ylilauta.org/a1/d6/a1d6797fc2783881.mp4"),
+        },
+        {
+            btnText: "ämmien puhetta",
+            msg: "ämmien puhetta",
+            sound: new Audio("https://i.ylilauta.org/6c/95/6c95cb98a5c6dab2.mp4"),
         }
     ]
 
