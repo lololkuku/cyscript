@@ -1049,6 +1049,11 @@
             btnText: "ansaitset parasta",
             msg: "tää on just sitä mitä sä ansaitset - kaikkein parasta",
             sound: new Audio("https://i.ylilauta.org/36/72/367224fc6df7afce.mp4"),
+        },
+        {
+            btnText: "akiHILJAA",
+            msg: "HILJAA   ",
+            sound: new Audio("https://i.ylilauta.org/48/c7/48c7cebf0d2f1be1.m4a"),
         }
     ]
 
