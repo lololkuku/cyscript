@@ -1043,7 +1043,7 @@
         {
             btnText: "meidän malja",
             msg: "meidän malja",
-            sound: new Audio("https://i.ylilauta.org/e5/80/e58073a658fb3ce3.m4a.mp4"),
+            sound: new Audio("https://i.ylilauta.org/e5/80/e58073a658fb3ce3.m4a"),
         }
     ]
 
