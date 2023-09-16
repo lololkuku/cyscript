@@ -1042,7 +1042,7 @@
         },
         {
             btnText: "meidän malja",
-            msg: "meidän malja",
+            msg: ":seppomeidänmalja  ",
             sound: new Audio("https://i.ylilauta.org/e5/80/e58073a658fb3ce3.m4a"),
         },
         {
