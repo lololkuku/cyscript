@@ -1034,6 +1034,16 @@
             btnText: "ämmien puhetta",
             msg: "ämmien puhetta",
             sound: new Audio("https://i.ylilauta.org/6c/95/6c95cb98a5c6dab2.mp4"),
+        },
+        {
+            btnText: "seppo suu kii",
+            msg: "seppo suus kiinni nyt",
+            sound: new Audio("https://i.ylilauta.org/d5/1f/d51fd00dcbbbf2da.m4a"),
+        },
+        {
+            btnText: "meidän malja",
+            msg: "meidän malja",
+            sound: new Audio("https://i.ylilauta.org/e5/80/e58073a658fb3ce3.m4a.mp4"),
         }
     ]
 
