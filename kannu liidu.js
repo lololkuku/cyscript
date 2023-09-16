@@ -1044,6 +1044,11 @@
             btnText: "meidän malja",
             msg: "meidän malja",
             sound: new Audio("https://i.ylilauta.org/e5/80/e58073a658fb3ce3.m4a"),
+        },
+        {
+            btnText: "ansaitset parasta",
+            msg: "tää on just sitä mitä sä ansaitset - kaikkein parasta",
+            sound: new Audio("https://i.ylilauta.org/36/72/367224fc6df7afce.mp4"),
         }
     ]
 
