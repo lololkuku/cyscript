@@ -1054,7 +1054,13 @@
             btnText: "akiHILJAA",
             msg: "HILJAA   ",
             sound: new Audio("https://i.ylilauta.org/48/c7/48c7cebf0d2f1be1.m4a"),
+        },
+        {
+            btnText: "eikai mun tilanne",
+            msg: "ei kai mun tilanne nyt niin vakava oo",
+            sound: new Audio("https://i.ylilauta.org/40/f0/40f03e90a5b69ae9.mp4"),
         }
+
     ]
 
     const soundMsgs = [];
