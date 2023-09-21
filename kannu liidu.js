@@ -1059,6 +1059,11 @@
             btnText: "eikai mun tilanne",
             msg: "ei kai mun tilanne nyt niin vakava oo",
             sound: new Audio("https://i.ylilauta.org/40/f0/40f03e90a5b69ae9.mp4"),
+        },
+        {
+            btnText: "lempikeksejä",
+            msg: "helveTIn sen lempikeksejä",
+            sound: new Audio("https://i.ylilauta.org/e0/a8/e0a8df875d9c172a.m4a"),
         }
 
     ]
