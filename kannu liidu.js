@@ -1064,8 +1064,12 @@
             btnText: "lempikeksejä",
             msg: "helveTIn sen lempikeksejä",
             sound: new Audio("https://i.ylilauta.org/e0/a8/e0a8df875d9c172a.m4a"),
+        },
+        {
+            btnText: "rotta",
+            msg: "roTTA",
+            sound: new Audio("https://i.ylilauta.org/91/f9/91f9c9e9a405a391.mp4"),
         }
-
     ]
 
     const soundMsgs = [];
