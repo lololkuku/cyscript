@@ -1069,6 +1069,11 @@
             btnText: "rotta",
             msg: "roTTA",
             sound: new Audio("https://i.ylilauta.org/91/f9/91f9c9e9a405a391.mp4"),
+        },
+        {
+            btnText: "putatkaa jo",
+            msg: "voi herran pieksut putatkaa nyt jo",
+            sound: new Audio("https://i.ylilauta.org/21/fc/21fcc52b613ae8b9.m4a"),
         }
     ]
 
