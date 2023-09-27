@@ -988,7 +988,7 @@
         {
             btnText: "WOO O",
             msg: "WO O O WOWO WO O O WOO",
-            sound: new Audio("https://i.ylilauta.org/91/bb/91bb6b306dd97f1e.m4a"),
+            sound: new Audio("https://i.ylilauta.org/e5/63/e563b30dc218a0ed.m4a"),
         },
         {
             btnText: "ismo dirlandaa",
