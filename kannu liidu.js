@@ -538,7 +538,7 @@
         {
             btnText: "oletettavasti huumeissa",
             msg: "oletettavasti huumeissa",
-            sound: new Audio("https://i.ylilauta.org/96/69/9669e17b8ddcdea3.mp4"),
+            sound: new Audio("https://i.ylilauta.org/56/07/5607e8aa0b183abe.mp4"),
         },
         {
             btnText: "ULOS",
