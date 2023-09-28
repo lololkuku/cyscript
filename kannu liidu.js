@@ -1076,6 +1076,11 @@
             sound: new Audio("https://i.ylilauta.org/21/fc/21fcc52b613ae8b9.m4a"),
         },
         {
+            btnText: "OO",
+            msg: "OO ",
+            sound: new Audio("https://i.ylilauta.org/d9/88/d98858da1d28cf4e.m4a"),
+        },
+        {
             btnText: "pallirave:D",
             msg: ":rave  ",
             sound: new Audio("https://i.ylilauta.org/02/2f/022f446bf1ed39e0.m4a"),
