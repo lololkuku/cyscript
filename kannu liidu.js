@@ -538,7 +538,7 @@
         {
             btnText: "oletettavasti huumeissa",
             msg: "oletettavasti huumeissa",
-            sound: new Audio("https://i.ylilauta.org/56/07/5607e8aa0b183abe.mp4"),
+            sound: new Audio("https://i.ylilauta.org/96/69/9669e17b8ddcdea3.mp4"),
         },
         {
             btnText: "ULOS",
@@ -1076,9 +1076,9 @@
             sound: new Audio("https://i.ylilauta.org/21/fc/21fcc52b613ae8b9.m4a"),
         },
         {
-            btnText: "OO",
-            msg: "OO ",
-            sound: new Audio("https://i.ylilauta.org/d9/88/d98858da1d28cf4e.m4a"),
+            btnText: "pallirave:D",
+            msg: ":rave  ",
+            sound: new Audio("https://i.ylilauta.org/02/2f/022f446bf1ed39e0.m4a"),
         }
     ]
 
@@ -1112,7 +1112,7 @@
 
             const time = localStorage.getItem(text + "_timelock");
 
-            if(!time || new Date().getTime() - +time >= 420000) {
+            if(!time || (text != "pallirave" && new Date().getTime() - +time >= 420000) || (new Date().getTime() - +time >= 86400000)) {
 
                 if(spamlock)
                     return;
@@ -1263,13 +1263,13 @@
                 const time = localStorage.getItem(text + "_timelock2");
                 const myTime = localStorage.getItem(text + "_timelock");
 
-                if(username == CLIENT.name || (!disableBtns && (!time || new Date().getTime() - +time > 400000))) {
+                if(username == CLIENT.name || (!disableBtns && (!time || (text != "pallirave" && new Date().getTime() - +time > 400000) || (new Date().getTime() - +time > 86040000)))) {
                     
                     if(username != CLIENT.name) {
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
                         sound.play();
                     }
-                    else if(!disableBtns && (!myTime || new Date().getTime() - +myTime > 420000)) {
+                    else if(!disableBtns && (!myTime || (text != "pallirave" && new Date().getTime() - +myTime > 420000) || (new Date().getTime() - +myTime > 86400000))) {
                         localStorage.setItem(text + "_timelock", new Date().getTime());
                         sound.play();
 
