@@ -1263,7 +1263,7 @@
                 const time = localStorage.getItem(text + "_timelock2");
                 const myTime = localStorage.getItem(text + "_timelock");
 
-                if(username == CLIENT.name || (!disableBtns && (!time || (text != "pallirave" && new Date().getTime() - +time > 400000) || (new Date().getTime() - +time > 86040000))) {
+                if(username == CLIENT.name || (!disableBtns && (!time || (text != "pallirave" && new Date().getTime() - +time > 400000) || (new Date().getTime() - +time > 86040000)))) {
                     
                     if(username != CLIENT.name) {
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
