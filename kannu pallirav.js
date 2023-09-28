@@ -1074,6 +1074,11 @@
             btnText: "putatkaa jo",
             msg: "voi herran pieksut putatkaa nyt jo",
             sound: new Audio("https://i.ylilauta.org/21/fc/21fcc52b613ae8b9.m4a"),
+        },
+        {
+            btnText: "pallirave:D",
+            msg: ":rave  ",
+            sound: new Audio("https://i.ylilauta.org/02/2f/022f446bf1ed39e0.m4a"),
         }
     ]
 
