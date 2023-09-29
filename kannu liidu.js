@@ -1084,6 +1084,11 @@
             btnText: "pallirave:D",
             msg: ":rave  ",
             sound: new Audio("https://i.ylilauta.org/02/2f/022f446bf1ed39e0.m4a"),
+        },
+        {
+            btnText: "maaali",
+            msg: "jeeee maaali",
+            sound: new Audio("https://i.ylilauta.org/89/bc/89bca8236a351178.m4a"),
         }
     ]
 
