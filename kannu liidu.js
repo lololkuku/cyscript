@@ -1094,7 +1094,7 @@
             btnText: "jallupaukku",
             msg: "jallupaukkukii",
             sound: new Audio("https://i.ylilauta.org/85/81/858184812f248d48.m4a"),
-        }
+        },
         {
             btnText: "laura laura",
             msg: "laura laura laura",
