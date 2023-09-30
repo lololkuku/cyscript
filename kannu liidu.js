@@ -1095,6 +1095,11 @@
             msg: "jallupaukkukii",
             sound: new Audio("https://i.ylilauta.org/85/81/858184812f248d48.m4a"),
         }
+        {
+            btnText: "laura laura",
+            msg: "laura laura laura",
+            sound: new Audio("https://i.ylilauta.org/a9/bb/a9bb309c74734265.m4a"),
+        }
     ]
 
     const soundMsgs = [];
