@@ -1089,6 +1089,11 @@
             btnText: "maaali",
             msg: "jeeee maaali",
             sound: new Audio("https://i.ylilauta.org/89/bc/89bca8236a351178.m4a"),
+        },
+        {
+            btnText: "jallupaukku",
+            msg: "jallupaukkukii",
+            sound: new Audio("https://i.ylilauta.org/85/81/858184812f248d48.m4a"),
         }
     ]
 
