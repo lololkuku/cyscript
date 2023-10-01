@@ -1099,6 +1099,11 @@
             btnText: "laura laura",
             msg: "laura laura laura",
             sound: new Audio("https://i.ylilauta.org/a9/bb/a9bb309c74734265.m4a"),
+        },
+        {
+            btnText: "mä tein sen",
+            msg: "MÄ TEIN SEN",
+            sound: new Audio("https://i.ylilauta.org/4a/35/4a35b9a8aa1c92e1.m4a"),
         }
     ]
 
