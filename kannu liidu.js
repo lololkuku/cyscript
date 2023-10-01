@@ -658,7 +658,7 @@
         {
             btnText: "sinä turpa kiinni",
             msg: "sinä turpa kiinni nYT",
-            sound: new Audio("https://i.ylilauta.org/99/f4/99f4644a2a8d8f6f.m4a"),
+            sound: new Audio("https://i.ylilauta.org/37/c2/37c2407dc9de2073.m4a"),
         }, 
         {
             btnText: "nyt turpa kiinni",
