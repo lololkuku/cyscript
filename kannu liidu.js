@@ -1138,7 +1138,7 @@
             const time = localStorage.getItem(text + "_timelock");
 
             // if(!time || (text != "pallirave:D" && new Date().getTime() - +time >= 420000) || (new Date().getTime() - +time >= 3600000)) {
-            if(!time || new Date().getTime() - +time >= 3600000) {
+            if(!time || new Date().getTime() - +time >= 420000) {
 
                 if(spamlock)
                     return;
@@ -1289,13 +1289,13 @@
                 const time = localStorage.getItem(text + "_timelock2");
                 const myTime = localStorage.getItem(text + "_timelock");
 
-                if(username == CLIENT.name || (!disableBtns && (!time || (new Date().getTime() - +time > 3600000)))) {
+                if(username == CLIENT.name || (!disableBtns && (!time || (new Date().getTime() - +time > 400000)))) {
                     
                     if(username != CLIENT.name) {
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
                         sound.play();
                     }
-                    else if(!disableBtns && (!myTime || (text != "pallirave:D" && new Date().getTime() - +myTime > 420000) || (new Date().getTime() - +myTime > 86400000))) {
+                    else if(!disableBtns && (!myTime || (new Date().getTime() - +myTime > 420000))) {
                         localStorage.setItem(text + "_timelock", new Date().getTime());
                         sound.play();
 
