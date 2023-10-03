@@ -1109,6 +1109,11 @@
             btnText: "herran pieksut",
             msg: ":herranpieksut  ",
             sound: new Audio("https://i.ylilauta.org/a5/ff/a5ffba5ba04e11da.mp4"),
+        },
+        {
+            btnText: "turpaki giolo",
+            msg: "pidä sinä nyt gigolo se turpas kiinni",
+            sound: new Audio("https://i.ylilauta.org/a5/5a/a55a2bb47d54ea7e.m4a"),
         }
     ]
 
