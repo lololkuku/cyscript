@@ -1104,6 +1104,11 @@
             btnText: "mä tein sen",
             msg: "MÄ TEIN SEN",
             sound: new Audio("https://i.ylilauta.org/4a/35/4a35b9a8aa1c92e1.m4a"),
+        },
+        {
+            btnText: "herran pieksut",
+            msg: ":herranpieksut  ",
+            sound: new Audio("https://i.ylilauta.org/a5/ff/a5ffba5ba04e11da.mp4"),
         }
     ]
 
