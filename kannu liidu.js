@@ -1228,7 +1228,7 @@
 
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
-        socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " + random. "})
+        socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
 
     kasBtn.className = "btn btn-sm btn-default";
@@ -1280,8 +1280,32 @@
  
             if(!(mutationsList[0].addedNodes && mutationsList[0].addedNodes[0] && mutationsList[0].addedNodes[0].className.indexOf("chat-msg") > -1))
                 return;
-
+            console.log("msgennen: " + msgs[msgs.length - 1].className)
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
+            if(msgs[msgs.length - 1].classList.contains("small-emos")) {
+                msg = msgs[msgs.length - 1];
+                const emotes = msg.getElementsByClassName("channel-emote");
+
+                msg.innerHTML += " <span class='randomEmo'>RANDOM</span>";
+
+                for(let i = 0; i < emotes.length; i++) {
+                    const emote = emotes[i];
+
+                    emote.onclick = () => {
+                        console.log("asd")
+                        if(input.value.length == 0)
+                            input.value = emote.getAttribute("title") + " ";
+                        else if(input.value[input.value.length - 1] == " ")
+                            input.value += emote.getAttribute("title") + " ";
+                        else
+                            input.value += " " + emote.getAttribute("title") + " ";
+                        input.focus();
+                    }
+                }
+
+                return;
+            }
+            console.log("msg: " + msg)
             let msgText = msg.textContent;
             let msgTextSound = "";
 
@@ -1400,6 +1424,7 @@
                 const emote = emotes[i];
 
                 emote.onclick = () => {
+                    console.log("asd")
                     if(input.value.length == 0)
                         input.value = emote.getAttribute("title") + " ";
                     else if(input.value[input.value.length - 1] == " ")
