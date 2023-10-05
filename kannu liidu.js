@@ -16,6 +16,7 @@
     const emoBtn = document.createElement("button");
     const soundNotifBtn = document.createElement("button");
     const disableBtn = document.createElement("button");
+    const randomEmosBtn = document.createElement("button");
 
     const tadaa = new Audio("https://i.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
@@ -27,7 +28,7 @@
     controls.appendChild(kasBtn);
     controls.appendChild(soundNotifBtn);
     controls.appendChild(emoBtn);
-
+    controls.appendChild(randomEmosBtn);
 
     const soundBtns = [
         {
@@ -1214,6 +1215,20 @@
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
+    });
+
+    randomEmosBtn.className = "btn btn-sm btn-default";
+    randomEmosBtn.style.float = "right";
+    randomEmosBtn.textContent = "Random emo3x";
+    randomEmosBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
+
+        spamlock = true;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
+        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
     kasBtn.className = "btn btn-sm btn-default";
