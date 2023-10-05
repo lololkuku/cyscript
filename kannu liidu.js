@@ -1387,7 +1387,8 @@
                 msgHtml = msgHtml.join(">");
                 msg.innerHTML = msgHtml;
             }
-            else if(msgText.slice(msgText.length - 9, msgText.length) == " random. " && soundIndex > -1) {
+                //(msgText.slice(msgText.length - 9, msgText.length) == " random. " && soundIndex > -1)
+            else if(msgText.slice(msgText.length - 9, msgText.length) == " random. ") {
                 let msgHtml = msg.innerHTML.slice(0,msgText.length-9);
                 msgHtml += " <span class='randomEmo'>RANDOM</span>";
                 msg.innerHTML = msgHtml;
