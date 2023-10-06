@@ -7,6 +7,7 @@
     rightpane.classList.add("marginfix");
 
     let spamlock = false;
+    let spamlock2 = false;
     let enabled = false;
     let tabActive = true;
     let disableBtns = false;
@@ -1221,13 +1222,11 @@
     randomEmosBtn.style.float = "right";
     randomEmosBtn.textContent = "Random emo3x";
     randomEmosBtn.addEventListener("click", () => {
-        if(spamlock)
+        if(spamlock2)
             return;
-
-        spamlock = true;
-
-        //temp 3000
-        setTimeout(() => {spamlock = false}, 3000)
+    
+        spamlock2 = true;
+        setTimeout(() => {spamlock2 = false}, 10000)
         socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
 
