@@ -1226,7 +1226,7 @@
             return;
     
         spamlock2 = true;
-        setTimeout(() => {spamlock2 = false}, 10000)
+        setTimeout(() => {spamlock2 = false}, 60000)
         socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
 
