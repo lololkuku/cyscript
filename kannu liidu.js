@@ -1116,6 +1116,11 @@
             btnText: "turpaki giolo",
             msg: "pidä sinä nyt gigolo se turpas kiinni",
             sound: new Audio("https://i.ylilauta.org/a5/5a/a55a2bb47d54ea7e.m4a"),
+        },
+        {
+            btnText: "oot oikeessa",
+            msg: "saatat olla oikeessa, hyvä pointti itse asiassa",
+            sound: new Audio("https://i.ylilauta.org/ee/d2/eed2124564abb152.m4a"),
         }
     ]
 
