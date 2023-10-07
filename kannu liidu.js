@@ -1126,6 +1126,11 @@
             btnText: "en halua",
             msg: "en halua ",
             sound: new Audio("https://i.ylilauta.org/f9/72/f972bbc3ffeb4c37.m4a"),
+        },
+        {
+            btnText: "svengaa hirvi",
+            msg: "svengaa ku HIRVI",
+            sound: new Audio("https://i.ylilauta.org/fa/25/fa2598310243163b.mp4"),
         }
     ]
 
