@@ -1121,6 +1121,11 @@
             btnText: "oot oikeessa",
             msg: "saatat olla oikeessa, hyvä pointti itse asiassa",
             sound: new Audio("https://i.ylilauta.org/ee/d2/eed2124564abb152.m4a"),
+        },
+        {
+            btnText: "en halua",
+            msg: "en halua ",
+            sound: new Audio("https://i.ylilauta.org/f9/72/f972bbc3ffeb4c37.m4a"),
         }
     ]
 
