@@ -1131,6 +1131,11 @@
             btnText: "svengaa hirvi",
             msg: "svengaa ku HIRVI",
             sound: new Audio("https://i.ylilauta.org/fa/25/fa2598310243163b.mp4"),
+        },
+        {
+            btnText: "kaapista pois",
+            msg: "tuu pois sieltä kaapista",
+            sound: new Audio("https://i.ylilauta.org/f7/1e/f71e91b042de8f5a.m4a"),
         }
     ]
 
