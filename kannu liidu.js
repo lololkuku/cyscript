@@ -1136,6 +1136,11 @@
             btnText: "kaapista pois",
             msg: "tuu pois sieltä kaapista",
             sound: new Audio("https://i.ylilauta.org/f7/1e/f71e91b042de8f5a.m4a"),
+        },
+        {
+            btnText: "ooh ahaha cucka",
+            msg: ":cuck  ",
+            sound: new Audio("https://i.ylilauta.org/bb/f7/bbf70790a0abccbb.m4a"),
         }
     ]
 
