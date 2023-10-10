@@ -1141,11 +1141,16 @@
             btnText: "ooh ahaha cucka",
             msg: ":cuck  ",
             sound: new Audio("https://i.ylilauta.org/bb/f7/bbf70790a0abccbb.m4a"),
-        },
+        },https://i.ylilauta.org/8b/3c/8b3c7fef4f94d89c.m4a
         {
             btnText: "helvetin helveTTI",
             msg: ":laitelanlaiva  ",
             sound: new Audio("https://i.ylilauta.org/6e/74/6e748cc8f6b0bc92.mp4"),
+        },
+        {
+            btnText: "pupheli",
+            msg: "semmonen kuumaverinen puppheli ",
+            sound: new Audio("https://i.ylilauta.org/8b/3c/8b3c7fef4f94d89c.m4a"),
         }
     ]
 
