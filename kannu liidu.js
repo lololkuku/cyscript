@@ -1139,7 +1139,7 @@
         },
         {
             btnText: "ooh ahaha cucka",
-            msg: ":cuck  ",
+            msg: ":jukka  ",
             sound: new Audio("https://i.ylilauta.org/bb/f7/bbf70790a0abccbb.m4a"),
         },
         {
