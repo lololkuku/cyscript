@@ -1124,7 +1124,7 @@
         },
         {
             btnText: "en halua",
-            msg: "en halua ",
+            msg: ":enhalua  ",
             sound: new Audio("https://i.ylilauta.org/f9/72/f972bbc3ffeb4c37.m4a"),
         },
         {
