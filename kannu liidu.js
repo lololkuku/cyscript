@@ -1151,6 +1151,11 @@
             btnText: "pupheli",
             msg: "semmonen kuumaverinen puppheli ",
             sound: new Audio("https://i.ylilauta.org/8b/3c/8b3c7fef4f94d89c.m4a"),
+        },
+        {
+            btnText: "nirppanokka",
+            msg: "kyllä sitä nyt ollaan niin nirppanokkaa niin nirppanokkaa että",
+            sound: new Audio("https://i.ylilauta.org/69/7e/697e9b61d787530d.m4a"),
         }
     ]
 
