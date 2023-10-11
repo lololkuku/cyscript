@@ -1156,6 +1156,11 @@
             btnText: "nirppanokka",
             msg: "kyllä sitä nyt ollaan niin nirppanokkaa niin nirppanokkaa että",
             sound: new Audio("https://i.ylilauta.org/69/7e/697e9b61d787530d.m4a"),
+        },
+        {
+            btnText: "nukkumaanmenoaika",
+            msg: "eikös nyt ala oleen tuommosen nassikan nukkumaanmenoaika",
+            sound: new Audio("https://i.ylilauta.org/c7/fa/c7fa07ea75605bce.mp4"),
         }
     ]
 
