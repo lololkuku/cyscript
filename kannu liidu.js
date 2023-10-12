@@ -1164,7 +1164,7 @@
         },
         {
             btnText: "typeryyksiä",
-            msg: "huhhhuh koko sivuhan kuhisee kaameita typeryyksiä",
+            msg: "huhhhuh koko sivuhan vilisee kaameita typeryyksiä",
             sound: new Audio("https://i.ylilauta.org/19/09/1909c233f9037cce.m4a"),
         }
     ]
