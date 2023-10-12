@@ -1161,6 +1161,11 @@
             btnText: "nukkumaanmenoaika",
             msg: "eikös nyt ala oleen tuommosen nassikan nukkumaanmenoaika",
             sound: new Audio("https://i.ylilauta.org/c7/fa/c7fa07ea75605bce.mp4"),
+        },
+        {
+            btnText: "typeryyksiä",
+            msg: "huhhhuh koko sivuhan kuhisee kaameita typeryyksiä",
+            sound: new Audio("https://i.ylilauta.org/19/09/1909c233f9037cce.m4a"),
         }
     ]
 
