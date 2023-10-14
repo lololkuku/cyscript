@@ -1166,6 +1166,11 @@
             btnText: "typeryyksiä",
             msg: "huhhhuh koko sivuhan vilisee kaameita typeryyksiä",
             sound: new Audio("https://f.ylilauta.org/19/09/1909c233f9037cce.m4a"),
+        },
+        {
+            btnText: "ryöstö hernesaar",
+            msg: "RYÖSTÖ HERNESAARESSA",
+            sound: new Audio("https://f.ylilauta.org/7b/9e/7b9e18574d12cb7f.m4a"),
         }
     ]
 
