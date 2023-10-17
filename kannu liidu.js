@@ -1171,6 +1171,11 @@
             btnText: "ryöstö hernesaar",
             msg: "RYÖSTÖ HERNESAARESSA",
             sound: new Audio("https://f.ylilauta.org/7b/9e/7b9e18574d12cb7f.m4a"),
+        },
+        {
+            btnText: "oliko muuta asiaa",
+            msg: "oliko muuta asiaa?",
+            sound: new Audio("https://f.ylilauta.org/b2/ea/b2eaa816301901cb.m4a"),
         }
     ]
 
