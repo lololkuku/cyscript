@@ -1176,6 +1176,11 @@
             btnText: "oliko muuta asiaa",
             msg: "oliko muuta asiaa?",
             sound: new Audio("https://f.ylilauta.org/b2/ea/b2eaa816301901cb.m4a"),
+        },
+        {
+            btnText: "pöytä vino",
+            msg: "onks tää pöytä jotenkin vino?",
+            sound: new Audio("https://f.ylilauta.org/39/29/39298a5d601bb87f.m4a"),
         }
     ]
 
