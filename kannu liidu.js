@@ -1181,6 +1181,11 @@
             btnText: "pöytä vino",
             msg: "onks tää pöytä jotenkin vino?",
             sound: new Audio("https://f.ylilauta.org/39/29/39298a5d601bb87f.m4a"),
+        },
+        {
+            btnText: "eläin",
+            msg: "jätkä on eläin",
+            sound: new Audio("https://f.ylilauta.org/78/08/78089915ddfec10a.m4a"),
         }
     ]
 
