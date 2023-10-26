@@ -1186,6 +1186,11 @@
             btnText: "eläin",
             msg: "jätkä on eläin",
             sound: new Audio("https://f.ylilauta.org/78/08/78089915ddfec10a.m4a"),
+        },
+        {
+            btnText: "juon olutta",
+            msg: "minä juon oluttahh",
+            sound: new Audio("https://f.ylilauta.org/35/00/3500fc49b13e04d1.m4a"),
         }
     ]
 
