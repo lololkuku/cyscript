@@ -1191,6 +1191,11 @@
             btnText: "juon olutta",
             msg: "minä juon oluttahh",
             sound: new Audio("https://f.ylilauta.org/35/00/3500fc49b13e04d1.m4a"),
+        },
+        {
+            btnText: "kusti kulkee",
+            msg: "kusti polkee ni posti kulkee poika",
+            sound: new Audio("https://f.ylilauta.org/d1/20/d120c2021dbaf6e7.m4a"),
         }
     ]
 
