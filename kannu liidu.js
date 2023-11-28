@@ -1196,6 +1196,11 @@
             btnText: "kusti kulkee",
             msg: "kusti polkee ni posti kulkee poika",
             sound: new Audio("https://f.ylilauta.org/d1/20/d120c2021dbaf6e7.m4a"),
+        },
+        {
+            btnText: "leikki loppuu",
+            msg: "kuule tää leikki loppuu nyT",
+            sound: new Audio("https://f.ylilauta.org/8b/6e/8b6eb751b7b585b0.mp4"),
         }
     ]
 
