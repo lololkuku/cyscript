@@ -585,7 +585,7 @@
         {
             btnText: "öitä seppo",
             msg: "lepää rauhassa seppo",
-            sound: new Audio("https://f.ylilauta.org/81/ee/81eef72a32d3838a.mp4"),
+            sound: new Audio("https://f.ylilauta.org/e3/4e/e34e15e2b00aa739.mp4"),
         },
         {
             btnText: "onks tää paskaa",
