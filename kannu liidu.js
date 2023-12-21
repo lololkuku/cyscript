@@ -1201,6 +1201,11 @@
             btnText: "leikki loppuu",
             msg: "kuule tää leikki loppuu nyT",
             sound: new Audio("https://f.ylilauta.org/8b/6e/8b6eb751b7b585b0.mp4"),
+        },
+        {
+            btnText: "AERGH",
+            msg: ":ismomunkki  ",
+            sound: new Audio("https://f.ylilauta.org/d6/5c/d65c89f05ef2fa18.m4a"),
         }
     ]
 
