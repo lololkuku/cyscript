@@ -1206,6 +1206,11 @@
             btnText: "AERGH",
             msg: ":ismomunkki  ",
             sound: new Audio("https://f.ylilauta.org/d6/5c/d65c89f05ef2fa18.m4a"),
+        },
+        {
+            btnText: "valehteleva lepakko",
+            msg: "EN MÄ EDEDES KOSKENU SUHUN SENKIN VALEHTELEVA LEPAKKO",
+            sound: new Audio("https://f.ylilauta.org/0d/71/0d714752b65fb9be.m4a"),
         }
     ]
 
