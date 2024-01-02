@@ -1211,6 +1211,11 @@
             btnText: "valehteleva lepakko",
             msg: "EN MÄ EDEDES KOSKENU SUHUN SENKIN VALEHTELEVA LEPAKKO",
             sound: new Audio("https://f.ylilauta.org/0d/71/0d714752b65fb9be.m4a"),
+        },
+        {
+            btnText: "luuseri",
+            msg: "luuserii",
+            sound: new Audio("https://f.ylilauta.org/2a/38/2a388a4ba7c5cc55.m4a"),
         }
     ]
 
