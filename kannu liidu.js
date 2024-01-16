@@ -1216,6 +1216,11 @@
             btnText: "luuseri",
             msg: "luuserii",
             sound: new Audio("https://f.ylilauta.org/2a/38/2a388a4ba7c5cc55.m4a"),
+        },
+        {
+            btnText: "uudestaan",
+            msg: "toi on pakko kattoo uudestaan",
+            sound: new Audio("https://f.ylilauta.org/f0/9f/f09fb5ee3d4a2c0b.m4a"),
         }
     ]
 
