@@ -1221,6 +1221,11 @@
             btnText: "uudestaan",
             msg: "toi on pakko kattoo uudestaan",
             sound: new Audio("https://f.ylilauta.org/f0/9f/f09fb5ee3d4a2c0b.m4a"),
+        },
+        {
+            btnText: "hieno matsi",
+            msg: "no onneks olkoon hieno matsi",
+            sound: new Audio("https://f.ylilauta.org/d1/a0/d1a0d2949c41c1c0.m4a"),
         }
     ]
 
