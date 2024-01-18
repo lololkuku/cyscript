@@ -1226,6 +1226,11 @@
             btnText: "hieno matsi",
             msg: "no onneks olkoon hieno matsi",
             sound: new Audio("https://f.ylilauta.org/d1/a0/d1a0d2949c41c1c0.m4a"),
+        },
+        {
+            btnText: "turpa tukkoon",
+            msg: "tuwpa tukkoon",
+            sound: new Audio("https://f.ylilauta.org/68/6c/686cc939a8a10111.m4a"),
         }
     ]
 
