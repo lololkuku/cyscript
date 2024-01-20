@@ -1231,6 +1231,16 @@
             btnText: "turpa tukkoon",
             msg: "tuwpa tukkoon",
             sound: new Audio("https://f.ylilauta.org/68/6c/686cc939a8a10111.m4a"),
+        },
+        {
+            btnText: "ole hyvä ja poistu",
+            msg: "ole hyvä ja poistu",
+            sound: new Audio("https://f.ylilauta.org/c4/4d/c44d04b11e3ad73b.m4a"),
+        },
+        {
+            btnText: "kiitos teillekin",
+            msg: "kiitos teillekin ja anteeks",
+            sound: new Audio("https://f.ylilauta.org/d6/57/d657637de618964d.m4a"),
         }
     ]
 
