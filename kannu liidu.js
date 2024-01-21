@@ -1241,6 +1241,11 @@
             btnText: "kiitos teillekin",
             msg: "kiitos teillekin ja anteeks",
             sound: new Audio("https://f.ylilauta.org/d6/57/d657637de618964d.m4a"),
+        },
+        {
+            btnText: "haluun olla onnellinen",
+            msg: "mä haluun olla onnellinen perkeLE",
+            sound: new Audio("https://f.ylilauta.org/96/59/96591cc89d975c67.m4a"),
         }
     ]
 
