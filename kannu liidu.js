@@ -1246,6 +1246,11 @@
             btnText: "haluun olla onnellinen",
             msg: "mä haluun olla onnellinen perkeLE",
             sound: new Audio("https://f.ylilauta.org/96/59/96591cc89d975c67.m4a"),
+        },
+        {
+            btnText: "etsä oo kaljoissas?",
+            msg: "et suinkaan sä oo vähän kaljoissas?",
+            sound: new Audio("https://f.ylilauta.org/29/dc/29dc32901df640f0.mp4"),
         }
     ]
 
