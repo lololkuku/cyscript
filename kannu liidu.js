@@ -1251,6 +1251,11 @@
             btnText: "etsä oo kaljoissas?",
             msg: "et suinkaan sä oo vähän kaljoissas?",
             sound: new Audio("https://f.ylilauta.org/29/dc/29dc32901df640f0.mp4"),
+        },
+        {
+            btnText: "turpa kiinni nyt",
+            msg: "turpa kiinni nyt",
+            sound: new Audio("https://f.ylilauta.org/5a/6a/5a6ae787549786de.m4a"),
         }
     ]
 
