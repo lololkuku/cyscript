@@ -1256,6 +1256,11 @@
             btnText: "turpa kiinni nyt",
             msg: "turpa kiinni nyt",
             sound: new Audio("https://i.ylilauta.org/5a/6a/5a6ae787549786de.m4a"),
+        },
+        {
+            btnText: "APUA",
+            msg: "APUAA TULKAA AUTTAMAAN",
+            sound: new Audio("https://i.ylilauta.org/55/c5/55c5f2fe0ff963c9.m4a"),
         }
     ]
 
