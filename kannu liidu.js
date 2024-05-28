@@ -1261,6 +1261,11 @@
             btnText: "APUA",
             msg: "APUAA TULKAA AUTTAMAAN",
             sound: new Audio("https://i.ylilauta.org/55/c5/55c5f2fe0ff963c9.m4a"),
+        },
+        {
+            btnText: "en oo yht mitn",
+            msg: "mä en oo yhtään mitään, mä oon ihan paska",
+            sound: new Audio("https://i.ylilauta.org/60/31/603177f150394382.m4a"),
         }
     ]
 
