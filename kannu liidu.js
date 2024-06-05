@@ -1266,6 +1266,11 @@
             btnText: "en oo yht mitn",
             msg: "mä en oo yhtään mitään, mä oon ihan paska",
             sound: new Audio("https://i.ylilauta.org/60/31/603177f150394382.m4a"),
+        },
+        {
+            btnText: "koppava lepakko",
+            msg: "koppava lepakko",
+            sound: new Audio("https://i.ylilauta.org/03/7a/037a450f1b4ed8c7.m4a"),
         }
     ]
 
