@@ -1271,6 +1271,11 @@
             btnText: "koppava lepakko",
             msg: "koppava lepakko",
             sound: new Audio("https://i.ylilauta.org/03/7a/037a450f1b4ed8c7.m4a"),
+        },
+        {
+            btnText: "munaton eunukki",
+            msg: "munaton eunukki",
+            sound: new Audio("https://i.ylilauta.org/9c/b2/9cb25d1062ab53a2.m4a"),
         }
     ]
 
