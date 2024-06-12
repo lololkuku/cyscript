@@ -1276,6 +1276,11 @@
             btnText: "munaton eunukki",
             msg: "munaton eunukki",
             sound: new Audio("https://i.ylilauta.org/9c/b2/9cb25d1062ab53a2.m4a"),
+        },
+        {
+            btnText: "helunaei",
+            msg: ":helunaei  ",
+            sound: new Audio("https://i.ylilauta.org/ac/49/ac498304f9babdd3.m4a"),
         }
     ]
 
