@@ -1281,6 +1281,11 @@
             btnText: "helunaei",
             msg: ":helunaei  ",
             sound: new Audio("https://i.ylilauta.org/ac/49/ac498304f9babdd3.m4a"),
+        },
+        {
+            btnText: "vapaaherran elämä",
+            msg: "mä oon juhlistanu tätä vapaaherran elämää",
+            sound: new Audio("https://i.ylilauta.org/eb/32/eb32c50ad8323eda.m4a"),
         }
     ]
 
