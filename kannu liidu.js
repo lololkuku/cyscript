@@ -1286,6 +1286,11 @@
             btnText: "vapaaherran elämä",
             msg: "mä oon juhlistanu tätä vapaaherran elämää",
             sound: new Audio("https://i.ylilauta.org/eb/32/eb32c50ad8323eda.m4a"),
+        },
+        {
+            btnText: "pullaoluet",
+            msg: "tuoppas meille kolmelle pullakahvit, tai ei ku tuo meille oluet, tai eikä ku korkkaa sittenkin pullo kuohuvaa",
+            sound: new Audio("https://i.ylilauta.org/6b/8b/6b8b558935ef4a2c.m4a"),
         }
     ]
 
