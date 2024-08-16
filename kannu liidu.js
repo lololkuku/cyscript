@@ -1291,6 +1291,16 @@
             btnText: "pullaoluet",
             msg: "tuoppas meille kolmelle pullakahvit, tai ei ku tuo meille oluet, tai eikä ku korkkaa sittenkin pullo kuohuvaa",
             sound: new Audio("https://i.ylilauta.org/6b/8b/6b8b558935ef4a2c.m4a"),
+        },
+        {
+            btnText: "välinpitämättömyyttä",
+            msg: "mä en kestä tätä vitun välinpitämättömyyttä enää tippaakaan mä lähen vittuun täältä",
+            sound: new Audio("https://i.ylilauta.org/66/12/6612309c15c0e737.m4a"),
+        },
+        {
+            btnText: "NIINKÖ",
+            msg: "NIINKÖ",
+            sound: new Audio("https://i.ylilauta.org/8b/78/8b78803092e835e1.m4a"),
         }
     ]
 
