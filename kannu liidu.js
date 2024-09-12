@@ -1301,6 +1301,11 @@
             btnText: "NIINKÖ",
             msg: "NIINKÖ",
             sound: new Audio("https://i.ylilauta.org/8b/78/8b78803092e835e1.m4a"),
+        },
+        {
+            btnText: "melamies valmiina",
+            msg: "anytime baby, melamies on aina valmis",
+            sound: new Audio("https://i.ylilauta.org/6e/70/6e705639ad5f99b2.m4a"),
         }
     ]
 
