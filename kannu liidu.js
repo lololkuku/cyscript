@@ -1306,6 +1306,11 @@
             btnText: "melamies valmiina",
             msg: "anytime baby, melamies on aina valmis",
             sound: new Audio("https://i.ylilauta.org/6e/70/6e705639ad5f99b2.m4a"),
+        },
+        {
+            btnText: "ei kai hämäystä",
+            msg: "ettei tää nyt olis jotain hämäystä",
+            sound: new Audio("https://i.ylilauta.org/e1/bb/e1bb9e64d928bbc7.mp4"),
         }
     ]
 
