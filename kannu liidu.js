@@ -1311,6 +1311,11 @@
             btnText: "ei kai hämäystä",
             msg: "ettei tää nyt olis jotain hämäystä",
             sound: new Audio("https://i.ylilauta.org/e1/bb/e1bb9e64d928bbc7.mp4"),
+        },
+        {
+            btnText: "juopottelin liikaa",
+            msg: "mä juopottelin liikaa",
+            sound: new Audio("https://i.ylilauta.org/5e/6a/5e6a6109501c636b.m4a"),
         }
     ]
 
