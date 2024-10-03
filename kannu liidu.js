@@ -1314,7 +1314,7 @@
         },
         {
             btnText: "juopottelin liikaa",
-            msg: "mä juopottelin liikaa",
+            msg: "/masa2  ",
             sound: new Audio("https://i.ylilauta.org/5e/6a/5e6a6109501c636b.m4a"),
         }
     ]
