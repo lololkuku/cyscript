@@ -1316,6 +1316,16 @@
             btnText: "juopottelin liikaa",
             msg: "/masa2  ",
             sound: new Audio("https://i.ylilauta.org/5e/6a/5e6a6109501c636b.m4a"),
+        },
+        {
+            btnText: "haista jukka p*ska",
+            msg: "haista sinä jukka iso pasKA ",
+            sound: new Audio("https://i.ylilauta.org/3a/37/3a371fd7849a7167.m4a"),
+        },
+        {
+            btnText: "hieno tarina",
+            msg: "no olipa hieno tarina ",
+            sound: new Audio("https://i.ylilauta.org/12/e9/12e9d80af3b827ac.mp4"),
         }
     ]
 
