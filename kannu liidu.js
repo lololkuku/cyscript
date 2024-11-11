@@ -1325,7 +1325,7 @@
         {
             btnText: "hieno tarina",
             msg: "no olipa hieno tarina ",
-            sound: new Audio("https://i.ylilauta.org/12/e9/12e9d80af3b827ac.mp4"),
+            sound: new Audio("https://i.ylilauta.org/af/c8/afc8a9639260cfc1.mp4"),
         }
     ]
 
