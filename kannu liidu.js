@@ -1326,6 +1326,11 @@
             btnText: "hieno tarina",
             msg: "no olipa hieno tarina ",
             sound: new Audio("https://i.ylilauta.org/af/c8/afc8a9639260cfc1.mp4"),
+        },
+        {
+            btnText: "HÄVETKÄÄ",
+            msg: "HÄVETKÄÄ ",
+            sound: new Audio("https://i.ylilauta.org/92/73/927376c243f5e9f9.m4a"),
         }
     ]
 
