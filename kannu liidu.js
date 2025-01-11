@@ -1331,6 +1331,11 @@
             btnText: "HÄVETKÄÄ",
             msg: "HÄVETKÄÄ ",
             sound: new Audio("https://i.ylilauta.org/92/73/927376c243f5e9f9.m4a"),
+        },
+        {
+            btnText: "roope ankka",
+            msg: "hemmetin roope ankka ",
+            sound: new Audio("https://i.ylilauta.org/68/f4/68f40594a0159e28.m4a"),
         }
     ]
 
