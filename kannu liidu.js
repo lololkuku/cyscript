@@ -1336,6 +1336,11 @@
             btnText: "roope ankka",
             msg: "hemmetin roope ankka ",
             sound: new Audio("https://i.ylilauta.org/68/f4/68f40594a0159e28.m4a"),
+        },
+        {
+            btnText: "laitelan laiva",
+            msg: "nyt on laitelan laiva uponnut ",
+            sound: new Audio("https://i.ylilauta.org/bd/db/bddbfc0f6172b2b3.m4a"),
         }
     ]
 
