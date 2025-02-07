@@ -1341,6 +1341,11 @@
             btnText: "laitelan laiva",
             msg: "nyt on laitelan laiva uponnut ",
             sound: new Audio("https://i.ylilauta.org/bd/db/bddbfc0f6172b2b3.m4a"),
+        },
+        {
+            btnText: "bailaa rajusti",
+            msg: "mää ainakin bailaan huomenna aika rajusti ",
+            sound: new Audio("https://i.ylilauta.org/3b/6a/3b6a82d537350431.m4a"),
         }
     ]
 
