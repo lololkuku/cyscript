@@ -1346,6 +1346,11 @@
             btnText: "bailaa rajusti",
             msg: "mää ainakin bailaan huomenna aika rajusti ",
             sound: new Audio("https://i.ylilauta.org/3b/6a/3b6a82d537350431.m4a"),
+        },
+        {
+            btnText: "tyttöystävää",
+            msg: "mulla ei oo vieläkään tyttöystävää ",
+            sound: new Audio("https://i.ylilauta.org/bc/4f/bc4fae5808e1c6b4.m4a"),
         }
     ]
 
