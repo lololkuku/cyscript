@@ -1816,9 +1816,9 @@
     }
 
 	function getTimeFromSeconds(seconds) {
-		const hours = Math.floor(seconds / 3600);
-		const minutes = Math.floor((seconds % 3600) / 60);
-		const secs = seconds % 60;
+		let hours = Math.floor(seconds / 3600);
+		let minutes = Math.floor((seconds % 3600) / 60);
+		let secs = seconds % 60;
 
 		hours = String(hours).padStart(2, '0');
 		minutes = String(minutes).padStart(2, '0');
