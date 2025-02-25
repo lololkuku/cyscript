@@ -1606,7 +1606,7 @@
                 vidEl.currentTime = seconds;
             }
 
-            if(msgText === "synccistä") {
+            if(msgText === "synccistä" && username === CLIENT.name) {
             	const vidEl = document.getElementById("ytapiplayer_html5_api");
             	socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
             }
