@@ -1602,13 +1602,13 @@
 
             if(msgText.split(" ").length === 2 && msgText.split(" ")[1].split(":").length === 3 && document.getElementById("ytapiplayer_html5_api")) {
                 const vidEl = document.getElementById("ytapiplayer_html5_api");
-                const seconds = getTime(msgText.split(" ")[1]);
+                const seconds = getSeconds(msgText.split(" ")[1]);
                 vidEl.currentTime = seconds;
             }
 
             if(msgText === "synccistä") {
             	const vidEl = document.getElementById("ytapiplayer_html5_api");
-            	socket.emit("chatMsg", {msg: `:ismo ${vidEl.currentTime}`})
+            	socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
             }
 
             if(msgText === "!roll") {
@@ -1806,7 +1806,7 @@
     function time(ms) {
         return new Promise(resolve => { setTimeout(resolve, ms) });
     }
-    function getTime(str) {
+    function getSeconds(str) {
         str = str.split(":");
 
         let h = +str[0];
@@ -1818,4 +1818,17 @@
 
         return h+m+s;
     }
+
+	function getTimeFromSeconds(seconds) {
+		let hours = Math.floor(seconds / 3600);
+		let minutes = Math.floor((seconds % 3600) / 60);
+		let secs = seconds % 60;
+
+		// Ensure two-digit format
+		hours = String(hours).padStart(2, '0');
+		minutes = String(minutes).padStart(2, '0');
+		secs = String(secs).padStart(2, '0');
+
+		return `${hours}:${minutes}:${secs}`;
+	}
 })();
