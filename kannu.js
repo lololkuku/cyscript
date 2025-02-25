@@ -1514,7 +1514,6 @@
  
             if(!(mutationsList[0].addedNodes && mutationsList[0].addedNodes[0] && mutationsList[0].addedNodes[0].className.indexOf("chat-msg") > -1))
                 return;
-            console.log("msgennen: " + msgs[msgs.length - 1].className)
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
             if(msgs[msgs.length - 1].classList.contains("small-emos")) {
                 msg = msgs[msgs.length - 1];
@@ -1526,7 +1525,6 @@
                     const emote = emotes[i];
 
                     emote.onclick = () => {
-                        console.log("asd")
                         if(input.value.length == 0)
                             input.value = emote.getAttribute("title") + " ";
                         else if(input.value[input.value.length - 1] == " ")
@@ -1539,7 +1537,6 @@
 
                 return;
             }
-            console.log("msg: " + msg)
             let msgText = msg.textContent;
             let msgTextSound = "";
 
@@ -1605,7 +1602,7 @@
                 const seconds = getSeconds(msgText.split(" ")[1]);
                 vidEl.currentTime = seconds;
             }
-
+	    console.log(username, CLIENT.name)
             if(msgText === "synccistä" && username === CLIENT.name) {
             	const vidEl = document.getElementById("ytapiplayer_html5_api");
             	socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
@@ -1663,7 +1660,6 @@
                 const emote = emotes[i];
 
                 emote.onclick = () => {
-                    console.log("asd")
                     if(input.value.length == 0)
                         input.value = emote.getAttribute("title") + " ";
                     else if(input.value[input.value.length - 1] == " ")
@@ -1820,11 +1816,10 @@
     }
 
 	function getTimeFromSeconds(seconds) {
-		let hours = Math.floor(seconds / 3600);
-		let minutes = Math.floor((seconds % 3600) / 60);
-		let secs = seconds % 60;
+		const hours = Math.floor(seconds / 3600);
+		const minutes = Math.floor((seconds % 3600) / 60);
+		const secs = seconds % 60;
 
-		// Ensure two-digit format
 		hours = String(hours).padStart(2, '0');
 		minutes = String(minutes).padStart(2, '0');
 		secs = String(secs).padStart(2, '0');
