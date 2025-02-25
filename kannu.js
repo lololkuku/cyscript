@@ -1829,6 +1829,6 @@
 		minutes = String(minutes).padStart(2, '0');
 		secs = String(secs).padStart(2, '0');
 
-		return `${hours}:${minutes}:${secs}`;
+		return `${hours}:${minutes}:${secs.split(".")[0]}`;
 	}
 })();
