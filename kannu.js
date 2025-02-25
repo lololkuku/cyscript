@@ -1549,8 +1549,8 @@
                 setTimeout(() => { messageCont.scrollTo(0, messageCont.scrollHeight) }, 300);
             }
 
-
-            const username = msg.parentElement.className.split(" ")[0].split("-")[2];
+	// const username = msg.parentElement.className.split(" ")[0].split("-")[2];
+            const username = msg.parentElement.className.split(" ")[0].substring(9);
 
             let soundIndex = soundMsgs.indexOf(msgTextSound);
 
