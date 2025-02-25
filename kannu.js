@@ -1606,6 +1606,11 @@
                 vidEl.currentTime = seconds;
             }
 
+            if(msgText === "synccistä") {
+            	const vidEl = document.getElementById("ytapiplayer_html5_api");
+            	console.log("currenttime:", vidEl.currentTime)
+            }
+
             if(msgText === "!roll") {
                 msg.innerHTML += ' <img class="channel-emote" src="https://c.tenor.com/1ghY8kGML2sAAAAC/pepe-apu.gif" title=":roll">';
             }
