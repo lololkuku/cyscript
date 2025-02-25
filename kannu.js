@@ -7,6 +7,7 @@
     rightpane.classList.add("marginfix");
 
     let spamlock = false;
+    let spamlock2 = false;
     let enabled = false;
     let tabActive = true;
     let disableBtns = false;
@@ -16,6 +17,7 @@
     const emoBtn = document.createElement("button");
     const soundNotifBtn = document.createElement("button");
     const disableBtn = document.createElement("button");
+    const randomEmosBtn = document.createElement("button");
 
     const tadaa = new Audio("https://i.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
@@ -27,7 +29,7 @@
     controls.appendChild(kasBtn);
     controls.appendChild(soundNotifBtn);
     controls.appendChild(emoBtn);
-
+    controls.appendChild(randomEmosBtn);
 
     const soundBtns = [
         {
@@ -583,7 +585,7 @@
         {
             btnText: "öitä seppo",
             msg: "lepää rauhassa seppo",
-            sound: new Audio("https://i.ylilauta.org/81/ee/81eef72a32d3838a.mp4"),
+            sound: new Audio("https://i.ylilauta.org/e3/4e/e34e15e2b00aa739.mp4"),
         },
         {
             btnText: "onks tää paskaa",
@@ -658,7 +660,7 @@
         {
             btnText: "sinä turpa kiinni",
             msg: "sinä turpa kiinni nYT",
-            sound: new Audio("https://i.ylilauta.org/99/f4/99f4644a2a8d8f6f.m4a"),
+            sound: new Audio("https://i.ylilauta.org/37/c2/37c2407dc9de2073.m4a"),
         }, 
         {
             btnText: "nyt turpa kiinni",
@@ -783,7 +785,7 @@
         {
             btnText: "mitä uhoot",
             msg: "mitä sä oikein uhoot poika",
-            sound: new Audio("https://i.ylilauta.org/c4/33/c433094b6aacdd5b.mp4"),
+            sound: new Audio("https://i.ylilauta.org/e4/50/e450466f61fe2e67.mp4"),
         },
         {
             btnText: "homoja",
@@ -895,6 +897,461 @@
             msg: "kirottua",
             sound: new Audio("https://i.ylilauta.org/b2/e2/b2e24b53a3221565.mp4"),
         },
+        {
+            btnText: "hemmettiä",
+            msg: "hemmeTTIä oikeesti",
+            sound: new Audio("https://i.ylilauta.org/0e/a9/0ea948aa96a20348.m4a"),
+        },
+        {
+            btnText: "sinne meni",
+            msg: "ahh sinne meni",
+            sound: new Audio("https://i.ylilauta.org/10/b8/10b87e938a9d0bee.m4a"),
+        },
+        {
+            btnText: "pysähdy pent",
+            msg: "pysähdy penteLE",
+            sound: new Audio("https://i.ylilauta.org/06/99/06994b75d51f5f7c.m4a"),
+        },
+        {
+            btnText: "maahanmuuttajat",
+            msg: "kaikki maahanmuuttajat on väkivaltasia rikollisia",
+            sound: new Audio("https://i.ylilauta.org/0a/5f/0a5f4eb2a48dedf8.m4a"),
+        },
+        {
+            btnText: "oot oikeessa",
+            msg: "sä oot harvinaisen oikeessa",
+            sound: new Audio("https://i.ylilauta.org/c5/fa/c5fae1f7e4e76904.mp4"),
+        },
+        {
+            btnText: "m molopää",
+            msg: "äm niinkun molopää",
+            sound: new Audio("https://i.ylilauta.org/50/4b/504b916c1508f984.m4a"),
+        },
+        {
+            btnText: "piipin",
+            msg: "piipin piipin",
+            sound: new Audio("https://i.ylilauta.org/18/54/185445d3ac9a2901.m4a"),
+        },
+        {
+            btnText: "höpön löpö",
+            msg: "ja höpön löpön löppö",
+            sound: new Audio("https://i.ylilauta.org/2c/1e/2c1e3c77bce1bfa3.m4a"),
+        },
+        {
+            btnText: "mitä helvettiä",
+            msg: "mitä helveTTIä",
+            sound: new Audio("https://i.ylilauta.org/e5/42/e54223fffa4ee4d8.m4a"),
+        },
+        {
+            btnText: "varmuudella",
+            msg: "n*ekeri melkoisella varmuudella",
+            sound: new Audio("https://i.ylilauta.org/ec/96/ec961e364fcc758a.mp4"),
+        },
+        {
+            btnText: "lohkare",
+            msg: "kohta lentää lohkare",
+            sound: new Audio("https://i.ylilauta.org/99/5c/995ced935f253065.mp4"),
+        },
+        {
+            btnText: "tästä se lähtee",
+            msg: "joo joo, tästä se lähtee",
+            sound: new Audio("https://i.ylilauta.org/79/7c/797c22009f8de567.mp4"),
+        },
+        {
+            btnText: "sä kuolet",
+            msg: "sä kuolet",
+            sound: new Audio("https://i.ylilauta.org/89/14/89142e6f8d57c185.mp4"),
+        },
+        {
+            btnText: "kebabbia nakkipalkalla",
+            msg: ":hitlerismo  ",
+            sound: new Audio("https://i.ylilauta.org/7a/cf/7acfd75a3de12ca9.mp4"),
+        },
+        {
+            btnText: "nettikiusaaja",
+            msg: "sä oot netti kiusaaja",
+            sound: new Audio("https://i.ylilauta.org/d5/13/d513f526fe94dabc.mp4"),
+        },
+        {
+            btnText: "jallu",
+            msg: "kyllä mulle jallu kelpaa",
+            sound: new Audio("https://i.ylilauta.org/af/3f/af3f9b2ecb819743.mp4"),
+        },
+        {
+            btnText: "emmä tajunnut",
+            msg: "emmä tajunnu että sä oot vajonnu noin alas",
+            sound: new Audio("https://i.ylilauta.org/85/3c/853cc5e703415590.mp4"),
+        },
+        {
+            btnText: "naittekote",
+            msg: "naitteko te",
+            sound: new Audio("https://i.ylilauta.org/18/8b/188bef05adf7ba33.mp4"),
+        },
+        {
+            btnText: "WOO O",
+            msg: "WO O O WOWO WO O O WOO",
+            sound: new Audio("https://i.ylilauta.org/e5/63/e563b30dc218a0ed.m4a"),
+        },
+        {
+            btnText: "ismo dirlandaa",
+            msg: ":ismodance  ",
+            sound: new Audio("https://i.ylilauta.org/56/51/56517cd6527df3a6.mp4"),
+        },
+        {
+            btnText: "en ymmärrä",
+            msg: "en ymmärrä ",
+            sound: new Audio("https://i.ylilauta.org/19/77/19770642b212e295.mp4"),
+        },
+        {
+            btnText: "ootko aatellu töihin",
+            msg: "ootko ajatellu työpaikkaa hankkia",
+            sound: new Audio("https://i.ylilauta.org/5b/f2/5bf28446582f4504.mp4"),
+        },
+        {
+            btnText: "en tiedä",
+            msg: "en tiedä, täytyy mennä",
+            sound: new Audio("https://i.ylilauta.org/75/25/7525f024e5bdf7ce.m4a"),
+        },
+        {
+            btnText: "TURPA KIINNI",
+            msg: "TURPA KIINNI",
+            sound: new Audio("https://i.ylilauta.org/af/dc/afdc498ea0ccfacb.m4a"),
+        },
+        {
+            btnText: "ismomitä helvettiä",
+            msg: "MITÄ HELVETTIÄ",
+            sound: new Audio("https://i.ylilauta.org/cc/8b/cc8b19d82f367deb.mp4"),
+        },
+        {
+            btnText: "sopii yrittää",
+            msg: "sopii yrittää",
+            sound: new Audio("https://i.ylilauta.org/d0/f7/d0f720f9def1082c.mp4"),
+        },
+        {
+            btnText: "no heii väliä",
+            msg: "no heiii mitä väliä",
+            sound: new Audio("https://i.ylilauta.org/a1/d6/a1d6797fc2783881.mp4"),
+        },
+        {
+            btnText: "ämmien puhetta",
+            msg: "ämmien puhetta",
+            sound: new Audio("https://i.ylilauta.org/6c/95/6c95cb98a5c6dab2.mp4"),
+        },
+        {
+            btnText: "seppo suu kii",
+            msg: "seppo suus kiinni nyt",
+            sound: new Audio("https://i.ylilauta.org/d5/1f/d51fd00dcbbbf2da.m4a"),
+        },
+        {
+            btnText: "meidän malja",
+            msg: ":seppomeidänmalja  ",
+            sound: new Audio("https://i.ylilauta.org/e5/80/e58073a658fb3ce3.m4a"),
+        },
+        {
+            btnText: "ansaitset parasta",
+            msg: "tää on just sitä mitä sä ansaitset - kaikkein parasta",
+            sound: new Audio("https://i.ylilauta.org/36/72/367224fc6df7afce.mp4"),
+        },
+        {
+            btnText: "akiHILJAA",
+            msg: "HILJAA   ",
+            sound: new Audio("https://i.ylilauta.org/48/c7/48c7cebf0d2f1be1.m4a"),
+        },
+        {
+            btnText: "eikai mun tilanne",
+            msg: "ei kai mun tilanne nyt niin vakava oo",
+            sound: new Audio("https://i.ylilauta.org/40/f0/40f03e90a5b69ae9.mp4"),
+        },
+        {
+            btnText: "lempikeksejä",
+            msg: "helveTIn sen lempikeksejä",
+            sound: new Audio("https://i.ylilauta.org/e0/a8/e0a8df875d9c172a.m4a"),
+        },
+        {
+            btnText: "rotta",
+            msg: "roTTA",
+            sound: new Audio("https://i.ylilauta.org/91/f9/91f9c9e9a405a391.mp4"),
+        },
+        {
+            btnText: "putatkaa jo",
+            msg: "voi herran pieksut putatkaa nyt jo",
+            sound: new Audio("https://i.ylilauta.org/21/fc/21fcc52b613ae8b9.m4a"),
+        },
+        {
+            btnText: "OO",
+            msg: "OO ",
+            sound: new Audio("https://i.ylilauta.org/d9/88/d98858da1d28cf4e.m4a"),
+        },
+        {
+            btnText: "pallirave:D",
+            msg: ":rave  ",
+            sound: new Audio("https://i.ylilauta.org/02/2f/022f446bf1ed39e0.m4a"),
+        },
+        {
+            btnText: "maaali",
+            msg: "jeeee maaali",
+            sound: new Audio("https://i.ylilauta.org/89/bc/89bca8236a351178.m4a"),
+        },
+        {
+            btnText: "jallupaukku",
+            msg: "jallupaukkukii",
+            sound: new Audio("https://i.ylilauta.org/85/81/858184812f248d48.m4a"),
+        },
+        {
+            btnText: "laura laura",
+            msg: "laura laura laura",
+            sound: new Audio("https://i.ylilauta.org/a9/bb/a9bb309c74734265.m4a"),
+        },
+        {
+            btnText: "mä tein sen",
+            msg: "MÄ TEIN SEN",
+            sound: new Audio("https://i.ylilauta.org/4a/35/4a35b9a8aa1c92e1.m4a"),
+        },
+        {
+            btnText: "herran pieksut",
+            msg: ":herranpieksut  ",
+            sound: new Audio("https://i.ylilauta.org/a5/ff/a5ffba5ba04e11da.mp4"),
+        },
+        {
+            btnText: "turpaki giolo",
+            msg: "pidä sinä nyt gigolo se turpas kiinni",
+            sound: new Audio("https://i.ylilauta.org/a5/5a/a55a2bb47d54ea7e.m4a"),
+        },
+        {
+            btnText: "oot oikeessa",
+            msg: "saatat olla oikeessa, hyvä pointti itse asiassa",
+            sound: new Audio("https://i.ylilauta.org/ee/d2/eed2124564abb152.m4a"),
+        },
+        {
+            btnText: "en halua",
+            msg: ":enhalua  ",
+            sound: new Audio("https://i.ylilauta.org/f9/72/f972bbc3ffeb4c37.m4a"),
+        },
+        {
+            btnText: "svengaa hirvi",
+            msg: "svengaa ku HIRVI",
+            sound: new Audio("https://i.ylilauta.org/fa/25/fa2598310243163b.mp4"),
+        },
+        {
+            btnText: "kaapista pois",
+            msg: "tuu pois sieltä kaapista",
+            sound: new Audio("https://i.ylilauta.org/f7/1e/f71e91b042de8f5a.m4a"),
+        },
+        {
+            btnText: "ooh ahaha cucka",
+            msg: "/cuck  ",
+            sound: new Audio("https://i.ylilauta.org/bb/f7/bbf70790a0abccbb.m4a"),
+        },
+        {
+            btnText: "helvetin helveTTI",
+            msg: ":laitelanlaiva  ",
+            sound: new Audio("https://i.ylilauta.org/6e/74/6e748cc8f6b0bc92.mp4"),
+        },
+        {
+            btnText: "pupheli",
+            msg: "semmonen kuumaverinen puppheli ",
+            sound: new Audio("https://i.ylilauta.org/8b/3c/8b3c7fef4f94d89c.m4a"),
+        },
+        {
+            btnText: "nirppanokka",
+            msg: "kyllä sitä nyt ollaan niin nirppanokkaa niin nirppanokkaa että",
+            sound: new Audio("https://i.ylilauta.org/69/7e/697e9b61d787530d.m4a"),
+        },
+        {
+            btnText: "nukkumaanmenoaika",
+            msg: "eikös nyt ala oleen tuommosen nassikan nukkumaanmenoaika",
+            sound: new Audio("https://i.ylilauta.org/c7/fa/c7fa07ea75605bce.mp4"),
+        },
+        {
+            btnText: "typeryyksiä",
+            msg: "huhhhuh koko sivuhan vilisee kaameita typeryyksiä",
+            sound: new Audio("https://i.ylilauta.org/19/09/1909c233f9037cce.m4a"),
+        },
+        {
+            btnText: "ryöstö hernesaar",
+            msg: "RYÖSTÖ HERNESAARESSA",
+            sound: new Audio("https://i.ylilauta.org/7b/9e/7b9e18574d12cb7f.m4a"),
+        },
+        {
+            btnText: "oliko muuta asiaa",
+            msg: "oliko muuta asiaa?",
+            sound: new Audio("https://i.ylilauta.org/b2/ea/b2eaa816301901cb.m4a"),
+        },
+        {
+            btnText: "pöytä vino",
+            msg: "onks tää pöytä jotenkin vino?",
+            sound: new Audio("https://i.ylilauta.org/39/29/39298a5d601bb87f.m4a"),
+        },
+        {
+            btnText: "eläin",
+            msg: "jätkä on eläin",
+            sound: new Audio("https://i.ylilauta.org/78/08/78089915ddfec10a.m4a"),
+        },
+        {
+            btnText: "juon olutta",
+            msg: "minä juon oluttahh",
+            sound: new Audio("https://i.ylilauta.org/35/00/3500fc49b13e04d1.m4a"),
+        },
+        {
+            btnText: "kusti kulkee",
+            msg: "kusti polkee ni posti kulkee poika",
+            sound: new Audio("https://i.ylilauta.org/d1/20/d120c2021dbaf6e7.m4a"),
+        },
+        {
+            btnText: "leikki loppuu",
+            msg: "kuule tää leikki loppuu nyT",
+            sound: new Audio("https://i.ylilauta.org/8b/6e/8b6eb751b7b585b0.mp4"),
+        },
+        {
+            btnText: "AERGH",
+            msg: ":ismomunkki  ",
+            sound: new Audio("https://i.ylilauta.org/d6/5c/d65c89f05ef2fa18.m4a"),
+        },
+        {
+            btnText: "valehteleva lepakko",
+            msg: "EN MÄ EDEDES KOSKENU SUHUN SENKIN VALEHTELEVA LEPAKKO",
+            sound: new Audio("https://i.ylilauta.org/0d/71/0d714752b65fb9be.m4a"),
+        },
+        {
+            btnText: "luuseri",
+            msg: "luuserii",
+            sound: new Audio("https://i.ylilauta.org/2a/38/2a388a4ba7c5cc55.m4a"),
+        },
+        {
+            btnText: "uudestaan",
+            msg: "toi on pakko kattoo uudestaan",
+            sound: new Audio("https://i.ylilauta.org/f0/9f/f09fb5ee3d4a2c0b.m4a"),
+        },
+        {
+            btnText: "hieno matsi",
+            msg: "no onneks olkoon hieno matsi",
+            sound: new Audio("https://i.ylilauta.org/d1/a0/d1a0d2949c41c1c0.m4a"),
+        },
+        {
+            btnText: "turpa tukkoon",
+            msg: "tuwpa tukkoon",
+            sound: new Audio("https://i.ylilauta.org/68/6c/686cc939a8a10111.m4a"),
+        },
+        {
+            btnText: "ole hyvä ja poistu",
+            msg: "ole hyvä ja poistu",
+            sound: new Audio("https://i.ylilauta.org/c4/4d/c44d04b11e3ad73b.m4a"),
+        },
+        {
+            btnText: "kiitos teillekin",
+            msg: "kiitos teillekin ja anteeks",
+            sound: new Audio("https://i.ylilauta.org/d6/57/d657637de618964d.m4a"),
+        },
+        {
+            btnText: "haluun olla onnellinen",
+            msg: "mä haluun olla onnellinen perkeLE",
+            sound: new Audio("https://i.ylilauta.org/96/59/96591cc89d975c67.m4a"),
+        },
+        {
+            btnText: "etsä oo kaljoissas?",
+            msg: "et suinkaan sä oo vähän kaljoissas?",
+            sound: new Audio("https://i.ylilauta.org/29/dc/29dc32901df640f0.mp4"),
+        },
+        {
+            btnText: "turpa kiinni nyt",
+            msg: "turpa kiinni nyt",
+            sound: new Audio("https://i.ylilauta.org/5a/6a/5a6ae787549786de.m4a"),
+        },
+        {
+            btnText: "APUA",
+            msg: "APUAA TULKAA AUTTAMAAN",
+            sound: new Audio("https://i.ylilauta.org/55/c5/55c5f2fe0ff963c9.m4a"),
+        },
+        {
+            btnText: "en oo yht mitn",
+            msg: "mä en oo yhtään mitään, mä oon ihan paska",
+            sound: new Audio("https://i.ylilauta.org/60/31/603177f150394382.m4a"),
+        },
+        {
+            btnText: "koppava lepakko",
+            msg: "koppava lepakko",
+            sound: new Audio("https://i.ylilauta.org/03/7a/037a450f1b4ed8c7.m4a"),
+        },
+        {
+            btnText: "munaton eunukki",
+            msg: "munaton eunukki",
+            sound: new Audio("https://i.ylilauta.org/9c/b2/9cb25d1062ab53a2.m4a"),
+        },
+        {
+            btnText: "helunaei",
+            msg: ":helunaei  ",
+            sound: new Audio("https://i.ylilauta.org/ac/49/ac498304f9babdd3.m4a"),
+        },
+        {
+            btnText: "vapaaherran elämä",
+            msg: "mä oon juhlistanu tätä vapaaherran elämää",
+            sound: new Audio("https://i.ylilauta.org/eb/32/eb32c50ad8323eda.m4a"),
+        },
+        {
+            btnText: "pullaoluet",
+            msg: "tuoppas meille kolmelle pullakahvit, tai ei ku tuo meille oluet, tai eikä ku korkkaa sittenkin pullo kuohuvaa",
+            sound: new Audio("https://i.ylilauta.org/6b/8b/6b8b558935ef4a2c.m4a"),
+        },
+        {
+            btnText: "välinpitämättömyyttä",
+            msg: "mä en kestä tätä vitun välinpitämättömyyttä enää tippaakaan mä lähen vittuun täältä",
+            sound: new Audio("https://i.ylilauta.org/66/12/6612309c15c0e737.m4a"),
+        },
+        {
+            btnText: "NIINKÖ",
+            msg: "NIINKÖ",
+            sound: new Audio("https://i.ylilauta.org/8b/78/8b78803092e835e1.m4a"),
+        },
+        {
+            btnText: "melamies valmiina",
+            msg: "anytime baby, melamies on aina valmis",
+            sound: new Audio("https://i.ylilauta.org/6e/70/6e705639ad5f99b2.m4a"),
+        },
+        {
+            btnText: "ei kai hämäystä",
+            msg: "ettei tää nyt olis jotain hämäystä",
+            sound: new Audio("https://i.ylilauta.org/e1/bb/e1bb9e64d928bbc7.mp4"),
+        },
+        {
+            btnText: "juopottelin liikaa",
+            msg: "/masa2  ",
+            sound: new Audio("https://i.ylilauta.org/5e/6a/5e6a6109501c636b.m4a"),
+        },
+        {
+            btnText: "haista jukka p*ska",
+            msg: "haista sinä jukka iso pasKA ",
+            sound: new Audio("https://i.ylilauta.org/3a/37/3a371fd7849a7167.m4a"),
+        },
+        {
+            btnText: "hieno tarina",
+            msg: "no olipa hieno tarina ",
+            sound: new Audio("https://i.ylilauta.org/af/c8/afc8a9639260cfc1.mp4"),
+        },
+        {
+            btnText: "HÄVETKÄÄ",
+            msg: "HÄVETKÄÄ ",
+            sound: new Audio("https://i.ylilauta.org/92/73/927376c243f5e9f9.m4a"),
+        },
+        {
+            btnText: "roope ankka",
+            msg: "hemmetin roope ankka ",
+            sound: new Audio("https://i.ylilauta.org/68/f4/68f40594a0159e28.m4a"),
+        },
+        {
+            btnText: "laitelan laiva",
+            msg: "nyt on laitelan laiva uponnut ",
+            sound: new Audio("https://i.ylilauta.org/bd/db/bddbfc0f6172b2b3.m4a"),
+        },
+        {
+            btnText: "bailaa rajusti",
+            msg: "mää ainakin bailaan huomenna aika rajusti ",
+            sound: new Audio("https://i.ylilauta.org/3b/6a/3b6a82d537350431.m4a"),
+        },
+        {
+            btnText: "tyttöystävää",
+            msg: "mulla ei oo vieläkään tyttöystävää ",
+            sound: new Audio("https://i.ylilauta.org/bc/4f/bc4fae5808e1c6b4.m4a"),
+        }
     ]
 
     const soundMsgs = [];
@@ -927,6 +1384,7 @@
 
             const time = localStorage.getItem(text + "_timelock");
 
+            // if(!time || (text != "pallirave:D" && new Date().getTime() - +time >= 420000) || (new Date().getTime() - +time >= 3600000)) {
             if(!time || new Date().getTime() - +time >= 420000) {
 
                 if(spamlock)
@@ -995,6 +1453,18 @@
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
+    randomEmosBtn.className = "btn btn-sm btn-default";
+    randomEmosBtn.style.float = "right";
+    randomEmosBtn.textContent = "Random emo3x";
+    randomEmosBtn.addEventListener("click", () => {
+        if(spamlock2)
+            return;
+    
+        spamlock2 = true;
+        setTimeout(() => {spamlock2 = false}, 60000)
+        socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
+    });
+
     kasBtn.className = "btn btn-sm btn-default";
     kasBtn.style.float = "right";
     kasBtn.textContent = "kass :D";
@@ -1044,8 +1514,32 @@
  
             if(!(mutationsList[0].addedNodes && mutationsList[0].addedNodes[0] && mutationsList[0].addedNodes[0].className.indexOf("chat-msg") > -1))
                 return;
-
+            console.log("msgennen: " + msgs[msgs.length - 1].className)
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
+            if(msgs[msgs.length - 1].classList.contains("small-emos")) {
+                msg = msgs[msgs.length - 1];
+                const emotes = msg.getElementsByClassName("channel-emote");
+
+                msg.innerHTML += " <span class='randomEmo'>RANDOM</span>";
+
+                for(let i = 0; i < emotes.length; i++) {
+                    const emote = emotes[i];
+
+                    emote.onclick = () => {
+                        console.log("asd")
+                        if(input.value.length == 0)
+                            input.value = emote.getAttribute("title") + " ";
+                        else if(input.value[input.value.length - 1] == " ")
+                            input.value += emote.getAttribute("title") + " ";
+                        else
+                            input.value += " " + emote.getAttribute("title") + " ";
+                        input.focus();
+                    }
+                }
+
+                return;
+            }
+            console.log("msg: " + msg)
             let msgText = msg.textContent;
             let msgTextSound = "";
 
@@ -1078,13 +1572,13 @@
                 const time = localStorage.getItem(text + "_timelock2");
                 const myTime = localStorage.getItem(text + "_timelock");
 
-                if(username == CLIENT.name || (!disableBtns && (!time || new Date().getTime() - +time > 400000))) {
+                if(username == CLIENT.name || (!disableBtns && (!time || (new Date().getTime() - +time > 400000)))) {
                     
                     if(username != CLIENT.name) {
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
                         sound.play();
                     }
-                    else if(!disableBtns && (!myTime || new Date().getTime() - +myTime > 420000)) {
+                    else if(!disableBtns && (!myTime || (new Date().getTime() - +myTime > 420000))) {
                         localStorage.setItem(text + "_timelock", new Date().getTime());
                         sound.play();
 
@@ -1106,6 +1600,12 @@
                 socket.emit("chatMsg", {msg: "/me rolled " + rnd});
             }
 
+            if(msgText.split(" ").length === 2 && msgText.split(" ")[1].split(":").length === 3 && document.getElementById("ytapiplayer_html5_api")) {
+                const vidEl = document.getElementById("ytapiplayer_html5_api");
+                const seconds = getTime(msgText.split(" ")[1]);
+                vidEl.currentTime = seconds;
+            }
+
             if(msgText === "!roll") {
                 msg.innerHTML += ' <img class="channel-emote" src="https://c.tenor.com/1ghY8kGML2sAAAAC/pepe-apu.gif" title=":roll">';
             }
@@ -1116,6 +1616,11 @@
                 fetch("https://kannubotti.herokuapp.com/?" + kysymys, {headers: {"kysymys": "kys"}}).then(res => res.text()).then(text => {
                     socket.emit("chatMsg", {msg: "`" + text + "`"})
                 })
+            }
+
+            if(username == CLIENT.name && msgText == "!napit") {
+                const btns = document.querySelectorAll(".aaninappi").length;
+                socket.emit("chatMsg", {msg: "nappeja: " + btns + " kpl :ismokolme"})
             }
  
             if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
@@ -1140,7 +1645,8 @@
                 msgHtml = msgHtml.join(">");
                 msg.innerHTML = msgHtml;
             }
-            else if(msgText.slice(msgText.length - 9, msgText.length) == " random. " && soundIndex > -1) {
+                //(msgText.slice(msgText.length - 9, msgText.length) == " random. " && soundIndex > -1)
+            else if(msgText.slice(msgText.length - 9, msgText.length) == " random. ") {
                 let msgHtml = msg.innerHTML.slice(0,msgText.length-9);
                 msgHtml += " <span class='randomEmo'>RANDOM</span>";
                 msg.innerHTML = msgHtml;
@@ -1152,6 +1658,7 @@
                 const emote = emotes[i];
 
                 emote.onclick = () => {
+                    console.log("asd")
                     if(input.value.length == 0)
                         input.value = emote.getAttribute("title") + " ";
                     else if(input.value[input.value.length - 1] == " ")
@@ -1293,5 +1800,17 @@
     }
     function time(ms) {
         return new Promise(resolve => { setTimeout(resolve, ms) });
+    }
+    function getTime(str) {
+        str = str.split(":");
+
+        let h = +str[0];
+        let m = +str[1];
+        let s = +str[2];
+
+        h = h*3600;
+        m = m*60;
+
+        return h+m+s;
     }
 })();
