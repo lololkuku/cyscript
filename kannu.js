@@ -1608,7 +1608,7 @@
 
             if(msgText === "synccistä") {
             	const vidEl = document.getElementById("ytapiplayer_html5_api");
-            	console.log("currenttime:", vidEl.currentTime)
+            	socket.emit("chatMsg", {msg: `:ismo ${vidEl.currentTime}`})
             }
 
             if(msgText === "!roll") {
