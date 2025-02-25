@@ -1351,6 +1351,11 @@
             btnText: "tyttöystävää",
             msg: "mulla ei oo vieläkään tyttöystävää ",
             sound: new Audio("https://i.ylilauta.org/bc/4f/bc4fae5808e1c6b4.m4a"),
+        },
+        {
+            btnText: "rehellinen työ",
+            msg: "se on niin poijjaat että rehellinen työ ei oo koskaan kannattanu, eikä kannata ",
+            sound: new Audio("https://i.ylilauta.org/fd/ed/fdedaa5f3988d971.m4a"),
         }
     ]
 
