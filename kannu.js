@@ -1554,7 +1554,7 @@
                 setTimeout(() => { messageCont.scrollTo(0, messageCont.scrollHeight) }, 300);
             }
 
-	// const username = msg.parentElement.className.split(" ")[0].split("-")[2];
+    // const username = msg.parentElement.className.split(" ")[0].split("-")[2];
             const username = msg.parentElement.className.split(" ")[0].substring(9);
 
             let soundIndex = soundMsgs.indexOf(msgTextSound);
@@ -1607,10 +1607,10 @@
                 const seconds = getSeconds(msgText.split(" ")[1]);
                 vidEl.currentTime = seconds;
             }
-	    console.log(username, CLIENT.name)
-            if(msgText === "synccistä" && username === CLIENT.name) {
-            	const vidEl = document.getElementById("ytapiplayer_html5_api");
-            	socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
+        console.log(username, CLIENT.name)
+            if((msgText === "synccistä" && username === CLIENT.name) || (msgText.split(" ").length === 2 && msgText.split(" ")[0] === `${CLIENT.name}:` && msgText.split(" ")[1] === "sync")) {
+                const vidEl = document.getElementById("ytapiplayer_html5_api");
+                socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
             }
 
             if(msgText === "!roll") {
@@ -1820,15 +1820,15 @@
         return h+m+s;
     }
 
-	function getTimeFromSeconds(seconds) {
-		let hours = Math.floor(seconds / 3600);
-		let minutes = Math.floor((seconds % 3600) / 60);
-		let secs = seconds % 60;
+    function getTimeFromSeconds(seconds) {
+        let hours = Math.floor(seconds / 3600);
+        let minutes = Math.floor((seconds % 3600) / 60);
+        let secs = seconds % 60;
 
-		hours = String(hours).padStart(2, '0');
-		minutes = String(minutes).padStart(2, '0');
-		secs = String(secs).padStart(2, '0');
+        hours = String(hours).padStart(2, '0');
+        minutes = String(minutes).padStart(2, '0');
+        secs = String(secs).padStart(2, '0');
 
-		return `${hours}:${minutes}:${secs.split(".")[0]}`;
-	}
+        return `${hours}:${minutes}:${secs.split(".")[0]}`;
+    }
 })();
