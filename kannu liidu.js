@@ -1351,6 +1351,11 @@
             btnText: "tyttöystävää",
             msg: "mulla ei oo vieläkään tyttöystävää ",
             sound: new Audio("https://i.ylilauta.org/bc/4f/bc4fae5808e1c6b4.m4a"),
+        },
+        {
+            btnText: "rehellinen työ",
+            msg: "se on niin poijjaat että rehellinen työ ei oo koskaan kannattanu, eikä kannata ",
+            sound: new Audio("https://i.ylilauta.org/fd/ed/fdedaa5f3988d971.m4a"),
         }
     ]
 
@@ -1514,7 +1519,6 @@
  
             if(!(mutationsList[0].addedNodes && mutationsList[0].addedNodes[0] && mutationsList[0].addedNodes[0].className.indexOf("chat-msg") > -1))
                 return;
-            console.log("msgennen: " + msgs[msgs.length - 1].className)
             let msg = msgs[msgs.length - 1].querySelector("span:last-of-type");
             if(msgs[msgs.length - 1].classList.contains("small-emos")) {
                 msg = msgs[msgs.length - 1];
@@ -1526,7 +1530,6 @@
                     const emote = emotes[i];
 
                     emote.onclick = () => {
-                        console.log("asd")
                         if(input.value.length == 0)
                             input.value = emote.getAttribute("title") + " ";
                         else if(input.value[input.value.length - 1] == " ")
@@ -1539,7 +1542,6 @@
 
                 return;
             }
-            console.log("msg: " + msg)
             let msgText = msg.textContent;
             let msgTextSound = "";
 
@@ -1552,8 +1554,8 @@
                 setTimeout(() => { messageCont.scrollTo(0, messageCont.scrollHeight) }, 300);
             }
 
-
-            const username = msg.parentElement.className.split(" ")[0].split("-")[2];
+    // const username = msg.parentElement.className.split(" ")[0].split("-")[2];
+            const username = msg.parentElement.className.split(" ")[0].substring(9);
 
             let soundIndex = soundMsgs.indexOf(msgTextSound);
 
@@ -1602,8 +1604,13 @@
 
             if(msgText.split(" ").length === 2 && msgText.split(" ")[1].split(":").length === 3 && document.getElementById("ytapiplayer_html5_api")) {
                 const vidEl = document.getElementById("ytapiplayer_html5_api");
-                const seconds = getTime(msgText.split(" ")[1]);
+                const seconds = getSeconds(msgText.split(" ")[1]);
                 vidEl.currentTime = seconds;
+            }
+        console.log(username, CLIENT.name)
+            if((msgText === "synccistä" && username === CLIENT.name) || (msgText.split(" ").length === 2 && msgText.split(" ")[0] === CLIENT.name && /^[0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}$/.test(masgText.split(" ")[1]))) {
+                const vidEl = document.getElementById("ytapiplayer_html5_api");
+                socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
             }
 
             if(msgText === "!roll") {
@@ -1658,7 +1665,6 @@
                 const emote = emotes[i];
 
                 emote.onclick = () => {
-                    console.log("asd")
                     if(input.value.length == 0)
                         input.value = emote.getAttribute("title") + " ";
                     else if(input.value[input.value.length - 1] == " ")
@@ -1801,7 +1807,7 @@
     function time(ms) {
         return new Promise(resolve => { setTimeout(resolve, ms) });
     }
-    function getTime(str) {
+    function getSeconds(str) {
         str = str.split(":");
 
         let h = +str[0];
@@ -1812,5 +1818,17 @@
         m = m*60;
 
         return h+m+s;
+    }
+
+    function getTimeFromSeconds(seconds) {
+        let hours = Math.floor(seconds / 3600);
+        let minutes = Math.floor((seconds % 3600) / 60);
+        let secs = seconds % 60;
+
+        hours = String(hours).padStart(2, '0');
+        minutes = String(minutes).padStart(2, '0');
+        secs = String(secs).padStart(2, '0');
+
+        return `${hours}:${minutes}:${secs.split(".")[0]}`;
     }
 })();
