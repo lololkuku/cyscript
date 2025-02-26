@@ -1356,6 +1356,11 @@
             btnText: "rehellinen työ",
             msg: "se on niin poijjaat että rehellinen työ ei oo koskaan kannattanu, eikä kannata ",
             sound: new Audio("https://i.ylilauta.org/fd/ed/fdedaa5f3988d971.m4a"),
+        },
+        {
+            btnText: "vitun homo",
+            msg: "vitun homo. HOMO ",
+            sound: new Audio("https://i.ylilauta.org/40/36/4036eecbf2a885a5.m4a"),
         }
     ]
 
