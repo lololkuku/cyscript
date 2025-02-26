@@ -1608,7 +1608,7 @@
                 vidEl.currentTime = seconds;
             }
         console.log(username, CLIENT.name)
-            if((msgText === "synccistä" && username === CLIENT.name) || (msgText.split(" ").length === 2 && msgText.split(" ")[0] === CLIENT.name && /^[0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}$/.test(masgText.split(" ")[1]))) {
+            if((msgText === "synccistä" && username === CLIENT.name) || (msgText.split(" ").length === 2 && msgText.split(" ")[0] === `${CLIENT.name}:` && msgText.split(" ")[1] === "sync")) {
                 const vidEl = document.getElementById("ytapiplayer_html5_api");
                 socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
             }
