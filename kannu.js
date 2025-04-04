@@ -1361,6 +1361,11 @@
             btnText: "vitun homo",
             msg: "vitun homo. HOMO ",
             sound: new Audio("https://i.ylilauta.org/40/36/4036eecbf2a885a5.m4a"),
+        },
+        {
+            btnText: "KÄRPÄNEN",
+            msg: "vitun homo. KÄRPÄNE ",
+            sound: new Audio("https://i.ylilauta.org/30/7d/307d20dd58ebae8d.mp4"),
         }
     ]
 
