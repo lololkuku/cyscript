@@ -1364,7 +1364,7 @@
         },
         {
             btnText: "KÄRPÄNEN",
-            msg: "vitun homo. KÄRPÄNE ",
+            msg: "KÄRPÄNE ",
             sound: new Audio("https://i.ylilauta.org/30/7d/307d20dd58ebae8d.mp4"),
         }
     ]
