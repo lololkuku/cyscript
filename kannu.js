@@ -1366,6 +1366,11 @@
             btnText: "KÄRPÄNEN",
             msg: "KÄRPÄNE ",
             sound: new Audio("https://i.ylilauta.org/30/7d/307d20dd58ebae8d.mp4"),
+        },
+        {
+            btnText: "hei oot homo",
+            msg: "hei, sä oot homo ",
+            sound: new Audio("https://i.ylilauta.org/ab/90/ab90858d5c6a3ead.m4a"),
         }
     ]
 
