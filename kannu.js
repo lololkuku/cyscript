@@ -1371,6 +1371,11 @@
             btnText: "hei oot homo",
             msg: "hei, sä oot homo ",
             sound: new Audio("https://i.ylilauta.org/ab/90/ab90858d5c6a3ead.m4a"),
+        },
+        {
+            btnText: "emmä niin tyhmä oo",
+            msg: "no emmä niin tyhmä oo ettenkö mä tämmösiä juttuja tajuais. jos oot homo niin oot ",
+            sound: new Audio("https://i.ylilauta.org/e6/c2/e6c236bcc6768e9b.mp4"),
         }
     ]
 
