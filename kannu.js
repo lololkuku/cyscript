@@ -800,7 +800,7 @@
         {
             btnText: "ullahuutis",
             msg: ":ulla  ",
-            sound: new Audio("https://i.ylilauta.org/61/93/619353bae560a537.m4a"),
+            sound: new Audio("https://i.ylilauta.org/cf/c9/cfc9038156f331af.m4a"),
         },
         {
             btnText: "ja nyt sinä pidät turpas kii",
