@@ -1376,6 +1376,11 @@
             btnText: "emmä niin tyhmä oo",
             msg: "no emmä niin tyhmä oo ettenkö mä tämmösiä juttuja tajuais. jos oot homo niin oot ",
             sound: new Audio("https://i.ylilauta.org/e6/c2/e6c236bcc6768e9b.mp4"),
+        },
+        {
+            btnText: "tytöt on tyhmiä",
+            msg: "tytöt on tyhmi ä ",
+            sound: new Audio("https://i.ylilauta.org/92/c1/92c19c12df26e68d.m4a"),
         }
     ]
 
