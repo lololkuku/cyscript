@@ -250,7 +250,7 @@
         {
             btnText: "arvasin",
             msg: ":arvasin  ",
-            sound: new Audio("https://i.ylilauta.org/78/ee/78ee2923ee53c365.mp4"),
+            sound: new Audio("http://i.ylilauta.org/78/ee/78ee2923ee53c365.mp4"),
         },
         {
             btnText: "kahvi",
