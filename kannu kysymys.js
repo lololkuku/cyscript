@@ -1603,10 +1603,12 @@
                     
                     if(username != CLIENT.name) {
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
+                        console.log(sound)
                         sound.play();
                     }
                     else if(!disableBtns && (!myTime || (new Date().getTime() - +myTime > 420000))) {
                         localStorage.setItem(text + "_timelock", new Date().getTime());
+                        console.log(sound)
                         sound.play();
 
                         if(text == "ULOS" && !btnPressed)
