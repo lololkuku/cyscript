@@ -1381,6 +1381,11 @@
             btnText: "tytöt on tyhmiä",
             msg: "tytöt on tyhmi ä ",
             sound: new Audio("http://i.ylilauta.org/92/c1/92c19c12df26e68d.m4a"),
+        },
+        {
+            btnText: "hemmeTTI",
+            msg: "voi hemmeTTI ",
+            sound: new Audio("https://i.ylilauta.org/bf/5d/bf5dcfe62f052ae1.m4a"),
         }
     ]
 
