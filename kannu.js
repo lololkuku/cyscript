@@ -1385,7 +1385,7 @@
         {
             btnText: "hemmeTTI",
             msg: "voi hemmeTTI ",
-            sound: new Audio("https://i.ylilauta.org/bf/5d/bf5dcfe62f052ae1.m4a"),
+            sound: new Audio("http://i.ylilauta.org/bf/5d/bf5dcfe62f052ae1.m4a"),
         }
     ]
 
