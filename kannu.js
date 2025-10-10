@@ -1386,6 +1386,11 @@
             btnText: "hemmeTTI",
             msg: "voi hemmeTTI ",
             sound: new Audio("http://i.ylilauta.org/bf/5d/bf5dcfe62f052ae1.m4a"),
+        },
+        {
+            btnText: "ulos täälTÄ",
+            msg: "ja nyt ulos täälTÄ ",
+            sound: new Audio("http://i.ylilauta.org/ed/24/ed244cc7dab361e1.m4a"),
         }
     ]
 
