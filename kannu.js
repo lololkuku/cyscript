@@ -1394,7 +1394,7 @@
         },
         {
             btnText: "ossikännit",
-            msg: "mä voin hyvin vetää vaikka kännit, eipähän oo aamulla aikasta heräämistä ",
+            msg: "/osteri harkitsee ryys  ",
             sound: new Audio("http://i.ylilauta.org/a4/90/a49007ca04764d1f.mp4"),
         }
     ]
