@@ -1396,6 +1396,11 @@
             btnText: "ossikännit",
             msg: "/osteri harkitsee ryys  ",
             sound: new Audio("http://i.ylilauta.org/a4/90/a49007ca04764d1f.mp4"),
+        },
+        {
+            btnText: "mitä oot tehnyt",
+            msg: "MITÄ SÄ OOT TEHNY",
+            sound: new Audio("https://i.ylilauta.org/1d/f0/1df0ab945b86f490.m4a"),
         }
     ]
 
