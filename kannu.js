@@ -1401,6 +1401,11 @@
             btnText: "mitä oot tehnyt",
             msg: "MITÄ SÄ OOT TEHNY",
             sound: new Audio("http://i.ylilauta.org/1d/f0/1df0ab945b86f490.m4a"),
+        },
+        {
+            btnText: "pitäny pellenä",
+            msg: "KAI TE KAIKKI PITÄNY MUA IHAN PELLENÄ",
+            sound: new Audio("http://i.ylilauta.org/ba/24/ba248f5d3ab71646.m4a"),
         }
     ]
 
