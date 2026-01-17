@@ -1404,7 +1404,7 @@
         },
         {
             btnText: "pitäny pellenä",
-            msg: "KAI TE KAIKKI PITÄNY MUA IHAN PELLENÄ",
+            msg: "TE KAIKKI PITÄNY MUA IHAN PELLENÄ",
             sound: new Audio("http://i.ylilauta.org/ba/24/ba248f5d3ab71646.m4a"),
         }
     ]
