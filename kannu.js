@@ -1406,6 +1406,11 @@
             btnText: "pitäny pellenä",
             msg: "TE KAIKKI PITÄNY MUA IHAN PELLENÄ",
             sound: new Audio("http://i.ylilauta.org/ba/24/ba248f5d3ab71646.m4a"),
+        },
+        {
+            btnText: "s*ntakasa",
+            msg: "sä olet mitätön sontakasa ",
+            sound: new Audio("http://i.ylilauta.org/b7/db/b7db775616dbf2ea.m4a"),
         }
     ]
 
