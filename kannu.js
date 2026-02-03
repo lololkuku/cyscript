@@ -1411,6 +1411,11 @@
             btnText: "s*ntakasa",
             msg: "sä olet mitätön sontakasa ",
             sound: new Audio("http://i.ylilauta.org/b7/db/b7db775616dbf2ea.m4a"),
+        },
+        {
+            btnText: "sekaan vaan",
+            msg: "sekaan vaan jos kiinnostaa ",
+            sound: new Audio("http://i.ylilauta.org/d8/a7/d8a703affc52b54c.m4a"),
         }
     ]
 
