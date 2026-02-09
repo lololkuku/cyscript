@@ -1416,6 +1416,11 @@
             btnText: "sekaan vaan",
             msg: "sekaan vaan jos kiinnostaa ",
             sound: new Audio("http://i.ylilauta.org/d8/a7/d8a703affc52b54c.m4a"),
+        },
+        {
+            btnText: "huoripukit ",
+            msg: "pitäkää toisenne huoripukit ",
+            sound: new Audio("http://i.ylilauta.org/e7/d3/e7d3ac9e3f5c1939.m4a"),
         }
     ]
 
