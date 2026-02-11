@@ -1421,6 +1421,11 @@
             btnText: "huoripukit ",
             msg: "pitäkää toisenne huoripukit ",
             sound: new Audio("http://i.ylilauta.org/e7/d3/e7d3ac9e3f5c1939.m4a"),
+        },
+        {
+            btnText: "kaljaa kohtuudella ",
+            msg: "mutta eikö sitä kaljaa voi ottaa kohtuuttomasti niiku sivistyneet ihmiset ",
+            sound: new Audio("http://i.ylilauta.org/d4/7a/d47acc86f542add3.m4a"),
         }
     ]
 
