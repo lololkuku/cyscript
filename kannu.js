@@ -1426,6 +1426,11 @@
             btnText: "kaljaa kohtuudella ",
             msg: "mutta eikö sitä kaljaa voi ottaa kohtuuttomasti niiku sivistyneet ihmiset ",
             sound: new Audio("http://i.ylilauta.org/d4/7a/d47acc86f542add3.m4a"),
+        },
+        {
+            btnText: "hyvin menee ",
+            msg: "hyvin menee. jes jes ",
+            sound: new Audio("http://i.ylilauta.org/1a/94/1a94b3ff1be6fb95.mp4"),
         }
     ]
 
