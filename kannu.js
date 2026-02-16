@@ -1436,6 +1436,11 @@
             btnText: "OSSILLE ",
             msg: ":ismoriehuu  ",
             sound: new Audio("http://i.ylilauta.org/b8/f8/b8f8e546d5bc34ed.m4a"),
+        },
+        {
+            btnText: "perhanan perhana ",
+            msg: "voi perhanan perhana sun kanssas ",
+            sound: new Audio("http://i.ylilauta.org/b7/b9/b7b9eeef60bd2906.m4a"),
         }
     ]
 
