@@ -1434,7 +1434,7 @@
         },
         {
             btnText: "OSSILLE ",
-            msg: "OSSILLE ",
+            msg: ":ismoriehuu  ",
             sound: new Audio("http://i.ylilauta.org/b8/f8/b8f8e546d5bc34ed.m4a"),
         }
     ]
