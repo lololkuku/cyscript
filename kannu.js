@@ -1431,6 +1431,11 @@
             btnText: "hyvin menee ",
             msg: "hyvin menee. jes jes ",
             sound: new Audio("http://i.ylilauta.org/1a/94/1a94b3ff1be6fb95.mp4"),
+        },
+        {
+            btnText: "OSSILLE ",
+            msg: "OSSILLE ",
+            sound: new Audio("http://i.ylilauta.org/b8/f8/b8f8e546d5bc34ed.m4a"),
         }
     ]
 
