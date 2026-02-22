@@ -1450,7 +1450,7 @@
         {
             btnText: "nappeja tänne ",
             msg: "niitä nappeja tänne ja vähän äkkiä ",
-            sound: new Audio("https://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
+            sound: new Audio("http://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
         }
     ]
 
