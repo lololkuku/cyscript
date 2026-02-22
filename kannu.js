@@ -1441,6 +1441,16 @@
             btnText: "perhanan perhana ",
             msg: "voi perhanan perhana sun kanssas ",
             sound: new Audio("http://i.ylilauta.org/b7/b9/b7b9eeef60bd2906.m4a"),
+        },
+        {
+            btnText: "kebab kastiketta ",
+            msg: ":kurjahuijarinpainajainen ",
+            sound: new Audio("http://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
+        },
+        {
+            btnText: "nappeja tänne ",
+            msg: "niitä nappeja tänne ja vähän äkkiä ",
+            sound: new Audio("https://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
         }
     ]
 
