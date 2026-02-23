@@ -1444,12 +1444,12 @@
         },
         {
             btnText: "kebab kastiketta ",
-            msg: ":kurjahuijarinpainajainen ",
+            msg: ":kurjahuijarinpainajainen  ",
             sound: new Audio("http://i.ylilauta.org/2d/fc/2dfcb458868fa34e.m4a"),
         },
         {
             btnText: "nappeja tänne ",
-            msg: ":nappeja ",
+            msg: ":nappeja  ",
             sound: new Audio("http://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
         }
     ]
