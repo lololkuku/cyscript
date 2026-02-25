@@ -1451,6 +1451,11 @@
             btnText: "nappeja tänne ",
             msg: ":nappeja  ",
             sound: new Audio("http://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
+        },
+        {
+            btnText: ":mikkeli  ",
+            msg: ":mikkeli  ",
+            sound: new Audio("https://i.ylilauta.org/c5/4d/c54d9204d6402b2a.m4a"),
         }
     ]
 
