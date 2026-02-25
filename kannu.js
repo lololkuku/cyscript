@@ -1455,7 +1455,7 @@
         {
             btnText: ":mikkeli  ",
             msg: ":mikkeli  ",
-            sound: new Audio("https://i.ylilauta.org/c5/4d/c54d9204d6402b2a.m4a"),
+            sound: new Audio("http://i.ylilauta.org/c5/4d/c54d9204d6402b2a.m4a"),
         }
     ]
 
