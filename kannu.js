@@ -1460,7 +1460,7 @@
         {
             btnText: "ei mitään asiaa",
             msg: "tänne sulla ei oo mitään asiaa ",
-            sound: new Audio("https://i.ylilauta.org/44/a9/44a9d4c79857a6af.mp4"),
+            sound: new Audio("http://i.ylilauta.org/44/a9/44a9d4c79857a6af.mp4"),
         }
     ]
 
