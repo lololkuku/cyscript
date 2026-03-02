@@ -1418,44 +1418,49 @@
             sound: new Audio("http://i.ylilauta.org/d8/a7/d8a703affc52b54c.m4a"),
         },
         {
-            btnText: "huoripukit ",
+            btnText: "huoripukit",
             msg: "pitäkää toisenne huoripukit ",
             sound: new Audio("http://i.ylilauta.org/e7/d3/e7d3ac9e3f5c1939.m4a"),
         },
         {
-            btnText: "kaljaa kohtuudella ",
+            btnText: "kaljaa kohtuudella",
             msg: "mutta eikö sitä kaljaa voi ottaa kohtuuttomasti niiku sivistyneet ihmiset ",
             sound: new Audio("http://i.ylilauta.org/d4/7a/d47acc86f542add3.m4a"),
         },
         {
-            btnText: "hyvin menee ",
+            btnText: "hyvin menee",
             msg: "hyvin menee. jes jes ",
             sound: new Audio("http://i.ylilauta.org/1a/94/1a94b3ff1be6fb95.mp4"),
         },
         {
-            btnText: "OSSILLE ",
+            btnText: "OSSILLE",
             msg: ":ismoriehuu  ",
             sound: new Audio("http://i.ylilauta.org/b8/f8/b8f8e546d5bc34ed.m4a"),
         },
         {
-            btnText: "perhanan perhana ",
+            btnText: "perhanan perhana",
             msg: "voi perhanan perhana sun kanssas ",
             sound: new Audio("http://i.ylilauta.org/b7/b9/b7b9eeef60bd2906.m4a"),
         },
         {
-            btnText: "kebab kastiketta ",
+            btnText: "kebab kastiketta",
             msg: ":kurjahuijarinpainajainen  ",
             sound: new Audio("http://i.ylilauta.org/2d/fc/2dfcb458868fa34e.m4a"),
         },
         {
-            btnText: "nappeja tänne ",
+            btnText: "nappeja tänne",
             msg: ":nappeja  ",
             sound: new Audio("http://i.ylilauta.org/02/c9/02c9f74e1237a3de.mp4"),
         },
         {
-            btnText: ":mikkeli  ",
+            btnText: ":mikkeli",
             msg: ":mikkeli  ",
             sound: new Audio("http://i.ylilauta.org/c5/4d/c54d9204d6402b2a.m4a"),
+        },
+        {
+            btnText: "ei mitään asiaa",
+            msg: "tänne sulla ei oo mitään asiaa ",
+            sound: new Audio("https://i.ylilauta.org/44/a9/44a9d4c79857a6af.mp4"),
         }
     ]
 
