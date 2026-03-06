@@ -1461,6 +1461,11 @@
             btnText: "ei mitään asiaa",
             msg: "tänne sulla ei oo mitään asiaa ",
             sound: new Audio("http://i.ylilauta.org/44/a9/44a9d4c79857a6af.mp4"),
+        },
+        {
+            btnText: "tehkää mitä haluatte",
+            msg: "hyvä on. tehkää ihan mitä haluatte. juokaa naikaa tappakaa vaikka ittenne en minä välitä",
+            sound: new Audio("https://i.ylilauta.org/75/7b/757b9a068eb97a97.m4a"),
         }
     ]
 
