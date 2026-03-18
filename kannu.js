@@ -1468,8 +1468,8 @@
             sound: new Audio("http://i.ylilauta.org/75/7b/757b9a068eb97a97.m4a"),
         },
         {
-            btnText: "eiei",
-            msg: "eieieieieieiEI",
+            btnText: "aiai",
+            msg: "aiaiaiaiaiaiAI",
             sound: new Audio("http://i.ylilauta.org/1b/05/1b05b230541ed800.m4a"),
         }
     ]
