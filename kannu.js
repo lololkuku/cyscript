@@ -1476,6 +1476,16 @@
             btnText: "eiei",
             msg: "eieieieieieiEI",
             sound: new Audio("http://i.ylilauta.org/1b/05/1b05b230541ed800.m4a"),
+        },
+        {
+            btnText: "voi helvetin",
+            msg: "no voi helvetin helvetti",
+            sound: new Audio("http://i.ylilauta.org/b5/83/b58349018b82b702.m4a"),
+        },
+        {
+            btnText: "paha paikka",
+            msg: "mulla on nyt pikkasen paha paikka",
+            sound: new Audio("http://i.ylilauta.org/ea/76/ea76244ca22d63c8.m4a"),
         }
     ]
 
