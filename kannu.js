@@ -1486,6 +1486,11 @@
             btnText: "paha paikka",
             msg: "mulla on nyt pikkasen paha paikka",
             sound: new Audio("http://i.ylilauta.org/ea/76/ea76244ca22d63c8.m4a"),
+        },
+        {
+            btnText: "mitähelkkaria",
+            msg: "mitä helk karia",
+            sound: new Audio("http://i.ylilauta.org/30/12/30128eb2eb481611.m4a"),
         }
     ]
 
