@@ -1491,6 +1491,11 @@
             btnText: "mitähelkkaria",
             msg: "mitä helk karia",
             sound: new Audio("http://i.ylilauta.org/30/12/30128eb2eb481611.m4a"),
+        },
+        {
+            btnText: "korkea aika töihin",
+            msg: "sun on korkea aika mennä töihin ja lopettaa laiskottelu",
+            sound: new Audio("http://i.ylilauta.org/da/01/da01f1885d516907.m4a"),
         }
     ]
 
