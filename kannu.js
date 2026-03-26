@@ -1611,7 +1611,8 @@
 
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
-        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
+        socket.emit("chatMsg", {msg: "-"});
+        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name})
         socket.emit("chatMsg", {msg: ":pippeli"});
     });
 
