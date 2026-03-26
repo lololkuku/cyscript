@@ -18,6 +18,7 @@
     const soundNotifBtn = document.createElement("button");
     const disableBtn = document.createElement("button");
     const randomEmosBtn = document.createElement("button");
+    const randomPipeBtn = document.createElement("button");
 
     const tadaa = new Audio("https://i.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
@@ -30,6 +31,7 @@
     controls.appendChild(soundNotifBtn);
     controls.appendChild(emoBtn);
     controls.appendChild(randomEmosBtn);
+    controls.appendChild(randomPipeBtn)
 
         const soundBtns = [
         {
@@ -1596,6 +1598,21 @@
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
+    });
+
+    randomPipeBtn.className = "btn btn-sm btn-default";
+    randomPipeBtn.style.float = "right";
+    randomPipeBtn.textContent = "Random pipe";
+    randomPipeBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
+
+        spamlock = true;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
+        socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
+        socket.emit("chatMsg", {msg: ":pippeli"});
     });
 
     randomEmosBtn.className = "btn btn-sm btn-default";
