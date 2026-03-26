@@ -22,16 +22,23 @@
 
     const tadaa = new Audio("https://i.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
+    const cyPollBtn = document.querySelector("#newpollbtn")    
     const cyEmoBtn = document.getElementById("emotelistbtn");
     cyEmoBtn.style.float = "left";
 
-    controls.appendChild(cyEmoBtn);
-    controls.appendChild(disableBtn);
-    controls.appendChild(kasBtn);
-    controls.appendChild(soundNotifBtn);
-    controls.appendChild(emoBtn);
-    controls.appendChild(randomEmosBtn);
-    controls.appendChild(randomPipeBtn)
+    const topBtnCont = document.createElement("div")
+    topBtnCont.style.overflow = "hidden"
+
+    controls.prepend(topBtnCont)
+
+    topBtnCont.appendChild(cyEmoBtn);
+    topBtnCont.appendChild(cyPollBtn);
+    topBtnCont.appendChild(disableBtn);
+    topBtnCont.appendChild(kasBtn);
+    topBtnCont.appendChild(soundNotifBtn);
+    topBtnCont.appendChild(emoBtn);
+    topBtnCont.appendChild(randomEmosBtn);
+    topBtnCont.appendChild(randomPipeBtn)
 
         const soundBtns = [
         {
