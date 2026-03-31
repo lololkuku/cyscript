@@ -19,6 +19,7 @@
     const disableBtn = document.createElement("button");
     const randomEmosBtn = document.createElement("button");
     const randomPipeBtn = document.createElement("button");
+    const randomUserBtn = document.createElement("button");
 
     const tadaa = new Audio("https://i.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
@@ -39,6 +40,7 @@
     topBtnCont.appendChild(emoBtn);
     topBtnCont.appendChild(randomEmosBtn);
     topBtnCont.appendChild(randomPipeBtn)
+    topBtnCont.appendChild(randomUserBtn)
 
         const soundBtns = [
         {
@@ -1605,6 +1607,22 @@
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
+    });
+
+    randomUserBtn.className = "btn btn-sm btn-default";
+    randomUserBtn.style.float = "right";
+    randomUserBtn.textContent = "Random käyttäjä";
+    randomUserBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
+
+        spamlock = true;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
+        const users = [...document.querySelectorAll("#userlist div span:nth-child(2)")]
+        const randomUser = users[Math.floor(Math.random() * users.length)].textContent
+        socket.emit("chatMsg", {msg: randomUser});
     });
 
     randomPipeBtn.className = "btn btn-sm btn-default";
