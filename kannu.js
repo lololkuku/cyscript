@@ -1621,7 +1621,8 @@
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
         const users = [...document.querySelectorAll("#userlist div span:nth-child(2)")]
-        const randomUser = users[Math.floor(Math.random() * users.length)].textContent + "." + " random. "
+        let randomUser = users[Math.floor(Math.random() * users.length)].textContent + "." + " random. "
+        randomUser = randomUser.slice(0,1) + "​" + randomUser.slice(1)
         socket.emit("chatMsg", {msg: randomUser});
     });
 
