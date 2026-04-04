@@ -1621,9 +1621,11 @@
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
         const users = [...document.querySelectorAll("#userlist div span:nth-child(2)")]
-        let randomUser = users[Math.floor(Math.random() * users.length)].textContent + " random. "
+        let randomUser = users[Math.floor(Math.random() * users.length)].textContent
         randomUser = randomUser.slice(0,1) + "​" + randomUser.slice(1)
+        socket.emit("chatMsg", {msg:"-"})
         socket.emit("chatMsg", {msg: randomUser});
+        socket.emit("chatMsg", {msg:"random."})
     });
 
     randomPipeBtn.className = "btn btn-sm btn-default";
@@ -1813,6 +1815,9 @@
                 const btns = document.querySelectorAll(".aaninappi").length;
                 socket.emit("chatMsg", {msg: "nappeja: " + btns + " kpl :ismokolme"})
             }
+
+            if(msgText == "random.")
+                msg.innerHTML = "<span class='randomEmo'>RANDOM</span>"
  
             if(msg.innerHTML.split(" <").length == 2 && msg.innerHTML.split(" <")[0] == "pipe") {
                 const msgParentClassname = msg.parentElement.className;
