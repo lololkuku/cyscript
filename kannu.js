@@ -1527,6 +1527,11 @@
             btnText: "mulla ei oo sanottavaa",
             msg: "mulla ei oo mitään sanottavAA ",
             sound: new Audio("http://i.ylilauta.org/b0/cf/b0cff532531f9384.m4a"),
+        },
+        {
+            btnText: "alkoholin ongelma",
+            msg: "sulla on alkoholiongelma ",
+            sound: new Audio("http://i.ylilauta.org/70/80/7080e72480c3e941.m4a"),
         }
     ]
 
