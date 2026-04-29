@@ -1522,6 +1522,11 @@
             btnText: "koko pullo meni",
             msg: "ja sitte menikin koko pullo että hupsista vaan ",
             sound: new Audio("http://i.ylilauta.org/cb/3d/cb3d4553acdae8e2.m4a"),
+        },
+        {
+            btnText: "mulla ei oo sanottavaa",
+            msg: "mulla ei oo mitään sanottavAA ",
+            sound: new Audio("http://i.ylilauta.org/b0/cf/b0cff532531f9384.m4a"),
         }
     ]
 
