@@ -1512,6 +1512,16 @@
             btnText: "valehteleva paska",
             msg: "valehteleva paska ",
             sound: new Audio("http://i.ylilauta.org/d0/20/d02073f469f3ccc5.m4a"),
+        },
+        {
+            btnText: "tissuttelee ittekseen",
+            msg: "mistä lähtien sä oot ruvennu tissuttelemaan ittekses ",
+            sound: new Audio("http://i.ylilauta.org/55/79/5579f4243a8414d4.m4a"),
+        },
+        {
+            btnText: "koko pullo meni",
+            msg: "ja sitte menikin koko pullo että hupsista vaan ",
+            sound: new Audio("http://i.ylilauta.org/cb/3d/cb3d4553acdae8e2.m4a"),
         }
     ]
 
