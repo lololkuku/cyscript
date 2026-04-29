@@ -1507,6 +1507,11 @@
             btnText: "korkea aika töihin",
             msg: "sun on korkea aika mennä töihin ja lopettaa laiskottelu",
             sound: new Audio("http://i.ylilauta.org/da/01/da01f1885d516907.m4a"),
+        },
+        {
+            btnText: "valehteleva paska",
+            msg: "valehteleva paska ",
+            sound: new Audio("http://i.ylilauta.org/d0/20/d02073f469f3ccc5.m4a"),
         }
     ]
 
@@ -1793,7 +1798,6 @@
                 const seconds = getSeconds(msgText.split(" ")[1]);
                 vidEl.currentTime = seconds;
             }
-        console.log(username, CLIENT.name)
             if((msgText === "synccistä" && username === CLIENT.name) || (msgText.split(" ").length === 2 && msgText.split(" ")[0] === `${CLIENT.name}:` && msgText.split(" ")[1] === "sync")) {
                 const vidEl = document.getElementById("ytapiplayer_html5_api");
                 socket.emit("chatMsg", {msg: `:ismo ${getTimeFromSeconds(vidEl.currentTime)}`})
@@ -1825,6 +1829,16 @@
                 if(msgParentClassname == "chat-msg-" + CLIENT.name) {
                     socket.emit("chatMsg", {msg: msg.getElementsByTagName("img")[0].getAttribute("title")});
                     socket.emit("chatMsg", {msg: ":pippeli"});
+                }
+            }
+
+            if(msg.children.length === 1 && msg.querySelector("img") && msg.querySelector("img").getAttribute("title") === ":pippeli") {
+                const prevMsg = msg.parentElement.previousElementSibling?.querySelector('span:last-of-type')
+                const prevEmo = prevMsg?.querySelector("img")
+                if(prevMsg && prevMsg.children.length === 1 && prevEmo) {
+                    console.log("jeess")
+                    console.log(prevEmo)
+                    prevEmo.classList.add("pipenaama")                  
                 }
             }
 
