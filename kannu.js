@@ -1532,6 +1532,16 @@
             btnText: "alkoholin ongelma",
             msg: "sulla on alkoholiongelma ",
             sound: new Audio("http://i.ylilauta.org/70/80/7080e72480c3e941.m4a"),
+        },
+        {
+            btnText: "selvetin helvetin",
+            msg: "aissselvetin helveTIn ",
+            sound: new Audio("http://i.ylilauta.org/b6/68/b668b1b46a932b48.m4a"),
+        },
+        {
+            btnText: "aaaATSAJAJA",
+            msg: ":tsajajaja  ",
+            sound: new Audio("http://i.ylilauta.org/c3/c5/c3c554ffad203705.m4a"),
         }
     ]
 
