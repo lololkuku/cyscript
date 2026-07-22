@@ -601,7 +601,7 @@
         {
             btnText: "onks tää paskaa",
             msg: "onks tää paskaa mitä",
-            sound: new Audio("http://i.ylilauta.org/f3/7d/f37d4f641a462ff5.m4a"),
+            sound: new Audio("https://lololkuku.github.io/cyaanet/0a1f70ffa4c00c39.mp3"),
         },
         {
             btnText: "suu suppuun",
