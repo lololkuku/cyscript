@@ -1576,7 +1576,7 @@
             const time = localStorage.getItem(text + "_timelock");
 
             // if(!time || (text != "pallirave:D" && new Date().getTime() - +time >= 420000) || (new Date().getTime() - +time >= 3600000)) {
-            if(!time || new Date().getTime() - +time >= 420000) {
+            if(true) {
 
                 if(spamlock)
                     return;
