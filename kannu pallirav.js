@@ -1582,7 +1582,7 @@
                     return;
 
                 spamlock = true;
-                setTimeout(() => {spamlock = false}, 3000)
+                setTimeout(() => {spamlock = false}, 1)
 
                 if(text == "ULOS") {
                     btnPressed = true;
@@ -1640,7 +1640,7 @@
         spamlock = true;
 
         //temp 3000
-        setTimeout(() => {spamlock = false}, 3000)
+        setTimeout(() => {spamlock = false}, 1)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
@@ -1654,7 +1654,7 @@
         spamlock = true;
 
         //temp 3000
-        setTimeout(() => {spamlock = false}, 3000)
+        setTimeout(() => {spamlock = false}, 1)
         const users = [...document.querySelectorAll("#userlist div span:nth-child(2)")]
         let randomUser = users[Math.floor(Math.random() * users.length)].textContent
         randomUser = randomUser.slice(0,1) + "​" + randomUser.slice(1)
@@ -1673,7 +1673,7 @@
         spamlock = true;
 
         //temp 3000
-        setTimeout(() => {spamlock = false}, 3000)
+        setTimeout(() => {spamlock = false}, 1)
         socket.emit("chatMsg", {msg: "-"});
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name})
         socket.emit("chatMsg", {msg: ":pippeli"});
@@ -1687,7 +1687,7 @@
             return;
     
         spamlock2 = true;
-        setTimeout(() => {spamlock2 = false}, 60000)
+        setTimeout(() => {spamlock2 = false}, 1)
         socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
 
@@ -1703,7 +1703,7 @@
                 return;
 
             spamlock = true;
-            setTimeout(() => {spamlock = false}, 3000)
+            setTimeout(() => {spamlock = false}, 1)
             for(let i = 0; i < 4; i++) {
                 socket.emit("chatMsg", {msg: kass[i]});
                 await time(30);
