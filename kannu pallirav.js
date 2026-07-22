@@ -1801,7 +1801,7 @@
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
                         sound.play();
                     }
-                    else if(!disableBtns && (!myTime || (new Date().getTime() - +myTime > 420000))) {
+                    else if(!disableBtns) {
                         localStorage.setItem(text + "_timelock", new Date().getTime());
                         sound.play();
 
