@@ -1562,9 +1562,10 @@
             btnText: "terve",
             msg: "terve ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/seppoterve.mp3"),
-        }
+        },
     ]
-
+    // napit loppu
+    
     const soundMsgs = [];
     //const soundNames = [];
 
