@@ -1686,7 +1686,7 @@
         if(spamlock2)
             return;
     
-        spamlock2 = true;
+        spamlock2 = false;
         setTimeout(() => {spamlock2 = false}, 60000)
         socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
@@ -1702,7 +1702,7 @@
             if(spamlock)
                 return;
 
-            spamlock = true;
+            spamlock = false;
             setTimeout(() => {spamlock = false}, 3000)
             for(let i = 0; i < 4; i++) {
                 socket.emit("chatMsg", {msg: kass[i]});
