@@ -1542,6 +1542,26 @@
             btnText: "aaaATSAJAJA",
             msg: ":tsajajaja  ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/c3c554ffad203705.mp3"),
+        },
+        {
+            btnText: "joo eiku ei",
+            msg: ":joo! eiku ei ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/jooeikuei.mp3"),
+        },
+        {
+            btnText: "jukkanauttii",
+            msg: "OIOIoioiioi",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/jukkanauttii.mp3"),
+        },
+        {
+            btnText: "roosaEN",
+            msg: "EN ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/roosaEN.mp3"),
+        },
+        {
+            btnText: "terve",
+            msg: "terve ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/seppoterve.mp3"),
         }
     ]
 
