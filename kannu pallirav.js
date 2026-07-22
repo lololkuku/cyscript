@@ -42,8 +42,7 @@
     topBtnCont.appendChild(randomPipeBtn)
     topBtnCont.appendChild(randomUserBtn)
 
-
-        const soundBtns = [
+      const soundBtns = [
         {
             btnText: "hälytys",
             msg: "ISMOJEN HÄTÄKOKOU",
@@ -1577,12 +1576,12 @@
             const time = localStorage.getItem(text + "_timelock");
 
             // if(!time || (text != "pallirave:D" && new Date().getTime() - +time >= 420000) || (new Date().getTime() - +time >= 3600000)) {
-            if(true) {
+            if(!time || new Date().getTime() - +time >= 420000) {
 
                 if(spamlock)
                     return;
 
-                spamlock = false;
+                spamlock = true;
                 setTimeout(() => {spamlock = false}, 3000)
 
                 if(text == "ULOS") {
@@ -1638,7 +1637,7 @@
         if(spamlock)
             return;
 
-        spamlock = false;
+        spamlock = true;
 
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
@@ -1652,7 +1651,7 @@
         if(spamlock)
             return;
 
-        spamlock = false;
+        spamlock = true;
 
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
@@ -1671,7 +1670,7 @@
         if(spamlock)
             return;
 
-        spamlock = false;
+        spamlock = true;
 
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
@@ -1687,7 +1686,7 @@
         if(spamlock2)
             return;
     
-        spamlock2 = false;
+        spamlock2 = true;
         setTimeout(() => {spamlock2 = false}, 60000)
         socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
@@ -1703,7 +1702,7 @@
             if(spamlock)
                 return;
 
-            spamlock = false;
+            spamlock = true;
             setTimeout(() => {spamlock = false}, 3000)
             for(let i = 0; i < 4; i++) {
                 socket.emit("chatMsg", {msg: kass[i]});
@@ -1802,7 +1801,7 @@
                         localStorage.setItem(text + "_timelock2", new Date().getTime());
                         sound.play();
                     }
-                    else if(!disableBtns) {
+                    else if(!disableBtns && (!myTime || (new Date().getTime() - +myTime > 420000))) {
                         localStorage.setItem(text + "_timelock", new Date().getTime());
                         sound.play();
 
