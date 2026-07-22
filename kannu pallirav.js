@@ -1573,9 +1573,16 @@
             if(disableBtns)
                 return;
 
+            const time = localStorage.getItem(text + "_timelock");
 
             // if(!time || (text != "pallirave:D" && new Date().getTime() - +time >= 420000) || (new Date().getTime() - +time >= 3600000)) {
-            if(true) {
+            if(!time || new Date().getTime() - +time >= 420000) {
+
+                if(spamlock)
+                    return;
+
+                spamlock = false;
+                setTimeout(() => {spamlock = false}, 3000)
 
                 if(text == "ULOS") {
                     btnPressed = true;
@@ -1627,6 +1634,13 @@
     emoBtn.style.float = "right";
     emoBtn.textContent = "Random emo";
     emoBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
+
+        spamlock = false;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " random. "})
     });
 
@@ -1634,6 +1648,13 @@
     randomUserBtn.style.float = "right";
     randomUserBtn.textContent = "Random käyttäjä";
     randomUserBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
+
+        spamlock = false;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
         const users = [...document.querySelectorAll("#userlist div span:nth-child(2)")]
         let randomUser = users[Math.floor(Math.random() * users.length)].textContent
         randomUser = randomUser.slice(0,1) + "​" + randomUser.slice(1)
@@ -1646,7 +1667,13 @@
     randomPipeBtn.style.float = "right";
     randomPipeBtn.textContent = "Random pipe";
     randomPipeBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
 
+        spamlock = false;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
         socket.emit("chatMsg", {msg: "-"});
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name})
         socket.emit("chatMsg", {msg: ":pippeli"});
@@ -1656,7 +1683,11 @@
     randomEmosBtn.style.float = "right";
     randomEmosBtn.textContent = "Random emo3x";
     randomEmosBtn.addEventListener("click", () => {
-
+        if(spamlock2)
+            return;
+    
+        spamlock2 = true;
+        setTimeout(() => {spamlock2 = false}, 60000)
         socket.emit("chatMsg", {msg: "+ " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " " + CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name + " +"})
     });
 
@@ -1668,7 +1699,11 @@
         let kass = ["-", ":pitkäkisu1", ":pitkäkisu2", ":pitkäkisu3"];
 
         (async () => {
+            if(spamlock)
+                return;
 
+            spamlock = true;
+            setTimeout(() => {spamlock = false}, 3000)
             for(let i = 0; i < 4; i++) {
                 socket.emit("chatMsg", {msg: kass[i]});
                 await time(30);
@@ -1757,14 +1792,17 @@
                 const soundBtn = soundBtns[soundIndex];
                 const text = soundBtn.btnText;
                 const sound = soundBtn.sound;
+                const time = localStorage.getItem(text + "_timelock2");
+                const myTime = localStorage.getItem(text + "_timelock");
 
-
-                if(username == CLIENT.name || (!disableBtns &&)) {
+                if(username == CLIENT.name || (!disableBtns && (!time || (new Date().getTime() - +time > 400000)))) {
                     
                     if(username != CLIENT.name) {
+                        localStorage.setItem(text + "_timelock2", new Date().getTime());
                         sound.play();
                     }
                     else if(!disableBtns && (!myTime || (new Date().getTime() - +myTime > 420000))) {
+                        localStorage.setItem(text + "_timelock", new Date().getTime());
                         sound.play();
 
                         if(text == "ULOS" && !btnPressed)
