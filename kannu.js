@@ -1563,6 +1563,11 @@
             msg: "terve ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/seppoterve.mp3"),
         },
+        {
+            btnText: "jukkasaamari",
+            msg: "saamarin saamaRI ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/saamari.mp3"),
+        },
     ]
     // napit loppu
     
