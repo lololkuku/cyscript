@@ -1571,7 +1571,7 @@
         {
             btnText: "perkeleen perkele",
             msg: "perkeleen perkele ",
-            sound: new Audio("https://lololkuku.github.io/cyaanet/perkeleenperkele.mp3"),
+            sound: new Audio("https://lololkuku.github.io/cyaanet/perkeleenperkele.m4a"),
         },
     ]
     // napit loppu
