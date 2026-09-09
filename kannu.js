@@ -1568,6 +1568,11 @@
             msg: "saamarin saamaRI ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/saamari.mp3"),
         },
+        {
+            btnText: "perkeleen perkele",
+            msg: "perkeleen perkele ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/perkeleenperkele.mp3"),
+        },
     ]
     // napit loppu
     
