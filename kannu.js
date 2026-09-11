@@ -1578,6 +1578,11 @@
             msg: "miten olis pikku napanterit näin alkuun ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/napanteri.mp3"),
         },
+        {
+            btnText: "muut osaa juoda",
+            msg: "eikö täällä muut osaa juoda ku minä ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/juodakuminä.m4a"),
+        },
     ]
     // napit loppu
     
