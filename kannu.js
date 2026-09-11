@@ -1573,6 +1573,11 @@
             msg: "perkeleen perkele ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/perkeleenperkele.m4a"),
         },
+        {
+            btnText: "napanterit",
+            msg: "miten olis pikku napanterit näin alkuun ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/napanteri.mp3"),
+        },
     ]
     // napit loppu
     
