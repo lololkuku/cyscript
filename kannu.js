@@ -1579,6 +1579,11 @@
             sound: new Audio("https://lololkuku.github.io/cyaanet/napanteri.mp3"),
         },
         {
+            btnText: "muut osaa juoda",
+            msg: "eikö täällä muut osaa judoa ku minä ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/juodakuminä.m4a"),
+        },
+        {
             btnText: "jeejee kiitoksia",
             msg: "jeejeejeejee jee jee. kiitoksia halleluja ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/jeejeejee.mp3"),
