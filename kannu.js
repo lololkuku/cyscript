@@ -1743,8 +1743,10 @@
 
         //temp 3000
         setTimeout(() => {spamlock = false}, 3000)
-        const buttons = document.querySelectorAll('button.aaninappi'); 
-        buttons[Math.floor(Math.random() * buttons.length)].click();
+ 
+        const randomBtn = soundBtns[Math.floor(Math.random() * soundBtns.length)] 
+        console.log("random btn:", randomBtn)
+        socket.emit("chatMsg", {msg: randomBtn.msg});
     });
 
     randomEmosBtn.className = "btn btn-sm btn-default";
