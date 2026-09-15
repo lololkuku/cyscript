@@ -8,6 +8,7 @@
 
     let spamlock = false;
     let spamlock2 = false;
+    let randomAaniSpamlock = false;
     let enabled = false;
     let tabActive = true;
     let disableBtns = false;
@@ -1736,13 +1737,13 @@
     randomAaniBtn.style.float = "right";
     randomAaniBtn.textContent = "Random nappi";
     randomAaniBtn.addEventListener("click", () => {
-        if(spamlock)
+        if(randomAaniSpamlock)
             return;
 
-        spamlock = true;
+        randomAaniSpamlock = true;
 
         //temp 3000
-        setTimeout(() => {spamlock = false}, 3000)
+        setTimeout(() => {randomAaniSpamlock = false}, 30000)
  
         const randomBtn = soundBtns[Math.floor(Math.random() * soundBtns.length)] 
         console.log("random btn:", randomBtn)
