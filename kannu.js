@@ -1747,6 +1747,7 @@
         const randomBtn = soundBtns[Math.floor(Math.random() * soundBtns.length)] 
         console.log("random btn:", randomBtn)
         socket.emit("chatMsg", {msg: randomBtn.msg});
+        socket.emit("chatMsg", {msg: " random. "})
     });
 
     randomEmosBtn.className = "btn btn-sm btn-default";
@@ -1891,6 +1892,10 @@
             if(msgText === "!roll" && username === CLIENT.name) {
                 const rnd = Math.floor((Math.random() * 100)+1);
                 socket.emit("chatMsg", {msg: "/me rolled " + rnd});
+            }
+
+            if(msgText === " random. ") {
+                msg.innerHTML = "<span class='randomEmo'>RANDOM</span>"
             }
 
             if(msgText.split(" ").length === 2 && msgText.split(" ")[1].split(":").length === 3 && document.getElementById("ytapiplayer_html5_api")) {
