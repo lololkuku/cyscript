@@ -20,6 +20,7 @@
     const randomEmosBtn = document.createElement("button");
     const randomPipeBtn = document.createElement("button");
     const randomUserBtn = document.createElement("button");
+    const randomAaniBtn = document.createElement("button");
 
     const tadaa = new Audio("https://i.ylilauta.org/fe/13/fe13e32d5f50131a.m4a");
 
@@ -41,6 +42,7 @@
     topBtnCont.appendChild(randomEmosBtn);
     topBtnCont.appendChild(randomPipeBtn)
     topBtnCont.appendChild(randomUserBtn)
+    topBtnCont.appendChild(randomAaniBtn)
 
       const soundBtns = [
         {
@@ -1728,6 +1730,21 @@
         socket.emit("chatMsg", {msg: "-"});
         socket.emit("chatMsg", {msg: CHANNEL.emotes[Math.floor(Math.random() * CHANNEL.emotes.length)].name})
         socket.emit("chatMsg", {msg: ":pippeli"});
+    });
+
+    randomAaniBtn.className = "btn btn-sm btn-default";
+    randomAaniBtn.style.float = "right";
+    randomAaniBtn.textContent = "Random nappi";
+    randomAaniBtn.addEventListener("click", () => {
+        if(spamlock)
+            return;
+
+        spamlock = true;
+
+        //temp 3000
+        setTimeout(() => {spamlock = false}, 3000)
+        const buttons = document.querySelectorAll('button.aaninappi'); 
+        buttons[Math.floor(Math.random() * buttons.length)].click();
     });
 
     randomEmosBtn.className = "btn btn-sm btn-default";
