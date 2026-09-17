@@ -1596,6 +1596,16 @@
             msg: "tuleeks sitä kaljaa ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/tuleekskaljaa.m4a"),
         },
+        {
+            btnText: "synkkänä aamusta lähtien",
+            msg: "no, mites täällä näin synkkänä ollaan heti aamusta lähtien ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/aamustalahtien.mp3"),
+        },
+        {
+            btnText: "seppo humalassa",
+            msg: "ei suinkaan se seppo oo humalassa ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/seppohumalassa.mp3"),
+        },
     ]
     // napit loppu
     
