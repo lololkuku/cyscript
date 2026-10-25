@@ -1606,6 +1606,11 @@
             msg: "ei suinkaan se seppo oo humalassa ",
             sound: new Audio("https://lololkuku.github.io/cyaanet/seppohumalassa.mp3"),
         },
+        {
+            btnText: "erotiikkaharrastus",
+            msg: "minulla ei ole mitään erotiikkaharrastusta ",
+            sound: new Audio("https://lololkuku.github.io/cyaanet/erotiikkaharrastus.mp3"),
+        },
     ]
     // napit loppu
     
